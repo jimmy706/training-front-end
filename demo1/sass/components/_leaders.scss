@@ -1,0 +1,26 @@
+ul.leaders {
+  max-width: 40em;
+  overflow-x: hidden;
+  li {
+    &::before {
+      float: left;
+      width: 0;
+      white-space: nowrap;
+      content: ". . . . . . . . . . . . . . . . . . . . "
+        ". . . . . . . . . . . . . . . . . . . . "
+        ". . . . . . . . . . . . . . . . . . . . "
+        ". . . . . . . . . . . . . . . . . . . . ";
+    }
+    span {
+      &:first-child {
+        padding-right: 0.5em;
+        background: $white;
+      }
+      & + span {
+        float: right;
+        padding-left: 0.5em;
+        background: $white;
+      }
+    }
+  }
+}

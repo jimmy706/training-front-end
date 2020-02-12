@@ -1,0 +1,31 @@
+section.contact {
+  position: relative;
+  height: 500px;
+
+  .contact-img {
+    position: absolute;
+    right: 0;
+    top: 4rem;
+    width: 40%;
+    height: auto;
+    min-height: 450px;
+  }
+
+  .contact-form {
+    width: 60%;
+    min-width: 500px;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  section.contact {
+    height: auto;
+    .contact-img {
+      display: none;
+    }
+    .contact-form {
+      width: 100%;
+      min-width: unset;
+    }
+  }
+}

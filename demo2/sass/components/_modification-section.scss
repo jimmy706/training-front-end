@@ -1,0 +1,32 @@
+section.modification {
+  .desc-text {
+    margin-bottom: 3rem;
+  }
+  .gallery-item {
+    margin-right: 2rem;
+    position: relative;
+    color: $white;
+    .cover-img {
+      width: 100%;
+      height: auto;
+    }
+    .gallery-title {
+      position: absolute;
+      bottom: 15px;
+      left: 15px;
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  section.modification {
+    .flexbox {
+      flex-direction: column;
+    }
+    .gallery-item {
+      margin-right: 0;
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+  }
+}

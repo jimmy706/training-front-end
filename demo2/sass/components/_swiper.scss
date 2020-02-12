@@ -1,0 +1,7 @@
+.swiper-button-next,
+.swiper-button-prev {
+  color: $light-gray;
+  &::after {
+    font-size: 1.5rem;
+  }
+}

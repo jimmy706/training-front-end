@@ -1,0 +1,26 @@
+.tab-wrapper {
+  .tabbar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2.5rem;
+
+    .tab-item {
+      margin-right: 15px;
+      @extend .btn;
+      box-shadow: 0 2px 0 0 #aaaaaa inset;
+
+      &.active {
+        @extend .btn-primary;
+        box-shadow: 0 2px 0 0 $strong-primary inset;
+      }
+    }
+  }
+
+  .tab-panel {
+    display: none;
+
+    &.active {
+      display: block;
+    }
+  }
+}

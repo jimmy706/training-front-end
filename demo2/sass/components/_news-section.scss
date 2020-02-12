@@ -1,0 +1,38 @@
+section.news {
+  .news__intro {
+    text-align: center;
+    margin-bottom: 5rem;
+  }
+  .news-item {
+    margin-right: 2rem;
+    border: 2px solid $black;
+    img {
+      width: 100%;
+      height: auto;
+    }
+    .item-body {
+      padding: 1rem;
+      .item-title {
+        @extend .sans-serif;
+      }
+    }
+    &:hover {
+      .item-title {
+        color: $primary;
+        transition: color 0.3s ease;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  section.news {
+    .flexbox {
+      flex-direction: column;
+    }
+    .news-item {
+      margin-right: 0;
+      margin-bottom: 3rem;
+    }
+  }
+}

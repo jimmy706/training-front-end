@@ -1,0 +1,16 @@
+.btn {
+  display: inline-block;
+  padding: 7px 30px;
+  background: $light-gray;
+  color: $black !important;
+  @extend .sans-serif;
+  cursor: pointer;
+}
+
+.btn-primary {
+  @extend .btn;
+  background: $primary;
+  &:hover {
+    background: $strong-primary;
+  }
+}

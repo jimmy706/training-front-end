@@ -1,0 +1,32 @@
+section.quotes {
+  background: url("../images/b-g-open.png") no-repeat center;
+  background-size: cover;
+  padding-top: 0;
+  padding-bottom: 10rem;
+  overflow: hidden;
+  margin-top: 10rem;
+  .burger-img {
+    position: absolute;
+    right: 7px;
+    top: 1px;
+    transform: scale(1.1);
+  }
+  position: relative;
+  .swiper-slide {
+    background: url("../images/b-g-2.jpg") no-repeat top center;
+    background-size: cover;
+  }
+  .slide-content {
+    padding: 2rem 4rem;
+    color: $white;
+    text-align: center;
+    @extend .container;
+    .rate {
+      color: $primary;
+      margin: 15px 0;
+    }
+    h4 {
+      margin: 0;
+    }
+  }
+}

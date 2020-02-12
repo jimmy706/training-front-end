@@ -1,0 +1,127 @@
+section.beauty-service {
+  position: relative;
+
+  .foot-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 500px;
+    height: 300px;
+  }
+
+  .beauty-service__info {
+    margin-left: 30rem;
+
+    .section-title {
+      color: $black;
+      margin-bottom: 2em;
+    }
+
+    .title-desc {
+      line-height: 1.7;
+    }
+
+    .data-list {
+      margin-top: 5rem;
+      display: flex;
+
+      .data-item {
+        text-align: center;
+        flex: 1;
+
+        .data-icon {
+          width: 35px;
+          height: 35px;
+        }
+
+        .data-text {
+          font-size: 3rem;
+          margin: 1.2rem 0;
+          color: $gray;
+        }
+
+        .data-type {
+          margin: 0;
+          color: $gray;
+          font-size: 0.9rem;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  .services {
+    display: flex;
+    margin-top: 5rem;
+
+    .service-img {
+      width: 200px;
+      height: 200px;
+    }
+
+    .service-item {
+      text-align: center;
+      margin-right: 2rem;
+
+      .service-title {
+        margin-bottom: 0;
+      }
+
+      .sub-title {
+        color: $primary;
+        @extend .hand-write;
+        font-size: 1.2rem;
+        margin: 1rem 0 2rem 0;
+      }
+
+      .service-desc {
+        @extend .desc-txt;
+        margin-bottom: 1rem;
+        margin-left: auto;
+        margin-right: auto;
+        width: 300px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  section.beauty-service {
+    .services {
+      flex-direction: column;
+      .service-item {
+        margin-bottom: 5rem;
+        .sub-title {
+          margin: 1rem 0;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  section.beauty-service {
+    .foot-img {
+      width: auto;
+      max-width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  section.beauty-service {
+    padding-top: 0;
+    .foot-img {
+      position: unset;
+    }
+    .beauty-service__info {
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
+    .services .service-item .service-desc {
+      width: auto;
+      max-width: 100%;
+    }
+  }
+}

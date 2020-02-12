@@ -1,0 +1,38 @@
+section.ads {
+  background: url("../images/home-1-background-1.jpg") no-repeat center;
+  background-size: cover;
+  height: 21.5rem;
+  position: relative;
+
+  .container {
+    background: $white;
+    transform: translateY(-6.7rem);
+    .ads__list {
+      display: flex;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      .ads__item {
+        flex: 1;
+        &:not(:last-child) {
+          margin-right: 2rem;
+        }
+        &:hover {
+          h3 {
+            transition: color 0.3s ease;
+            color: $primary;
+          }
+        }
+      }
+      .ad-img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 850px) {
+  section.ads {
+    display: none;
+  }
+}

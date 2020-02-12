@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css?family=Fjalla+One&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two&display=swap");
+
+@import "./base/variables";
+@import "./base/reset";
+
+@import "./layouts/container";
+@import "./layouts/responsive";
+
+@import "./components/txt";
+@import "./components/buttons";
+@import "./components/header";
+@import "./components/ads-section";
+@import "./components/gallery-section";
+@import "./components/welcome-section";
+@import "./components/menu-section";
+@import "./components/swiper";
+@import "./components/modification-section";
+@import "./components/banner-section";
+@import "./components/quotes-section";
+@import "./components/news-section";
+@import "./components/awards-section";
+@import "./components/book-section";
+@import "./components/footer";
+@import "./components/mb-nav";

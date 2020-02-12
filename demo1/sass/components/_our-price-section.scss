@@ -1,0 +1,75 @@
+section.our-price {
+  .price-header {
+    text-align: center;
+
+    .price-desc {
+      width: 600px;
+      margin: 0 auto;
+      text-align: center;
+    }
+  }
+
+  .price-table {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
+    grid-gap: 5rem;
+
+    .service-item {
+      .service-header {
+        @extend .hand-write;
+        font-weight: bold;
+        font-size: 1.5rem;
+        margin-bottom: 1em;
+        li {
+          &::before {
+            color: $primary;
+          }
+          span + span {
+            padding-right: 0.5rem;
+            color: $primary;
+          }
+        }
+      }
+
+      .service-content {
+        @extend .desc-txt;
+      }
+    }
+  }
+
+  .banner {
+    margin-top: 3rem;
+    height: auto;
+    width: auto;
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  section.our-price {
+    .price-table {
+      .service-item {
+        .service-header {
+          .service-price {
+            &::before {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  section.our-price {
+    .price-table {
+      grid-template-columns: minmax(250px, 600px);
+    }
+    .price-header {
+      .price-desc {
+        width: auto;
+      }
+    }
+  }
+}

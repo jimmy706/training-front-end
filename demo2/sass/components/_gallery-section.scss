@@ -1,0 +1,49 @@
+section.gallery {
+  background: $black;
+  color: $white;
+  padding-top: 0;
+  padding-bottom: 2rem;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .gallery__nav {
+    display: flex;
+    align-items: center;
+  }
+  .navbar {
+    margin-left: 1em;
+    li {
+      margin-right: 15px;
+      a {
+        color: $primary;
+        font-size: 12px;
+        i {
+          margin-right: 5px;
+        }
+      }
+      &.active {
+        a {
+          color: $white;
+        }
+      }
+    }
+  }
+  .swiper-wrapper {
+    padding-top: 1em;
+    img {
+      width: 100%;
+      height: 200px;
+      min-width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  section.gallery {
+    .navbar {
+      display: none;
+    }
+  }
+}

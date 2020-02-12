@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Piquant</title>
+  </head>
+  <body>
+    <nav class="mb-nav" id="mb-nav">
+      <div class="nav__interact-wrapper">
+        <form class="search-form">
+          <input
+            placeholder="Search..."
+            type="text"
+            name="search"
+            class="search-input"
+          />
+          <button type="submit"><i class="fas fa-search"></i></button>
+        </form>
+        <button id="close-nav-btn">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <ul class="nav__list">
+        <li>
+          <a href="#"> <i class="fas fa-star"></i> Home </a>
+        </li>
+        <li class="nav__cart">
+          <a href="#">
+            <span class="cart-icon">
+              <i class="fas fa-shopping-cart"></i> <span class="badge">0</span>
+            </span>
+            Cart
+          </a>
+        </li>
+        <li>
+          <a href="#"> <i class="fas fa-star"></i> Reservations </a>
+        </li>
+        <li>
+          <a href="#"> <i class="fas fa-star"></i> Menu </a>
+        </li>
+        <li>
+          <a href="#"> <i class="fas fa-star"></i> Pages </a>
+        </li>
+        <li>
+          <a href="#"> <i class="fas fa-star"></i> Blog </a>
+        </li>
+        <li>
+          <a href="#"> <i class="fas fa-star"></i> Shop </a>
+        </li>
+        <li>
+          <a href="#"> <i class="fas fa-star"></i> Elements </a>
+        </li>
+      </ul>
+    </nav>
+    <header class="header">
+      <img src="./images/b-g.png" class="header-bg" alt="" />
+      <div class="header__contact">
+        <div class="socials">
+          <span class="mb-none">FOLLOW US</span>
+          <span>
+            <a class="social-icon" href="#">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a class="social-icon" href="#">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a class="social-icon" href="#">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a class="social-icon" href="#">
+              <i class="fab fa-tripadvisor"></i>
+            </a>
+          </span>
+        </div>
+        <div class="contact-info">
+          <span>
+            RESERVATIONS + 1-444-123-459
+          </span>
+          <span class="mb-none">
+            <i class="social-icon fas fa-calendar-alt"></i>
+            BOOK NOW
+          </span>
+          <span class="mb-none">
+            <a href="#"><i class="social-icon fas fa-bars"></i></a>
+          </span>
+        </div>
+      </div>
+      <nav class="header__nav">
+        <a href="#" class="logo">
+          <img src="./images/landing-logo.png" alt="" />
+        </a>
+        <ul class="nav__links">
+          <li>
+            <a href="#">Home </a>
+            <i class="fas fa-star"></i>
+          </li>
+          <li>
+            <a href="#">Reservations</a>
+            <i class="fas fa-star"></i>
+          </li>
+          <li>
+            <a href="#">Menu</a>
+            <i class="fas fa-star"></i>
+          </li>
+          <li>
+            <a href="#">Pages</a>
+            <i class="fas fa-star"></i>
+          </li>
+          <li>
+            <a href="#">Blog</a>
+            <i class="fas fa-star"></i>
+          </li>
+          <li>
+            <a href="#">Shop</a>
+            <i class="fas fa-star"></i>
+          </li>
+          <li>
+            <a href="#">Elements</a>
+          </li>
+        </ul>
+        <div class="nav__interact-wrapper">
+          <form class="search-form">
+            <input
+              placeholder="Search..."
+              type="text"
+              name="search"
+              class="search-input"
+            />
+            <button type="submit"><i class="fas fa-search"></i></button>
+          </form>
+          <div class="header__cart">
+            Cart
+            <a href="#" class="cart">
+              <i class="fas fa-shopping-cart"></i>
+              <span class="badge">0</span>
+            </a>
+          </div>
+        </div>
+        <button class="btn-primary" id="toggle-nav-btn">
+          <i class="fas fa-bars"></i>
+        </button>
+      </nav>
+      <div class="swiper-container" id="header-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="header-slide">
+              <div class="slide-content">
+                <img src="./images/beef.png" alt="beef" class="beef-img" />
+                <h1 class="sans-serif slide-title">KNOW YOUR FOOD</h1>
+                <p class="slide-desc">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod arcu non odio euismod lacinia at quis risus.
+                </p>
+                <a href="#" class=" btn-primary">
+                  PURCHASE
+                </a>
+              </div>
+              <img
+                src="./images/home-1-slide-1-graphic-2.png"
+                alt="hamburger"
+                class="header-banner"
+              />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="header-slide">
+              <div class="slide-content">
+                <img src="./images/beef.png" alt="beef" class="beef-img" />
+                <h1 class="sans-serif slide-title">KNOW YOUR FOOD</h1>
+                <p class="slide-desc">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod arcu non odio euismod lacinia at quis risus.
+                </p>
+                <a href="#" class=" btn-primary">
+                  PURCHASE
+                </a>
+              </div>
+              <img
+                src="./images/home-1-slide-1-graphic-2.png"
+                alt="hamburger"
+                class="header-banner"
+              />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="header-slide">
+              <div class="slide-content">
+                <img src="./images/beef.png" alt="beef" class="beef-img" />
+                <h1 class="sans-serif slide-title">KNOW YOUR FOOD</h1>
+                <p class="slide-desc">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod arcu non odio euismod lacinia at quis risus.
+                </p>
+                <a href="#" class=" btn-primary">
+                  PURCHASE
+                </a>
+              </div>
+              <img
+                src="./images/home-1-slide-1-graphic-2.png"
+                alt="hamburger"
+                class="header-banner"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </header>
+
+    <section class="ads">
+      <div class=" container">
+        <div class="ads__list">
+          <a href="#" class="ads__item">
+            <img src="./images/img-1.png" class="ad-img" alt="burger" />
+            <h3>DELICIOUS FOOD</h3>
+            <p class="desc-text">
+              Vitae semper quis lectus nulla at volutpat diam ut. Dictumst
+              quisque sagittis purus sit amet volutpat.
+            </p>
+          </a>
+          <a href="#" class="ads__item">
+            <img src="./images/img-2.png" class="ad-img" alt="burger" />
+            <h3>FOR EVERY TASTE</h3>
+            <p class="desc-text">
+              Vitae semper quis lectus nulla at volutpat diam ut. Dictumst
+              quisque sagittis purus sit amet volutpat.
+            </p>
+          </a>
+          <a href="#" class="ads__item">
+            <img src="./images/img-3.png" class="ad-img" alt="burger" />
+            <h3>THE REAL BURGERS</h3>
+            <p class="desc-text">
+              Vitae semper quis lectus nulla at volutpat diam ut. Dictumst
+              quisque sagittis purus sit amet volutpat.
+            </p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery">
+      <div class="container">
+        <nav class="gallery__nav">
+          <h1 class="hand-write">Art Gallery</h1>
+          <ul class="navbar">
+            <li class="active">
+              <a href="#"><i class="fas fa-mug-hot"></i> Food & Drinks</a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-mug-hot"></i> Interior</a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-gift"></i> Deserts</a>
+            </li>
+            <li>
+              <a href="#"><i class="far fa-file"></i> Recipes</a>
+            </li>
+          </ul>
+        </nav>
+
+        <a href="#" class="btn">
+          <i class="far fa-hand-point-right"></i> SEE FULL GALLERY
+        </a>
+      </div>
+      <div class="container-fluid">
+        <div class="swiper-container" id="gallery-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./images/Carne-Asada-Tacos.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/Mango-Chile-Chutney.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/A-Treat-For-Your-Taste-Buds.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/img-4.png" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/img-5.png" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/Carne-Asada-Tacos.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/Mango-Chile-Chutney.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/A-Treat-For-Your-Taste-Buds.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/img-4.png" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/img-5.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="welcome content-section">
+      <div class="container">
+        <div class="flexbox">
+          <div class="welcome__intro ">
+            <h1 class="sans-serif">WELCOME TO PIQUANT</h1>
+            <p class="desc-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Gravida quis blandit turpis cursus in hac habitasse platea
+              dictumst. Venenatis cras tincidunt lobortis feugiat tellus in
+              metus vulputate eu scelerisque felis.
+            </p>
+            <a href="#" class="btn-primary">READ MORE</a>
+          </div>
+          <img src="./images/home-1-image-4.jpg" class="welcome-img" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section menu">
+      <div class="container">
+        <div class="swiper-container" id="menu-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="#" class="menu-item">
+                <div class="item-header">
+                  <img src="./images/single-food-1a.jpg" />
+                  <span class="price">
+                    $14
+                  </span>
+                  <span class="badge">NEW</span>
+                </div>
+                <div class="item-body">
+                  <h3 class="sans-serif food-title">
+                    MASALA-SPICED CHICKPEAS
+                  </h3>
+                  <p class="desc-text">
+                    Dictum varius duis at consectetur lorem donec massa sapien.
+                    Elit ullamcorper dignissim cras tincidunt lobortis feugiat
+                    vivamus.
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="menu-item">
+                <div class="item-header">
+                  <img src="./images/single-food-2a.jpg" />
+                  <span class="price">
+                    $14
+                  </span>
+                  <span class="badge">NEW</span>
+                </div>
+                <div class="item-body">
+                  <h3 class="sans-serif food-title">
+                    KUNG PAO PASTRAMI
+                  </h3>
+                  <p class="desc-text">
+                    Dictum varius duis at consectetur lorem donec massa sapien.
+                    Elit ullamcorper dignissim cras tincidunt lobortis feugiat
+                    vivamus.
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="menu-item">
+                <div class="item-header">
+                  <img src="./images/single-food-31.jpg" />
+                  <span class="price">
+                    $14
+                  </span>
+                </div>
+                <div class="item-body">
+                  <h3 class="sans-serif food-title">
+                    JALAPENO-MANGO SALSA
+                  </h3>
+                  <p class="desc-text">
+                    Dictum varius duis at consectetur lorem donec massa sapien.
+                    Elit ullamcorper dignissim cras tincidunt lobortis feugiat
+                    vivamus.
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="menu-item">
+                <div class="item-header">
+                  <img src="./images/single-food-1a.jpg" />
+                  <span class="price">
+                    $14
+                  </span>
+                  <span class="badge">NEW</span>
+                </div>
+                <div class="item-body">
+                  <h3 class="sans-serif food-title">
+                    MASALA-SPICED CHICKPEAS
+                  </h3>
+                  <p class="desc-text">
+                    Dictum varius duis at consectetur lorem donec massa sapien.
+                    Elit ullamcorper dignissim cras tincidunt lobortis feugiat
+                    vivamus.
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="menu-item">
+                <div class="item-header">
+                  <img src="./images/single-food-2a.jpg" />
+                  <span class="price">
+                    $14
+                  </span>
+                  <span class="badge">NEW</span>
+                </div>
+                <div class="item-body">
+                  <h3 class="sans-serif food-title">
+                    KUNG PAO PASTRAMI
+                  </h3>
+                  <p class="desc-text">
+                    Dictum varius duis at consectetur lorem donec massa sapien.
+                    Elit ullamcorper dignissim cras tincidunt lobortis feugiat
+                    vivamus.
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="menu-item">
+                <div class="item-header">
+                  <img src="./images/single-food-31.jpg" />
+                  <span class="price">
+                    $14
+                  </span>
+                </div>
+                <div class="item-body">
+                  <h3 class="sans-serif food-title">
+                    JALAPENO-MANGO SALSA
+                  </h3>
+                  <p class="desc-text">
+                    Dictum varius duis at consectetur lorem donec massa sapien.
+                    Elit ullamcorper dignissim cras tincidunt lobortis feugiat
+                    vivamus.
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section modification">
+      <div class="container">
+        <h1 class="sans-serif">
+          SIMPLE MODIFICATION
+        </h1>
+        <p class="desc-text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Gravida
+          quis blandit turpis cursus in hac habitasse platea dictumst. Venenatis
+          tellus in metus vulputate eu scelerisque felis. Ullamcorper dignissim
+          cras tincidunt lobortis feugiat vivamus at augue eget.
+        </p>
+
+        <div class="gallery flexbox">
+          <a href="#" class="gallery-item">
+            <img src="./images/banner-image-1.jpg" class="cover-img" alt="" />
+            <h3 class="sans-serif gallery-title">
+              TESTE OUR <br />
+              EXQUISITE RECIPES
+            </h3>
+          </a>
+          <a href="#" class="gallery-item">
+            <img src="./images/banner-image-2.jpg" class="cover-img" alt="" />
+            <h3 class="sans-serif gallery-title">
+              <span class="primary-text">SAVE 30%</span> <br />
+              ONLY TODAY'S OFFER
+            </h3>
+          </a>
+          <a href="#" class="gallery-item">
+            <img src="./images/banner-image-3.jpg" class="cover-img" alt="" />
+            <h3 class="sans-serif gallery-title">
+              DISCOVER <br />
+              AMAZING INTERIOR
+            </h3>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="quotes">
+      <img
+        src="./images/home-1-slide-1-graphic-2.png"
+        class="burger-img"
+        alt=""
+      />
+      <div class="swiper-container" id="quotes-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="slide-content">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Tristique senectus et netus et. n ornare quam viverra orci
+              sagittis eu volutpat odio facilisis. Natoque penatibus et magnis
+              in eu mi bibendum dis parturient montes nascetur.
+              <div class="rate">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <h4 class="sans-serif">
+                Emma Watson
+              </h4>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slide-content">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Tristique senectus et netus et. n ornare quam viverra orci
+              sagittis eu volutpat odio facilisis. Natoque penatibus et magnis
+              in eu mi bibendum dis parturient montes nascetur.
+              <div class="rate">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <h4 class="sans-serif">
+                Emma Watson
+              </h4>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slide-content">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Tristique senectus et netus et. n ornare quam viverra orci
+              sagittis eu volutpat odio facilisis. Natoque penatibus et magnis
+              in eu mi bibendum dis parturient montes nascetur.
+              <div class="rate">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <h4 class="sans-serif">
+                Emma Watson
+              </h4>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </section>
+
+    <section class="news content-section">
+      <div class="container">
+        <div class="news__intro">
+          <h1 class="sans-serif">LASTEST NEWS</h1>
+          <span class="desc-text"
+            >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Tristique senectus et netus et. Id consectetur purus ut faucibus
+            pulvinar elementum integer enim. Sagittis purus sit amet
+            volutpat.</span
+          >
+        </div>
+        <div class="flexbox">
+          <a href="#" class="news-item">
+            <img
+              src="./images/b-saffron-and-nougat-ice-cream.jpg"
+              alt="ice cream"
+            />
+            <div class="item-body">
+              <div class="date">
+                <i class="far fa-calendar-alt"></i> NOV 04, 2015
+              </div>
+              <div class="item-content">
+                <h3 class="item-title">NOUGAT ICE CREAME</h3>
+                <span class="desc-text"
+                  >Pretium lectus quam id leo in vitae turpis. Ac tortor
+                  dignissim convallis aenean et. Gravida rutrum quisque non
+                  tellus.</span
+                >
+              </div>
+            </div>
+          </a>
+          <a href="#" class="news-item">
+            <img
+              src="./images/b-brazilian-burger-with-egg.jpg"
+              alt="ice cream"
+            />
+            <div class="item-body">
+              <div class="date">
+                <i class="far fa-calendar-alt"></i> NOV 04, 2015
+              </div>
+              <div class="item-content">
+                <h3 class="item-title">BRAZILIAN BURGERS</h3>
+                <span class="desc-text"
+                  >Pretium lectus quam id leo in vitae turpis. Ac tortor
+                  dignissim convallis aenean et. Gravida rutrum quisque non
+                  tellus.</span
+                >
+              </div>
+            </div>
+          </a>
+          <a href="#" class="news-item">
+            <img src="./images/home-1-blog-31.jpg" alt="ice cream" />
+            <div class="item-body">
+              <div class="date">
+                <i class="far fa-calendar-alt"></i> NOV 04, 2015
+              </div>
+              <div class="item-content">
+                <h3 class="item-title">GRILLED DUCK BREASTS</h3>
+                <span class="desc-text"
+                  >Pretium lectus quam id leo in vitae turpis. Ac tortor
+                  dignissim convallis aenean et. Gravida rutrum quisque non
+                  tellus.</span
+                >
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="banner">
+      <img src="./images/parallax-3.jpg" class="cover" alt="" />
+      <img class="logo" src="./images/home-1-logo-1.png" alt="" />
+    </section>
+
+    <section class="awards content-section">
+      <div class="container">
+        <div class="award-board">
+          <h1 class="sans-serif">AWARD WINNING RESTAURANT</h1>
+          <p class="desc-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Tristique senectus et netus et. Orci sagittis eu volutpat odio
+            facilisis mauris sit amet.
+          </p>
+          <ul class="award-list">
+            <li>
+              <img src="./images/logo_1.png" alt="" />
+            </li>
+            <li>
+              <img src="./images/logo_2.png" alt="" />
+            </li>
+            <li>
+              <img src="./images/logo_3.png" alt="" />
+            </li>
+            <li>
+              <img src="./images/logo_4.png" alt="" />
+            </li>
+            <li>
+              <img src="./images/logo_5.png" alt="" />
+            </li>
+          </ul>
+          <div class="contact-info">
+            <h2 class="sans-serif">CONTACT INFO</h2>
+            <table>
+              <tr>
+                <td>
+                  <i class="fas fa-map-marker-alt"></i> Raymond Boulevard 224,
+                  New York
+                </td>
+                <td><i class="fas fa-envelope"></i> info@themebussiness.com</td>
+              </tr>
+              <tr>
+                <td><i class="fas fa-phone"></i> 1-444-123-459</td>
+                <td><i class="fas fa-wifi"></i> www.yourwebsite.com</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="open-board">
+          <div class="board-content">
+            <h1 class="sans-serif">
+              OPENING <span class="primary-text">HOURS</span>
+            </h1>
+            <ul class="leaders">
+              <li>
+                <span>Monday</span>
+                <span>9:00 - 22:00</span>
+              </li>
+              <li>
+                <span>Tuesday</span>
+                <span>CLOSED</span>
+              </li>
+              <li>
+                <span>Wednesday</span>
+                <span>9:00 - 22:00</span>
+              </li>
+              <li>
+                <span>Thursday</span>
+                <span>9:00 - 22:00</span>
+              </li>
+              <li>
+                <span>Friday</span>
+                <span>9:00 - 1:00</span>
+              </li>
+              <li>
+                <span>Saturday</span>
+                <span>10:00 - 1:00</span>
+              </li>
+              <li>
+                <span>Sunday</span>
+                <span>10:00 - 22:00</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="booking content-section">
+      <div class="container">
+        <form class="book-form">
+          <div class="person-form-group form-group">
+            <input type="number" name="person" min="1" max="10" value="1" />
+            <label class="icon-wrapper">
+              <i class="fas fa-user-plus"></i>
+            </label>
+            <span class="space">for</span>
+          </div>
+
+          <div class="form-group">
+            <input type="date" value="08/05/2018" />
+            <span class="icon-wrapper">
+              <i class="far fa-calendar-alt"></i>
+            </span>
+            <span class="space">at</span>
+          </div>
+
+          <div class="form-group">
+            <input type="time" value="19:00" />
+            <span class="icon-wrapper">
+              <i class="far fa-clock"></i>
+            </span>
+          </div>
+          <button type="submit" class="btn-primary">
+            <i class="far fa-hand-point-right"></i> BOOK A TABLE
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer content-section">
+      <div class="container">
+        <div class="footer-content">
+          <div class="contact">
+            <img src="./images/landing-logo.png" class="logo-img" alt="logo" />
+            <p class="contact-desc">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit pariatur
+              fuga quo culpa provident.
+            </p>
+            <ul class="contact-list">
+              <li><i class="far fa-envelope"></i> info@themebussiness.com</li>
+              <li><i class="fas fa-phone"></i> 1-444-123-459</li>
+              <li>
+                <i class="fas fa-map-marker-alt"></i> Raymond Boulevard 224, New
+                York
+              </li>
+            </ul>
+          </div>
+          <div class="recent-posts">
+            <h2 class="footer-title">
+              RECENT POSTS
+            </h2>
+            <ul>
+              <li>
+                <a href="#"
+                  >Chicken Tinga Nachos
+                  <hr />
+                </a>
+              </li>
+              <li>
+                <a href="#"
+                  >Sweet and Sour Pork Chops
+                  <hr />
+                </a>
+              </li>
+              <li>
+                <a href="#"
+                  >Green Chile And Chicken Stew
+                  <hr
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  >Pecan Pie Macarions
+                  <hr
+                /></a>
+              </li>
+            </ul>
+          </div>
+          <div class="instagram-posts">
+            <h2 class="footer-title">INSTAGRAM POSTS</h2>
+          </div>
+          <div class="twitter-feed">
+            <h2 class="footer-title">TWITTER FEED</h2>
+            <div class="feed">
+              <span class="twitter-icon"> <i class="fab fa-twitter"></i></span>
+              <p>
+                Lorem ipsum dolor sit amet, lio adipiscing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <span>Copyrights ©️ Mikado Themes</span>
+          <div class="icons">
+            <span>Follow Us</span>
+            <a href="#" class="icon">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="icon">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="icon">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="icon">
+              <i class="fab fa-tripadvisor"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <button class="btn-primary to-top-btn" id="to-top-btn">
+        TOP
+      </button>
+    </footer>
+
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script src="./js/scroll-top.js"></script>
+    <script src="./js/mb-nav.js"></script>
+    <script>
+      var headerSwiper = new Swiper("#header-swiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev"
+        },
+        autoplay: {
+          delay: 8000
+        }
+      });
+
+      var gallerySwiper = new Swiper("#gallery-swiper", {
+        slidesPerView: 1,
+        spaceBetween: 26,
+        autoplay: {
+          delay: 5000
+        },
+        breakpoints: {
+          769: {
+            slidesPerView: 5
+          },
+          500: {
+            slidesPerView: 3
+          },
+          400: {
+            slidesPerView: 2
+          }
+        }
+      });
+
+      var menuSwiper = new Swiper("#menu-swiper", {
+        slidesPerView: 1,
+        spaceBetween: 26,
+        loop: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev"
+        },
+        breakpoints: {
+          768: {
+            slidesPerView: 3
+          },
+          520: {
+            slidesPerView: 2
+          }
+        }
+      });
+      var quoteSwiper = new Swiper("#quotes-swiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev"
+        },
+        loop: true
+      });
+    </script>
+  </body>
+</html>

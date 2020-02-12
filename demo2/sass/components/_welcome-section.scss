@@ -1,0 +1,36 @@
+section.welcome {
+  .flexbox {
+    align-items: center;
+  }
+  .welcome__intro {
+    flex: 1;
+    margin-right: 2rem;
+    h1 {
+      margin: 0;
+    }
+    p {
+      margin-top: 1.2rem;
+      margin-bottom: 1.2rem;
+    }
+  }
+
+  .welcome-img {
+    height: auto;
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  section.welcome {
+    .flexbox {
+      flex-direction: column;
+    }
+    .welcome__intro {
+      margin-right: 0;
+      margin-bottom: 2rem;
+    }
+    .welcome-img {
+      width: 100%;
+    }
+  }
+}

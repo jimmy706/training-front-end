@@ -1,0 +1,28 @@
+.btn {
+  display: inline-block;
+  background: #f5f5f5;
+  color: $black;
+  padding: 7px 12px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.9rem;
+  border: 0;
+  transition: background 0.3s ease;
+  &:hover {
+    background: $normal-gray;
+  }
+}
+
+.btn-primary {
+  background-color: $primary;
+  color: #fff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  &:hover {
+    background: $primary-hover;
+  }
+}
+
+.btn-shadow {
+  box-shadow: 0 2px 0px 0px $strong-primary;
+}

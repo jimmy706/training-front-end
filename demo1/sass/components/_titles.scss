@@ -1,0 +1,24 @@
+.hand-write {
+    font-family: 'Yellowtail', cursive;
+}
+
+.section-title {
+    margin: 0;
+    margin-bottom: 1.2rem;
+    color: $primary;
+    @extend .hand-write;
+}
+
+
+
+.booking {
+    background-color: $primary;
+    text-align: center;
+    @extend .hand-write;
+    color: #fff;
+    padding: 2rem 0;
+
+    h1 {
+        margin: 0;
+    }
+}

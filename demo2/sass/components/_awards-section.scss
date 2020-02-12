@@ -1,0 +1,116 @@
+section.awards {
+  .container {
+    display: flex;
+  }
+  .award-board {
+    width: 60%;
+    padding-right: 2rem;
+    .award-list {
+      margin: 3rem 0;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-gap: 1rem;
+      img {
+        max-width: 100px;
+        width: 100%;
+        height: auto;
+        max-height: 100px;
+      }
+    }
+    .contact-info {
+      table {
+        line-height: 2;
+        width: 100%;
+        i {
+          margin-right: 7px;
+        }
+      }
+    }
+  }
+  .open-board {
+    width: 40%;
+    background-color: $black;
+    color: $white;
+    padding: 1.5rem;
+    height: fit-content;
+    box-sizing: border-box;
+    .board-content {
+      padding: 1.5rem;
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      h1 {
+        text-align: center;
+      }
+    }
+    .leaders {
+      overflow-x: hidden;
+      li {
+        line-height: 2.5;
+        &::before {
+          float: left;
+          width: 0;
+          white-space: nowrap;
+          content: ". . . . . . . . . . . . . . . . . . . . "
+            ". . . . . . . . . . . . . . . . . . . . "
+            ". . . . . . . . . . . . . . . . . . . . "
+            ". . . . . . . . . . . . . . . . . . . . "
+            ". . . . . . . . . . . . . . . . . . . . "
+            ". . . . . . . . . . . . . . . . . . . . ";
+        }
+        span {
+          &:first-child {
+            padding-right: 0.33em;
+            background: $black;
+            padding-left: 1.3em;
+            text-transform: capitalize;
+            &::before {
+              content: "\f017"; /* FontAwesome Unicode */
+              font-family: "Font Awesome\ 5 Free";
+              display: inline-block;
+              margin-left: -1.3em;
+              width: 1.3em;
+            }
+          }
+          & + span {
+            float: right;
+            padding-left: 0.33em;
+            background: $black;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 920px) {
+  section.awards {
+    .container {
+      flex-direction: column;
+      .award-board {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 5rem;
+      }
+      .open-board {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 520px) {
+  section.awards {
+    .award-board {
+      .contact-info {
+        table {
+          tr {
+            display: grid;
+            grid-template-columns: 1fr;
+            td {
+              margin-bottom: 7px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
