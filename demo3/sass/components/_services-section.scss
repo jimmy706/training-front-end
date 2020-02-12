@@ -1,0 +1,21 @@
+section.services {
+  .service-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    .service-item {
+      margin-bottom: 2rem;
+      cursor: pointer;
+      .service-title {
+        margin-top: 1rem;
+        margin-bottom: 1.5rem;
+      }
+      &:hover {
+        .service-title {
+          color: $primary;
+          transition: color 0.3s ease;
+        }
+      }
+    }
+  }
+}

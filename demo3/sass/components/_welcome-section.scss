@@ -1,0 +1,13 @@
+section.welcome {
+  .flex-item {
+    margin-bottom: 3rem;
+    color: $gray;
+    cursor: pointer;
+    &:hover {
+      h3 {
+        color: $primary;
+        transition: color 0.3s ease;
+      }
+    }
+  }
+}

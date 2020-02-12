@@ -1,0 +1,57 @@
+.header {
+  padding: 0 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.5s ease;
+  background-color: transparent;
+  z-index: 999;
+  width: 100%;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  letter-spacing: 2px;
+  .nav-item {
+    position: relative;
+    &.active {
+      .nav-link {
+        color: $primary !important;
+      }
+    }
+  }
+  .nav-link {
+    display: block;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.8rem;
+    transition: color 0.4s ease;
+    font-weight: 400;
+    color: $white;
+    &:not(.btn-primary) {
+      margin-right: 2rem;
+    }
+    &:hover {
+      &:not(.btn-primary) {
+        color: $primary;
+      }
+    }
+  }
+
+  .header__nav {
+    display: flex;
+    align-items: center;
+  }
+  &.sticky-header {
+    background-color: rgba(255, 255, 255, 0.95);
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0 1px 5px 0px rgba(0, 0, 0, 0.1);
+    .nav-link {
+      &:not(.btn-primary) {
+        color: $black;
+      }
+    }
+  }
+}

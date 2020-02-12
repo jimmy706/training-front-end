@@ -1,0 +1,56 @@
+section.main-banner {
+  background: url("../images/header-image-homepage.png") no-repeat top;
+  height: 800px;
+  background-size: cover;
+  .container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    grid-gap: 2rem;
+    color: $white;
+    font-weight: lighter;
+  }
+  .banner-content {
+    .header-title {
+      font-weight: 300;
+      font-size: 4.7rem;
+    }
+    .desc-text {
+      margin-bottom: 3rem;
+      font-size: 1.5rem;
+      line-height: 1.5;
+    }
+    .btn-primary {
+      @extend .montserrat;
+      font-size: 18px;
+      padding: 1rem 2rem;
+    }
+  }
+  .office-hours {
+    background-color: $light-primary;
+    padding: 2rem 1.2rem;
+    text-align: center;
+    .title {
+      border-bottom: 3px solid $primary;
+      margin-top: 0;
+      padding-bottom: 5px;
+    }
+    .leaders {
+      li {
+        display: flex;
+        justify-content: space-between;
+        padding: 15px;
+        border-bottom: 1px solid $white;
+        font-weight: bold;
+        font-size: 1rem;
+      }
+    }
+    h2 {
+      font-weight: lighter;
+    }
+    .phone {
+      margin-top: 2rem;
+    }
+  }
+}

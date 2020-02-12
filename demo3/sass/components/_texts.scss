@@ -1,0 +1,43 @@
+.text-primary {
+  color: $primary !important;
+}
+
+.text-white {
+  color: $white !important;
+}
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.text-gray {
+  color: $gray !important;
+}
+
+.intro-wrapper {
+  @extend .m-auto;
+  width: 70%;
+  min-width: 300px;
+  text-align: center;
+  letter-spacing: 2px;
+  .section-title {
+    font-size: 2.7rem;
+  }
+  .intro-text {
+    font-size: 1.3rem;
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
+    color: $black-knight;
+  }
+  .seperate {
+    width: 280px;
+    display: inline-block;
+    height: 2px;
+    border: 0;
+    background: #d1d1d1;
+  }
+}

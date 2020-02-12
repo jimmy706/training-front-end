@@ -1,0 +1,40 @@
+.flexbox {
+  display: flex;
+  .flex-item {
+    flex: 1;
+  }
+}
+
+.wrapper {
+  padding-top: 4.5rem;
+  padding-bottom: 4.5rem;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.container-fluid {
+  width: 100%;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}

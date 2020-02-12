@@ -1,0 +1,10 @@
+.btn-primary {
+  background-color: $primary;
+  color: $white;
+  font-size: 1rem;
+  padding: 0.7rem 1.7rem;
+  cursor: pointer;
+  &:hover {
+    background-color: $strong-primary;
+  }
+}
