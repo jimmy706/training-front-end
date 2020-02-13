@@ -1,0 +1,11 @@
+section.clients {
+  background: url("../images/rgb-gradient-bar-for-logo-carrasel.png") no-repeat
+    center center;
+  background-size: cover;
+  cursor: pointer;
+  .swiper-slide {
+    img {
+      height: auto;
+    }
+  }
+}

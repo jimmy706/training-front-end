@@ -1,0 +1,29 @@
+section.care-services {
+  .care-service {
+    color: $white;
+    padding: 2rem 0;
+    padding: 40px 30px;
+    .service-title {
+      font-weight: 400;
+    }
+    &:nth-child(1) {
+      background: $primary;
+    }
+    &:nth-child(2) {
+      background: $light-blue;
+    }
+    &:nth-child(3) {
+      background: $blue;
+    }
+    .btn-outline-light {
+      border: 2px solid $white;
+      letter-spacing: 2px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1;
+      &:hover {
+        background: $white;
+      }
+    }
+  }
+}

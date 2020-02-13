@@ -1,0 +1,48 @@
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0.6);
+  overflow-x: hidden;
+  overflow-y: auto;
+  z-index: 99999;
+  display: none;
+  .modal-content {
+    min-width: 300px;
+    width: 50%;
+    margin: 40px auto 0 auto;
+    background: $white;
+    border-radius: 3px;
+    opacity: 1;
+    .modal-header,
+    .modal-body {
+      padding: 15px 20px;
+    }
+    .modal-title {
+      margin: 0;
+      font-size: 1.5rem;
+    }
+    .modal-header {
+      position: relative;
+      border-bottom: 1px solid $light;
+      .close {
+        position: absolute;
+        top: 5px;
+        right: 15px;
+        background: transparent;
+        font-size: 1.3rem;
+        opacity: 0.4;
+        cursor: pointer;
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+  &.open {
+    display: block;
+  }
+}

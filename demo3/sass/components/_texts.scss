@@ -18,6 +18,18 @@
   color: $gray !important;
 }
 
+.small-title {
+  font-size: $small-title;
+}
+
+.section-title {
+  font-size: $section-title;
+}
+
+.card-title {
+  font-size: $card-title;
+}
+
 .intro-wrapper {
   @extend .m-auto;
   width: 70%;
@@ -25,7 +37,7 @@
   text-align: center;
   letter-spacing: 2px;
   .section-title {
-    font-size: 2.7rem;
+    margin-bottom: 1rem;
   }
   .intro-text {
     font-size: 1.3rem;
