@@ -19,3 +19,19 @@ section.services {
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  section.services {
+    .service-list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  section.services {
+    .service-list {
+      grid-template-columns: 1fr;
+    }
+  }
+}

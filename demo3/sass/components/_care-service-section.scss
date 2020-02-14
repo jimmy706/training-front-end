@@ -27,3 +27,12 @@ section.care-services {
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  section.care-services {
+    flex-direction: column;
+    .care-service {
+      padding: 4rem 1.5rem;
+    }
+  }
+}

@@ -46,3 +46,22 @@
     display: block;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .modal {
+    .modal-content {
+      width: 80%;
+      .modal-title {
+        font-size: 1.3rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .modal {
+    .modal-content {
+      width: 95%;
+    }
+  }
+}

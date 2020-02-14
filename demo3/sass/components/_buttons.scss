@@ -41,3 +41,29 @@
     background: $black;
   }
 }
+
+#top-btn {
+  position: fixed;
+  transition: background-color 0.3s ease;
+  bottom: -5px;
+  right: 30px;
+  z-index: 99;
+  background-color: $black;
+  opacity: 0.95;
+  color: $white;
+  padding: 10px 15px;
+  cursor: pointer;
+  display: none;
+  &:hover {
+    background-color: $primary;
+  }
+  &.block {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #top-btn {
+    bottom: 15px;
+  }
+}

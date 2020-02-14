@@ -1,12 +1,14 @@
 section.doctors {
   background: $light;
   .flex-item {
-    background: $white;
     margin-right: 2rem;
     .doctor-avatar {
       width: 100%;
       height: auto;
       transition: transform 0.4s ease;
+
+      display: block;
+      margin: 0 auto;
       &:hover {
         transform: scale(1.02);
         box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
@@ -14,6 +16,22 @@ section.doctors {
     }
     .item-body {
       padding: 20px 25px;
+      background: $white;
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  section.doctors {
+    .flexbox {
+      flex-direction: column;
+    }
+    .flex-item {
+      margin-right: 0;
+      margin-bottom: 3rem;
+      .doctor-avatar {
+        max-width: 359px;
+      }
     }
   }
 }

@@ -13,7 +13,7 @@
   </head>
   <body>
     <header class="header" id="header">
-      <a href="#" class="logo-wrapper my-3">
+      <a href="#" class="logo-wrapper">
         <img
           class="logo "
           src="./images/medical_logo_1x_light.png"
@@ -23,24 +23,101 @@
 
       <ul class="header__nav">
         <li class="nav-item active">
-          <a href="#" class="nav-link">Home</a>
+          <a href="#" class="nav-link">HOME</a>
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link">About</a>
+          <a href="#" class="nav-link">ABOUT</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link">DEPARTMENTS</a>
+          <ul class="dropdown-menu">
+            <li>
+              <a href="#">Genral Practice</a>
+            </li>
+            <li>
+              <a href="#">Cardiology</a>
+            </li>
+            <li>
+              <a href="#">Pediactrics</a>
+            </li>
+            <li>
+              <a href="#">Diabetes Care</a>
+            </li>
+            <li>
+              <a href="#">
+                Pre-natal Care
+              </a>
+            </li>
+            <li>
+              <a href="#">Ultrasound Echocardiogram</a>
+            </li>
+          </ul>
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link">Home</a>
+          <a href="#" class="nav-link">ARTICLES</a>
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link">departments</a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">articles</a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="btn-primary rounded nav-link">make appointment</a>
+          <a href="#" class="btn-primary rounded nav-link">MAKE APPOINMENT</a>
         </li>
       </ul>
+
+      <ul id="header__mb-nav" class="header__mb-nav dropdown-menu">
+        <li class="nav-item active">
+          <a href="#" class="nav-link">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">ABOUT</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link"
+            >DEPARTMENTS
+            <span
+              class="dropdown-icon dropdown-toogle"
+              data-target="#header-mb-dropdown"
+            >
+              <i class="fas fa-chevron-down"></i>
+            </span>
+          </a>
+        </li>
+        <li class="dropdown-content nav-item">
+          <ul class="dropdown-menu" id="header-mb-dropdown">
+            <li class="nav-item">
+              <a href="#" class="nav-link">Genral Practice</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Cardiology</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Pediactrics</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Diabetes Care</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                Pre-natal Care
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Ultrasound Echocardiogram</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">ARTICLES</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">MAKE APPOINTMENT</a>
+        </li>
+      </ul>
+
+      <button
+        id="btn-toogle"
+        class="btn-transparent text-primary dropdown-toogle"
+        data-target="#header__mb-nav"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
     </header>
 
     <section class="main-banner">
@@ -323,15 +400,17 @@
 
     <section class="facilities text-center">
       <div class="bg-img"></div>
-      <div class="intro-wrapper">
-        <img src="./images/icon-7.png" alt="" />
-        <h1 class="section-title mt-1 text-white">TOUR OUR FACILITIES</h1>
-        <hr class="seperate" />
-        <p class="intro-text text-white">
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
-          ab illo inventore veritatis et quasi architecto beatae
-        </p>
+      <div class="container">
+        <div class="intro-wrapper">
+          <img src="./images/icon-7.png" alt="" />
+          <h1 class="section-title mt-1 text-white">TOUR OUR FACILITIES</h1>
+          <hr class="seperate" />
+          <p class="intro-text text-white">
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+            quae ab illo inventore veritatis et quasi architecto beatae
+          </p>
+        </div>
       </div>
       <button
         class="btn-transparent modal-toggle"
@@ -378,7 +457,6 @@
     </section>
 
     <section class="appointment wrapper">
-      <img class="bg-cover" />
       <div class="container">
         <div class="intro-wrapper">
           <h1 class="section-title mt-1 text-white">Make An Appoinment</h1>
@@ -651,18 +729,50 @@
         </div>
       </div>
     </div>
+
+    <button id="top-btn" class="rounded">
+      <i class="fas fa-chevron-up"></i>
+    </button>
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
     <script src="./js/header.js"></script>
     <script src="./js/modals.js"></script>
+    <script src="./js/dropdown.js"></script>
     <script>
       var swiper = new Swiper(".swiper-container", {
-        slidesPerView: 4,
+        slidesPerView: 2,
         spaceBetween: 30,
         loop: true,
         autoplay: {
           delay: 5000,
           disableOnInteraction: false
+        },
+        breakpoints: {
+          650: {
+            slidesPerView: 4
+          },
+          450: {
+            slidesPerView: 3
+          }
         }
+      });
+
+      var topBtn = document.getElementById("top-btn");
+
+      window.addEventListener("scroll", function(e) {
+        if (window.scrollY > 60) {
+          if (!topBtn.classList.contains("block")) {
+            topBtn.classList.add("block");
+          }
+        } else {
+          topBtn.classList.remove("block");
+        }
+      });
+
+      topBtn.addEventListener("click", function() {
+        window.scroll({
+          top: 0,
+          behavior: "smooth"
+        });
       });
     </script>
   </body>

@@ -32,12 +32,14 @@
 
 .intro-wrapper {
   @extend .m-auto;
-  width: 70%;
+  width: 80%;
   min-width: 300px;
   text-align: center;
   letter-spacing: 2px;
   .section-title {
     margin-bottom: 1rem;
+    font-weight: 200;
+    color: $black-knight;
   }
   .intro-text {
     font-size: 1.3rem;
@@ -51,5 +53,20 @@
     height: 2px;
     border: 0;
     background: #d1d1d1;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .intro-wrapper {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .intro-wrapper {
+    .section-title {
+      font-size: xx-large;
+    }
   }
 }

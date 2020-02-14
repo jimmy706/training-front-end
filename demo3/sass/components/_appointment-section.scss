@@ -4,16 +4,8 @@ section.appointment {
   flex-direction: column;
   justify-content: center;
   position: relative;
-  .bg-cover {
-    top: 0;
-    left: 0;
-    position: absolute;
-    background: url("../images/make-an-appointment.png") no-repeat center center;
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-  }
+  background: url("../images/make-an-appointment.png") no-repeat center center;
+  background-size: cover;
   .appointment-form {
     width: 70%;
     min-width: 300px;
@@ -33,6 +25,22 @@ section.appointment {
       letter-spacing: 2px;
       display: block;
       width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section.appointment {
+    height: auto;
+
+    .appointment-form {
+      width: 100%;
+      .flexbox {
+        flex-direction: column;
+        .form-group {
+          margin-right: 0 !important;
+        }
+      }
     }
   }
 }

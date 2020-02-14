@@ -54,3 +54,36 @@ section.main-banner {
     }
   }
 }
+
+@media screen and (max-width: 1000px) {
+  section.main-banner {
+    height: auto;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    .container {
+      grid-template-columns: 1fr;
+    }
+    .banner-content {
+      margin-bottom: 5rem;
+    }
+  }
+}
+
+@media screen and (max-width: 660px) {
+  section.main-banner {
+    .office-hours {
+      display: none;
+    }
+    .banner-content {
+      margin-bottom: 0;
+      .header-title {
+        font-size: 12vw;
+        margin-bottom: 1.2rem;
+      }
+      .desc-text {
+        margin-bottom: 1.5rem;
+        font-weight: 300;
+      }
+    }
+  }
+}
