@@ -1,5 +1,6 @@
 .flexbox {
   display: flex;
+  flex-wrap: wrap;
   .flex-item {
     flex: 1;
   }
