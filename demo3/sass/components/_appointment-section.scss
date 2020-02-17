@@ -8,7 +8,7 @@ section.appointment {
   background-size: cover;
   .appointment-form {
     width: 70%;
-    min-width: 300px;
+    min-width: 250px;
     input {
       color: #aaa9a9;
       background: transparent;
@@ -35,6 +35,7 @@ section.appointment {
 
     .appointment-form {
       width: 100%;
+      min-width: auto;
       .flexbox {
         flex-direction: column;
         .form-group {

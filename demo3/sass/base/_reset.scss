@@ -56,6 +56,10 @@ input[disabled] {
   cursor: default;
 }
 
+textarea {
+  resize: vertical;
+}
+
 h1,
 h2,
 h3,

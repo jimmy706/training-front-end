@@ -50,6 +50,9 @@ button[disabled],
 input[disabled] {
   cursor: default; }
 
+textarea {
+  resize: vertical; }
+
 h1,
 h2,
 h3,
@@ -472,7 +475,7 @@ iframe {
 
 .intro-wrapper {
   width: 80%;
-  min-width: 300px;
+  min-width: 200px;
   text-align: center;
   letter-spacing: 2px; }
   .intro-wrapper .section-title {
@@ -485,7 +488,8 @@ iframe {
     margin-bottom: 3rem;
     color: #333c4e; }
   .intro-wrapper .seperate {
-    width: 280px;
+    width: 50%;
+    min-width: 150px;
     display: inline-block;
     height: 2px;
     border: 0;
@@ -667,7 +671,8 @@ iframe {
         .header .header__mb-nav .dropdown-menu .nav-link::before {
           content: "-"; }
   .header .logo-wrapper {
-    line-height: 0; }
+    line-height: 0;
+    display: block; }
 
 @media screen and (max-width: 1060px) {
   .header {
@@ -679,6 +684,13 @@ iframe {
       display: none; }
     .header #btn-toogle {
       display: block; } }
+@media screen and (max-width: 380px) {
+  .header {
+    padding: 0 15px; }
+    .header .logo {
+      width: 200px; }
+      .header .logo img {
+        width: 100%; } }
 .rounded {
   border-radius: 3px !important; }
 
@@ -882,7 +894,7 @@ section.appointment {
   background-size: cover; }
   section.appointment .appointment-form {
     width: 70%;
-    min-width: 300px; }
+    min-width: 250px; }
     section.appointment .appointment-form input {
       color: #aaa9a9;
       background: transparent;
@@ -902,7 +914,8 @@ section.appointment {
   section.appointment {
     height: auto; }
     section.appointment .appointment-form {
-      width: 100%; }
+      width: 100%;
+      min-width: auto; }
       section.appointment .appointment-form .flexbox {
         flex-direction: column; }
         section.appointment .appointment-form .flexbox .form-group {
@@ -982,6 +995,9 @@ section.clients {
 @media screen and (max-width: 768px) {
   .footer .footer-content {
     grid-template-columns: 1fr; } }
+@media screen and (max-width: 380px) {
+  .footer .footer-logo {
+    width: 200px; } }
 .dropdown-menu {
   display: none;
   animation: dropdown 0.4s ease;

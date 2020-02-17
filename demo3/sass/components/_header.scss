@@ -146,6 +146,7 @@
 
   .logo-wrapper {
     line-height: 0;
+    display: block;
   }
 }
 
@@ -160,6 +161,18 @@
     }
     #btn-toogle {
       display: block;
+    }
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .header {
+    padding: 0 15px;
+    .logo {
+      width: 200px;
+      img {
+        width: 100%;
+      }
     }
   }
 }

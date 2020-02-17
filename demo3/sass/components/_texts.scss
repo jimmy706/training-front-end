@@ -33,7 +33,7 @@
 .intro-wrapper {
   @extend .m-auto;
   width: 80%;
-  min-width: 300px;
+  min-width: 200px;
   text-align: center;
   letter-spacing: 2px;
   .section-title {
@@ -48,7 +48,8 @@
     color: $black-knight;
   }
   .seperate {
-    width: 280px;
+    width: 50%;
+    min-width: 150px;
     display: inline-block;
     height: 2px;
     border: 0;
