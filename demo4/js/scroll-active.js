@@ -1,6 +1,7 @@
 var headerLinks = Array.from(document.querySelectorAll("#header a.nav-link"));
 var sections = Array.from(document.getElementsByClassName("page-section"));
 var topBtn = document.getElementById("top-btn");
+var headerHeight = document.getElementById("header").offsetHeight;
 
 headerLinks.forEach(function(link) {
   link.addEventListener("click", function(e) {
@@ -10,7 +11,7 @@ headerLinks.forEach(function(link) {
       var top = s.offsetTop;
       if (target === s.getAttribute("id")) {
         window.scroll({
-          top: top - 60,
+          top: top - headerHeight,
           behavior: "smooth"
         });
       }
@@ -30,7 +31,7 @@ window.addEventListener("scroll", function(e) {
   sections.forEach(function(s) {
     var top = s.offsetTop;
     var bottom = top + s.offsetHeight;
-    if (top < distance && distance < bottom) {
+    if (top < distance + headerHeight && distance + headerHeight < bottom) {
       var id = s.getAttribute("id");
       headerLinks.forEach(function(link) {
         var target = link.getAttribute("href").replace("#", "");

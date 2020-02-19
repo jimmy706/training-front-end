@@ -1,5 +1,8 @@
 section#overview {
   padding-bottom: 0;
+  .flexbox {
+    padding-bottom: 3rem;
+  }
   .overview-content {
     width: 50%;
     box-sizing: border-box;
@@ -87,5 +90,25 @@ section#overview {
   100% {
     opacity: 0;
     transform: translate(-50%, -50%) scale(1.5);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  section#overview {
+    .flexbox {
+      flex-direction: column;
+    }
+    .overview-content {
+      width: 100%;
+      padding-right: 0;
+      margin-bottom: 3rem;
+    }
+    .img-wrapper {
+      width: 100%;
+    }
+    .no-limit__item {
+      margin-right: 0;
+      margin-top: 3.5rem;
+    }
   }
 }

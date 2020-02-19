@@ -12,26 +12,105 @@
   align-items: center;
   box-shadow: 0 1px 5px 0px rgba(0, 0, 0, 0.1);
   z-index: 999;
-  .list-item {
-    margin-right: 0.9rem;
-  }
-  .nav-link {
-    transition: color 0.4s ease;
-    display: block;
-    height: 102px;
-    line-height: 102px;
-    font: {
-      size: 0.7rem;
-      weight: 600;
-    }
-    &:hover {
-      color: $primary;
-    }
-    &.active {
-      color: $primary;
+  .header__logo {
+    display: flex;
+    align-items: center;
+    img {
+      width: 100%;
+      height: auto;
     }
   }
-  .cart-icon {
-    @extend .nav-link;
+  .nav-list {
+    li {
+      margin-right: 0.9rem;
+      height: 102px;
+      line-height: 102px;
+    }
+    .nav-link {
+      transition: color 0.4s ease;
+      display: block;
+
+      font: {
+        size: 0.7rem;
+        weight: 600;
+      }
+      &:hover {
+        color: $primary;
+      }
+      &.active {
+        color: $primary;
+      }
+    }
+    .cart-icon {
+      @extend .nav-link;
+    }
+    .btn-toogle {
+      display: none;
+    }
+  }
+
+  #header__mb-nav {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    transform: translateY(100%);
+    background-color: $black;
+    .mb-nav-list {
+      display: flex;
+      flex-direction: column;
+      li {
+        width: 100%;
+      }
+      .nav-link {
+        display: block;
+        background-color: #4b6590;
+        color: $white;
+        transition: background-color 0.3s ease;
+        padding-left: 15px;
+        line-height: 2;
+        &.active {
+          background-color: $primary;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .header {
+    padding-left: 20px;
+    padding-right: 20px;
+    .nav-list {
+      li {
+        height: 90px;
+        line-height: 90px;
+      }
+      .list-item {
+        display: none;
+      }
+      .btn-toogle {
+        display: inline-block;
+        font-size: 0.9rem;
+      }
+      .cart-icon {
+        font-size: 0.9rem;
+        display: inline;
+
+        &:hover {
+          color: $desc-text-color;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .header {
+    .header__logo {
+      width: 150px;
+      line-height: 1;
+      display: block;
+    }
   }
 }

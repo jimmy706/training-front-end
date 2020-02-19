@@ -34,3 +34,15 @@
   width: 55%;
   min-width: 250px;
 }
+
+@media screen and (max-width: 1024px) {
+  .intro-wrapper {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .section-title {
+    font-size: 1.8rem;
+  }
+}

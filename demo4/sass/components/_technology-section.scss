@@ -6,13 +6,12 @@ section#technology {
       flex: 1;
       img {
         width: 100%;
-        height: 100%;
+        height: auto;
       }
     }
     .technology-text {
       flex: 1;
       margin-left: 2rem;
-      padding-right: 8%;
       box-sizing: border-box;
       .section-title {
         margin-bottom: 0;
@@ -26,7 +25,7 @@ section#technology {
   .tech-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1.5rem;
+    grid-gap: 2rem;
     margin-top: 3rem;
   }
 
@@ -120,7 +119,7 @@ section#technology {
     padding: 4.5rem 0;
     color: $light;
     .banner-desc {
-      width: 40%;
+      width: 55%;
       min-width: 250px;
       margin: 0rem auto 2rem auto;
     }
@@ -130,6 +129,46 @@ section#technology {
     .timepiece-img {
       width: 90%;
       height: auto;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  section#technology {
+    .tech-list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section#technology {
+    .tech-content {
+      flex-direction: column;
+      .technology-text {
+        margin-left: 0;
+      }
+    }
+    .tech-list {
+      grid-template-columns: 1fr;
+      grid-gap: 3rem;
+    }
+    .banner-2 {
+      .container {
+        flex-direction: column;
+        .banner-content {
+          width: 100%;
+          margin-bottom: 3.5rem;
+        }
+      }
+    }
+    .banner-3 {
+      .banner-desc {
+        width: 95%;
+      }
+      .timepiece-img {
+        width: 100%;
+      }
     }
   }
 }

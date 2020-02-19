@@ -2,17 +2,29 @@ section#accessories {
   .accessory-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 2rem;
+    grid-gap: 3rem;
   }
   .item {
-    padding: 0 1.5rem;
     img {
       width: 100%;
       height: auto;
       margin-bottom: 1.5rem;
+      max-width: 434px;
     }
     .btn-secondary {
       margin-top: 1.2rem;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section#accessories {
+    .accessory-list {
+      grid-template-columns: 1fr;
+      .btn-secondary {
+        font-size: 15px;
+        padding: 0.6rem 1.2rem;
+      }
     }
   }
 }

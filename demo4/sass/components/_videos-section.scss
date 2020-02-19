@@ -69,3 +69,35 @@ section#videos {
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  section#videos {
+    .ads {
+      flex-direction: column;
+      .ad {
+        padding-top: 300px;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        padding-bottom: 3rem;
+      }
+    }
+    .banner {
+      .container {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .btn-order {
+        margin-top: 1.5rem;
+      }
+    }
+    .transports {
+      .container {
+        grid-gap: 3.5rem;
+        grid-template-columns: 1fr;
+      }
+      .transport-item {
+        padding: 0;
+      }
+    }
+  }
+}

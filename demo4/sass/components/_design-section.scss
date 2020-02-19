@@ -49,10 +49,49 @@ section#design {
   }
 
   .banner-2 {
-    background: url("../images/bg_feat_section_three.jpg");
+    background: url("../images/bg_feat_section_three.jpg") no-repeat center;
     background-size: cover;
     padding-bottom: 100px;
     padding-top: 400px;
     color: $white;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  section#design {
+    .product-item {
+      .product-img {
+        max-width: 190px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section#design {
+    .product-list {
+      grid-template-columns: 1fr;
+    }
+    .product-wrapper-center {
+      grid-column-start: auto;
+      grid-column-end: auto;
+      flex-direction: column;
+      padding-top: 0;
+      .product-item {
+        margin-bottom: 2.5rem;
+        margin-right: 0;
+      }
+    }
+    .product-item {
+      .product-img {
+        max-width: 319px;
+      }
+    }
+    .banner-1 {
+      .container {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
   }
 }

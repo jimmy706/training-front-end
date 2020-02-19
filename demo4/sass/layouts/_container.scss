@@ -15,25 +15,28 @@
   margin-left: auto;
   margin-right: auto;
   max-width: 1200px;
-  padding-left: 4rem;
-  padding-right: 4rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 
 .container-fluid {
   width: 100%;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
   box-sizing: border-box;
-}
-
-@media screen and (max-width: 768px) {
-  .container {
-    padding-left: 1.8rem;
-    padding-right: 1.8rem;
-  }
 }
 
 #main-content {
   margin-bottom: 188px;
   background-color: $white;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  #main-content {
+    margin-bottom: 0;
+  }
 }

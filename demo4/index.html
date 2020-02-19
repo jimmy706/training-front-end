@@ -44,10 +44,43 @@
               >ORDER NOW</a
             >
           </li>
-          <li class="list-item">
+          <li>
             <a href="javascript:void(0)" class="cart-icon"
               ><i class="fas fa-shopping-cart"></i
             ></a>
+          </li>
+          <li class="btn-toogle">
+            <span
+              class="btn-transparent dropdown-toogle"
+              data-target="#header__mb-nav"
+            >
+              <i class="fas fa-bars"></i>
+            </span>
+          </li>
+        </ul>
+      </nav>
+      <nav class="header__mb-nav dropdown-menu" id="header__mb-nav">
+        <ul class="mb-nav-list">
+          <li class="list-item">
+            <a href="#overview" class="nav-link">Overview</a>
+          </li>
+          <li class="list-item">
+            <a href="#features" class="nav-link">Features</a>
+          </li>
+          <li class="list-item">
+            <a href="#technology" class="nav-link">Technology</a>
+          </li>
+          <li class="list-item">
+            <a href="#design" class="nav-link">Design</a>
+          </li>
+          <li class="list-item">
+            <a href="#accessories" class="nav-link">Accessories</a>
+          </li>
+          <li class="list-item">
+            <a href="#videos" class="nav-link">Videos</a>
+          </li>
+          <li class="list-item">
+            <a href="javascript:void(0)" class="nav-link">Order Now</a>
           </li>
         </ul>
       </nav>
@@ -55,39 +88,43 @@
 
     <main id="main-content">
       <section class="header-banner">
-        <div class="banner-content">
-          <h1 class="banner-title">
-            Avada Flux
-          </h1>
-          <p class="banner-desc">Welcome to the next tech generation</p>
-          <a href="javascript:void(0)" class="btn-primary btn-large"
-            >Get Avada Now!</a
-          >
+        <div class="content-wrapper">
+          <div class="banner-content">
+            <h1 class="banner-title text-white">
+              Avada Flux
+            </h1>
+            <p class="banner-desc">Welcome to the next tech generation</p>
+            <a href="javascript:void(0)" class="btn-primary btn-large"
+              >Get Avada Now!</a
+            >
+          </div>
+          <div class="img-wrapper">
+            <img
+              src="images/watch_product.png"
+              alt="watch_product"
+              class="watch_img"
+            />
+          </div>
         </div>
-        <img
-          src="images/watch_product.png"
-          alt="watch_product"
-          class="watch_img"
-        />
         <div id="watch_bg">
           <div data-depth="0.05">
             <img
               src="images/glow_shape_3.png"
-              class="glow_shape_3"
+              class="glow_shape_3 shape-img"
               alt="glow_shape_3"
             />
           </div>
           <div data-depth="0.05">
             <img
               src="images/glow_shape_2.png"
-              class="glow_shape_2"
+              class="glow_shape_2 shape-img"
               alt="glow_shape_2"
             />
           </div>
           <div data-depth="0.05">
             <img
               src="images/glow_shape_1.png"
-              class="glow_shape_1"
+              class="glow_shape_1 shape-img"
               alt="glow_shape_1"
             />
           </div>
@@ -99,8 +136,7 @@
           <div class="flexbox">
             <div class="overview-content">
               <h1 class="section-title">
-                Everything you need <br />
-                on your wrist
+                Everything you need on your wrist
               </h1>
               <h3 class="sub-title">
                 The amazing watch concept
@@ -340,18 +376,20 @@
           </div>
         </div>
         <div class="banner-1 text-center">
-          <div class="intro-wrapper">
-            <h1 class="section-title">
-              This Is One Amazing Watch
-            </h1>
-            <p>
-              Sed non mauris vitae erat consequat auctor eu in elit.Class aptent
-              tasociosqu ad litora torquent peer incepet mauris in erat justo
-              nullam ac.
-            </p>
-          </div>
-          <div class="img-wrapper">
-            <img src="images/watch_violet.png" alt="watch_violet" />
+          <div class="container">
+            <div class="intro-wrapper">
+              <h1 class="section-title">
+                This Is One Amazing Watch
+              </h1>
+              <p>
+                Sed non mauris vitae erat consequat auctor eu in elit.Class
+                aptent tasociosqu ad litora torquent peer incepet mauris in erat
+                justo nullam ac.
+              </p>
+            </div>
+            <div class="img-wrapper">
+              <img src="images/watch_violet.png" alt="watch_violet" />
+            </div>
           </div>
         </div>
         <div class="banner-2">
@@ -380,24 +418,27 @@
           </div>
         </div>
         <div class="banner-3 text-center">
-          <div class="intro-wrapper ">
-            <h1 class="section-title">
-              A Fantastic Timepiece
-            </h1>
-            <p>
-              Sed non mauris vitae erat consequat auctor
+          <div class="container">
+            <div class="intro-wrapper ">
+              <h1 class="section-title">
+                A Fantastic Timepiece
+              </h1>
+              <p>
+                Sed non mauris vitae erat consequat auctor
+              </p>
+            </div>
+            <img
+              src="images/fantastic_timepiece-1200x368.png"
+              alt="fantastic_timepiece"
+              class="timepiece-img"
+            />
+            <p class="banner-desc">
+              Sed non mauris vitae erat consequat auctor eu in elit. Class
+              aptent tasociosqu ad litora torquent peer incepet mauris in erat
+              justo. Nullam ac urna eu felis.
             </p>
           </div>
-          <img
-            src="images/fantastic_timepiece-1200x368.png"
-            alt="fantastic_timepiece"
-            class="timepiece-img"
-          />
-          <p class="banner-desc">
-            Sed non mauris vitae erat consequat auctor eu in elit. Class aptent
-            tasociosqu ad litora torquent peer incepet mauris in erat justo.
-            Nullam ac urna eu felis.
-          </p>
+
           <a href="javascript:void(0)" class="btn-secondary btn-large"
             >GET AVADA NOW!</a
           >
@@ -678,35 +719,38 @@
     </button>
 
     <footer id="footer">
-      <div class="copyright">
-        © Copyright 2012 - 2020 | Avada Theme by
-        <a href="javascript:void(0)">Theme Fusion</a> | All Rights Reserved |
-        Powered by <a href="javascript:void(0)">WordPress</a>
+      <div class="container">
+        <div class="copyright">
+          © Copyright 2012 - 2020 | Avada Theme by
+          <a href="javascript:void(0)">Theme Fusion</a> | All Rights Reserved |
+          Powered by <a href="javascript:void(0)">WordPress</a>
+        </div>
+        <ul class="socials">
+          <li class="">
+            <a href="javascript:void(0)" class="tooltip">
+              <i class="fab fa-facebook-f"></i>
+              <span class="tooltip-text">Facebook</span>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)" class="tooltip">
+              <i class="fab fa-twitter"></i>
+              <span class="tooltip-text">Twitter</span>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)" class="tooltip"
+              ><span class="tooltip-text">Instagram</span>
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+        </ul>
       </div>
-      <ul class="socials">
-        <li class="">
-          <a href="javascript:void(0)" class="tooltip">
-            <i class="fab fa-facebook-f"></i>
-            <span class="tooltip-text">Facebook</span>
-          </a>
-        </li>
-        <li>
-          <a href="javascript:void(0)" class="tooltip">
-            <i class="fab fa-twitter"></i>
-            <span class="tooltip-text">Twitter</span>
-          </a>
-        </li>
-        <li>
-          <a href="javascript:void(0)" class="tooltip"
-            ><span class="tooltip-text">Instagram</span>
-            <i class="fab fa-instagram"></i>
-          </a>
-        </li>
-      </ul>
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
     <script src="js/scroll-active.js"></script>
+    <script src="js/dropdown.js"></script>
     <script>
       var headerBanner = document.getElementById("watch_bg");
       var paralax = new Parallax(headerBanner);

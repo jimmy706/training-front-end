@@ -63,3 +63,9 @@
     display: block;
   }
 }
+
+@media screen and (max-width: 768px) {
+  #top-btn {
+    bottom: 15px;
+  }
+}
