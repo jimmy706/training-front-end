@@ -1,0 +1,135 @@
+section#technology {
+  padding-bottom: 0;
+  .tech-content {
+    display: flex;
+    .img-wrapper {
+      flex: 1;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .technology-text {
+      flex: 1;
+      margin-left: 2rem;
+      padding-right: 8%;
+      box-sizing: border-box;
+      .section-title {
+        margin-bottom: 0;
+      }
+      .sub-title {
+        margin: 1rem 0;
+      }
+    }
+  }
+
+  .tech-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1.5rem;
+    margin-top: 3rem;
+  }
+
+  .tech-item {
+    display: flex;
+    cursor: pointer;
+    .item-title {
+      transition: color 0.3s ease;
+    }
+    .icon-wrapper {
+      margin-right: 20px;
+      i {
+        display: block;
+        padding: 18px;
+        font-size: 1.3rem;
+        background: transparent;
+        color: $primary;
+        border: 1px solid $primary;
+        border-radius: 50%;
+        position: relative;
+        transition: all 0.2s ease;
+        &:after {
+          position: absolute;
+          content: "";
+          border-radius: 50%;
+          width: 100%;
+          height: 100%;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%) scale(1);
+          box-shadow: 1px 1px 15px 2px rgba(0, 0, 0, 0.3);
+          opacity: 0;
+        }
+      }
+    }
+    &:hover {
+      .item-title {
+        color: #d6d6d6;
+      }
+      .icon-wrapper {
+        i {
+          background: #d6d6d6;
+          transform: scale(0.9);
+          border-color: #d6d6d6;
+          &::after {
+            animation: wave 0.8s linear 0.1s;
+          }
+        }
+      }
+    }
+  }
+
+  .banner-1 {
+    padding-top: 3rem;
+    margin-top: 4rem;
+    padding-bottom: 0;
+    background: url("../images/light_gradient_violet_bg.png") no-repeat center;
+    background-size: cover;
+    img {
+      max-width: 100%;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+  .banner-2 {
+    background: url("../images/smartphone_section_bg.jpg") no-repeat center;
+    background-size: cover;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    .container {
+      display: flex;
+      .banner-content {
+        width: 70%;
+        .banner-desc {
+          margin-bottom: 2rem;
+        }
+        .btn-secondary {
+          font-size: 0.8rem;
+          line-height: 1.2;
+        }
+      }
+      .banner-img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+  .banner-3 {
+    background: url("../images/timepiece_section_bg.jpg") no-repeat center;
+    background-size: cover;
+    padding: 4.5rem 0;
+    color: $light;
+    .banner-desc {
+      width: 40%;
+      min-width: 250px;
+      margin: 0rem auto 2rem auto;
+    }
+    .section-title {
+      color: $white;
+    }
+    .timepiece-img {
+      width: 90%;
+      height: auto;
+    }
+  }
+}

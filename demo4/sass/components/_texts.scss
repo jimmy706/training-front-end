@@ -1,0 +1,36 @@
+.section-title {
+  font-size: 2.3rem;
+  line-height: 1.2;
+  color: $black;
+}
+
+.sub-title {
+  font-size: 1.3rem;
+  color: $sub-title-color;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.black-title {
+  color: $black;
+}
+
+.text-line-through {
+  text-decoration: line-through;
+}
+
+.text-primary {
+  color: $primary;
+}
+
+.text-white {
+  color: $white;
+}
+
+.intro-wrapper {
+  margin: 0 auto 3rem auto;
+  width: 55%;
+  min-width: 250px;
+}

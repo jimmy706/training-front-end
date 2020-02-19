@@ -1,0 +1,147 @@
+html {
+  font-size: 22px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 300;
+  line-height: 1.7;
+  color: $desc-text-color;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: $black;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+button {
+  border: 0;
+}
+
+button:focus,
+button:active,
+input:active,
+input:focus,
+textarea:active,
+textarea:focus,
+option:active,
+option:focus,
+select:active,
+select:focus {
+  outline: none;
+}
+
+button[disabled],
+input[disabled] {
+  cursor: default;
+}
+
+textarea {
+  resize: vertical;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 300;
+  line-height: 1;
+  color: $black;
+}
+
+h1 {
+  font-size: 2.3rem;
+  margin-top: 0.4rem;
+  margin-bottom: 0.6rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-top: 0.4rem;
+  margin-bottom: 0.8rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1.1rem;
+}
+
+h4 {
+  font-size: 1.3rem;
+  margin-top: 0;
+  margin-bottom: 0.6rem;
+}
+
+h5 {
+  font-size: 0.9rem;
+  margin: 1rem 0;
+}
+
+h6 {
+  font-size: 0.6rem;
+  margin: 0.6rem 0;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0.6rem;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1rem;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+ul li {
+  display: block;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+.clean {
+  clear: both;
+}
+
+iframe {
+  border: 0;
+}

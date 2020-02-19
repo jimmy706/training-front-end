@@ -1,0 +1,71 @@
+section#videos {
+  .ads {
+    display: flex;
+    .ad {
+      padding-top: 16.65%;
+      padding-left: 2%;
+      padding-right: 2%;
+      padding-bottom: 3%;
+      color: $white;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      &:nth-child(1) {
+        background-image: url("../images/guide_tours_bg.jpg");
+      }
+      &:nth-child(2) {
+        background-image: url("../images/commercials_ads_bg.jpg");
+      }
+      &:nth-child(3) {
+        background-image: url("../images/tutorials_bg.jpg");
+      }
+    }
+  }
+  .banner {
+    background-color: $primary;
+    padding: 3rem 0;
+    color: $white;
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .btn-order {
+      background-color: $white;
+      transition: color 0.3s ease;
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
+  .transports {
+    padding: 3rem 0;
+    .container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 2rem;
+    }
+    .icon-wrapper {
+      margin-bottom: 1.6rem;
+      i {
+        color: $primary;
+        width: 80px;
+        height: 80px;
+        line-height: 80px;
+        text-align: center;
+        border: 1px solid $primary;
+        border-radius: 50%;
+        font-size: 1.5rem;
+      }
+    }
+    .transport-item {
+      padding: 0 2rem;
+      .btn-secondary {
+        padding: 0.6rem 1.5rem;
+      }
+      h4 {
+        color: #515b69;
+      }
+    }
+  }
+}

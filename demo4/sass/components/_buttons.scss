@@ -1,0 +1,65 @@
+.btn {
+  transition: background 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  border-radius: 3px;
+  font-weight: 600;
+  padding: 0.8em 1.2em;
+  line-height: 1;
+}
+
+.btn-small {
+  font-size: 0.6rem;
+}
+
+.btn-normal {
+  font-size: 0.63rem;
+}
+
+.btn-large {
+  font-size: 0.8rem;
+  padding: 1em 2em;
+}
+
+.btn-transparent {
+  background: transparent;
+  cursor: pointer;
+}
+
+.btn-primary {
+  @extend .btn;
+  background-color: $primary;
+  color: $white;
+}
+
+.btn-secondary {
+  @extend .btn;
+  background-color: $secondary;
+  color: $white;
+  &:hover {
+    background-color: $primary;
+  }
+}
+
+#top-btn {
+  background-color: #333;
+  color: $white;
+  position: fixed;
+  transition: background-color 0.3s ease;
+  bottom: -5px;
+  right: 60px;
+  z-index: 99;
+  padding: 10px 15px;
+  cursor: pointer;
+  display: none;
+  opacity: 0.95;
+  border-radius: 3px;
+  font-size: 0.8rem;
+  &:hover {
+    background-color: $primary;
+  }
+  &.block {
+    display: block;
+  }
+}

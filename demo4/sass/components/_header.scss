@@ -1,0 +1,37 @@
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: $white;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 60px;
+  padding-right: 60px;
+  box-sizing: border-box;
+  align-items: center;
+  box-shadow: 0 1px 5px 0px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+  .list-item {
+    margin-right: 0.9rem;
+  }
+  .nav-link {
+    transition: color 0.4s ease;
+    display: block;
+    height: 102px;
+    line-height: 102px;
+    font: {
+      size: 0.7rem;
+      weight: 600;
+    }
+    &:hover {
+      color: $primary;
+    }
+    &.active {
+      color: $primary;
+    }
+  }
+  .cart-icon {
+    @extend .nav-link;
+  }
+}
