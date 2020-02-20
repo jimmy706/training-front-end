@@ -1,0 +1,51 @@
+section#overview {
+  .studio {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    .content-wrapper {
+      padding: 11%;
+      box-sizing: border-box;
+      background: $black;
+      min-height: 400px;
+      height: 100%;
+      h1 {
+        margin-bottom: 10px;
+      }
+      p {
+        margin-bottom: 20px;
+      }
+      .btn {
+        margin-top: 1rem;
+      }
+    }
+    .img-wrapper {
+      background: url("../images/col_image112.webp") no-repeat top center;
+      background-size: cover;
+      height: 100%;
+      width: 100%;
+    }
+  }
+  .banner {
+    padding: 200px;
+    display: flex;
+    background: url("../images/quote_bg_studio1.webp") no-repeat left top;
+    background-size: cover;
+    .banner-content {
+      width: 65%;
+      margin-right: 3rem;
+      border: 10px solid $white;
+      box-sizing: border-box;
+      padding: 50px 40px;
+    }
+    .button-wrapper {
+      background-color: $primary-light;
+      padding: 0 4rem;
+      display: flex;
+      align-items: center;
+      .btn {
+        font-size: 18px;
+      }
+    }
+  }
+}

@@ -1,0 +1,57 @@
+.slideshow {
+  position: relative;
+  .dots {
+    display: flex;
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 20;
+    .dot {
+      border-radius: 50%;
+      background: $black;
+      color: $black;
+      border: 1px solid $white;
+      display: block;
+      margin-right: 8px;
+      width: 0.8rem;
+      height: 0.8rem;
+      cursor: pointer;
+      &.active {
+        background: $white;
+      }
+    }
+  }
+  .slide {
+    width: 100%;
+    display: none;
+    &.active {
+      display: block;
+    }
+    animation: faded 0.4s ease-out;
+  }
+  .next,
+  .prev {
+    font-size: 1.2rem;
+    padding: 0.8rem 1.2rem;
+    background-color: #00000060;
+    color: $white;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    display: none;
+  }
+  .next {
+    right: 0;
+  }
+  .prev {
+    left: 0;
+  }
+  &:hover {
+    .prev,
+    .next {
+      display: block;
+    }
+  }
+}

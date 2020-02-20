@@ -1,0 +1,35 @@
+section#services {
+  .staff {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 3rem;
+    margin-bottom: 5rem;
+    .staff-block {
+      text-align: center;
+      .staff-avatar {
+        width: 100%;
+        margin-bottom: 1.5rem;
+      }
+    }
+  }
+  .banner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    .img-wrapper {
+      background: url("../images/girl_covered1.jpg") no-repeat center;
+      background-size: cover;
+      min-height: 495px;
+      height: 100%;
+      width: 100%;
+    }
+    .banner-content {
+      text-align: center;
+      padding: 11%;
+      box-sizing: border-box;
+      background-color: $primary;
+      .banner-desc {
+        margin: 1rem 0;
+      }
+    }
+  }
+}

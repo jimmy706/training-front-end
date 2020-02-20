@@ -1,0 +1,35 @@
+#header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 60px;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  width: 100%;
+  z-index: 999;
+  transition: background 0.3s ease;
+  background: transparent;
+  .header__nav {
+    .nav-item {
+      float: left;
+    }
+    .nav-link {
+      display: block;
+      line-height: 1;
+      font-size: 15px;
+      padding: 42px 20px;
+      background: transparent;
+      &.active {
+        background: $black-light;
+      }
+    }
+    .dropdown-toogle {
+      font-size: 1.4rem;
+      color: $primary;
+      cursor: pointer;
+      display: none;
+    }
+  }
+}

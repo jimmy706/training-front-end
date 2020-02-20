@@ -1,0 +1,147 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.67;
+  color: $white;
+  background-color: $bg;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: $white;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+button {
+  border: 0;
+}
+
+button:focus,
+button:active,
+input:active,
+input:focus,
+textarea:active,
+textarea:focus,
+option:active,
+option:focus,
+select:active,
+select:focus {
+  outline: none;
+}
+
+button[disabled],
+input[disabled] {
+  cursor: default;
+}
+
+textarea {
+  resize: vertical;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 300;
+  line-height: 1.1;
+  font-family: "Abril Fatface", cursive;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.8rem;
+}
+
+h2 {
+  font-size: 2.25rem;
+  margin-top: 0.8rem;
+  margin-bottom: 1.1rem;
+}
+
+h3 {
+  font-size: 1.9rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1.1rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 0.6rem;
+}
+
+h5 {
+  font-size: 1rem;
+  margin: 1rem 0;
+}
+
+h6 {
+  font-size: 0.7rem;
+  margin: 0.6rem 0;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0.6rem;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1rem;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+ul li {
+  display: block;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+.clean {
+  clear: both;
+}
+
+iframe {
+  border: 0;
+}
