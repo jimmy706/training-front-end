@@ -3,6 +3,24 @@ var sections = Array.from(document.getElementsByClassName("page-section"));
 var topBtn = document.getElementById("top-btn");
 var headerHeight = document.getElementById("header").offsetHeight;
 
+function activeLink(id) {
+  headerLinks.forEach(function(link) {
+    var target = link.getAttribute("href").replace("#", "");
+    if (target === id) {
+      link.classList.add("active");
+    }
+  });
+}
+
+function removeActive(id) {
+  headerLinks.forEach(function(link) {
+    var target = link.getAttribute("href").replace("#", "");
+    if (target === id) {
+      link.classList.remove("active");
+    }
+  });
+}
+
 headerLinks.forEach(function(link) {
   link.addEventListener("click", function(e) {
     e.preventDefault();
@@ -31,16 +49,11 @@ window.addEventListener("scroll", function(e) {
   sections.forEach(function(s) {
     var top = s.offsetTop;
     var bottom = top + s.offsetHeight;
+    var id = s.getAttribute("id");
     if (top < distance + headerHeight && distance + headerHeight < bottom) {
-      var id = s.getAttribute("id");
-      headerLinks.forEach(function(link) {
-        var target = link.getAttribute("href").replace("#", "");
-        if (target === id) {
-          link.classList.add("active");
-        } else {
-          link.classList.remove("active");
-        }
-      });
+      activeLink(id);
+    } else {
+      removeActive(id);
     }
   });
 });

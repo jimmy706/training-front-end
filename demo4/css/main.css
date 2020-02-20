@@ -565,7 +565,8 @@ section#overview {
     padding-right: 0;
     margin-bottom: 3rem; }
   section#overview .img-wrapper {
-    width: 100%; }
+    width: 100%;
+    padding: 0; }
   section#overview .no-limit__item {
     margin-right: 0;
     margin-top: 3.5rem; } }
