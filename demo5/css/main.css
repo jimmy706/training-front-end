@@ -381,6 +381,9 @@ iframe {
     left: 0;
     width: 100%;
     transform: translateY(100%); }
+    #header #header__mb-nav .dropdown-toogle {
+      font-size: 1rem;
+      line-height: 1; }
     #header #header__mb-nav li {
       display: block;
       width: 100%;
@@ -477,6 +480,9 @@ iframe {
     #header-banner .slide .slide-content .btn {
       padding: 0.5em 1.5em;
       font-size: 12px; } }
+@media screen and (max-width: 600px) {
+  #header-banner .slide {
+    height: 550px; } }
 section#overview .studio {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -646,18 +652,20 @@ section#posts {
     font-size: 0.75rem; }
     #footer .copyright a {
       color: #4ca9b4; }
-  #footer .socials a {
-    display: inline-block;
-    background-color: #000000;
-    width: 60px;
-    height: 60px;
-    line-height: 60px;
-    text-align: center;
-    font-size: 1.2rem;
-    margin-right: 7px;
-    transition: color 0.3s ease; }
-    #footer .socials a:hover {
-      color: #ddd; }
+  #footer .socials {
+    display: flex; }
+    #footer .socials a {
+      display: inline-block;
+      background-color: #000000;
+      width: 60px;
+      height: 60px;
+      line-height: 60px;
+      text-align: center;
+      font-size: 1.2rem;
+      margin-right: 7px;
+      transition: color 0.3s ease; }
+      #footer .socials a:hover {
+        color: #ddd; }
 
 @media screen and (max-width: 980px) {
   #footer {

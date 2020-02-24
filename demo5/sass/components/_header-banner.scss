@@ -87,3 +87,11 @@
     }
   }
 }
+
+@media screen and (max-width: 600px) {
+  #header-banner {
+    .slide {
+      height: 550px;
+    }
+  }
+}

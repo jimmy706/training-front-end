@@ -81,6 +81,10 @@
     left: 0;
     width: 100%;
     transform: translateY(100%);
+    .dropdown-toogle {
+      font-size: 1rem;
+      line-height: 1;
+    }
     li {
       display: block;
       width: 100%;
