@@ -1,0 +1,40 @@
+#footer {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  box-sizing: border-box;
+  align-items: center;
+  .copyright {
+    font-size: 0.75rem;
+    a {
+      color: $primary;
+    }
+  }
+  .socials {
+    a {
+      display: inline-block;
+      background-color: #000000;
+      width: 60px;
+      height: 60px;
+      line-height: 60px;
+      text-align: center;
+      font-size: 1.2rem;
+      margin-right: 7px;
+      transition: color 0.3s ease;
+      &:hover {
+        color: #ddd;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 980px) {
+  #footer {
+    flex-direction: column;
+    justify-content: center;
+    .copyright {
+      margin-bottom: 1.5rem;
+    }
+  }
+}

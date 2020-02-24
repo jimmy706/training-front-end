@@ -25,6 +25,8 @@
   .slide {
     width: 100%;
     display: none;
+    overflow: hidden;
+
     &.active {
       display: block;
     }

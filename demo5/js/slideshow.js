@@ -67,8 +67,6 @@ slideshows.forEach(function(slideshow) {
 
     activeDot();
 
-    console.log(n);
-
     slides.forEach(function(s) {
       s.classList.remove("active");
     });

@@ -17,8 +17,8 @@
       </a>
       <nav class="header__nav">
         <ul>
-          <li class="nav-item">
-            <a href="javascript:void(0)" class="nav-link active">
+          <li class="nav-item active">
+            <a href="javascript:void(0)" class="nav-link">
               HOME
             </a>
           </li>
@@ -34,8 +34,18 @@
           </li>
           <li class="nav-item">
             <a href="javascript:void(0)" class="nav-link ">
-              COLLECTIONS
+              <span>COLLECTIONS</span>
+              
             </a>
+            
+            <ul class="dropdown-menu">
+              <li>
+                <a href="javascript:void(0)">Case Study 1</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)">Case Study 1</a>
+              </li>
+            </ul>
           </li>
           <li class="nav-item">
             <a href="javascript:void(0)" class="nav-link ">
@@ -53,11 +63,62 @@
             </a>
           </li>
           <li>
-            <span class="dropdown-toogle">
+            <span class="dropdown-toogle bars-icon" data-target="#header__mb-nav">
               <i class="fas fa-bars"></i>
             </span>
           </li>
         </ul>
+      </nav>
+
+      <nav id="header__mb-nav" class="dropdown-menu">
+        <ul>
+          <li class=" active">
+            <a href="javascript:void(0)" class="">
+              HOME
+            </a>
+          </li>
+          <li class="">
+            <a href="javascript:void(0)" class=" ">
+              STUDIO
+            </a>
+          </li>
+          <li class="">
+            <a href="javascript:void(0)" class=" ">
+              TALENT
+            </a>
+          </li>
+          <li class=" dropdown-btn">
+            <a href="javascript:void(0)" class=" ">
+              <span>
+                COLLECTIONS
+              </span>
+              <span class="dropdown-toogle f-right" data-target="#mb-collections"><i class="fas fa-chevron-down"></i></span>
+            </a>
+            
+            <ul class="dropdown-menu" id="mb-collections">
+              <li>
+                <a href="javascript:void(0)">Case Study 1</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)">Case Study 1</a>
+              </li>
+            </ul>
+          </li>
+          <li class="">
+            <a href="javascript:void(0)" class=" ">
+              SERVICES
+            </a>
+          </li>
+          <li class="">
+            <a href="javascript:void(0)" class=" ">
+              NEWS
+            </a>
+          </li>
+          <li class="">
+            <a href="javascript:void(0)" class=" ">
+              CONTACT
+            </a>
+          </li>
       </nav>
     </header>
 
@@ -106,12 +167,12 @@
           <div class="content-wrapper text-center">
             <h1>Meet Our Studio</h1>
             <p class="long-space">THE STUDIO</p>
-            <span>
+            <div>
               Donec faucibus consequat ante. Mauris eget mi sed ex efficitur
               porta id non quam. Cras aliquam turpis tellus, quis laoreet lacus
               congue sed. Nullam at est quis urna vestibulum interdum. Praesent
               auctor leo ut massa ultrices tempor.
-            </span>
+            </div>
             <a href="javascript:void(0)" class="btn">READ MORE</a>
           </div>
           <div class="img-wrapper"></div>
@@ -189,6 +250,101 @@
               dolor.
             </p>
             <a href="javascript:void(0)" class="btn">READ MORE</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="wrapper" id="collections">
+        <div class="container">
+          <div class="intro-wrapper">
+            <h1>Collections</h1>
+            <img src="images/hr.webp" alt="line" />
+          </div>
+        </div>
+        <div class="grid">
+          <div href="javascript:void(0)" class="item item-1">
+            <img
+              src="./images/portfolio_item_42.webp"
+              alt="portfolio_item_42"
+              class="cover-img"
+            />
+            <div class="overlay">
+              <a href="javascript:void(0)" class="contain"> </a>
+              <a href="javascript:void(0)" class="toogle">
+                <i class="fas fa-link"></i>
+              </a>
+              <a href="./images/portfolio_item_42.webp" class="toogle">
+                <i class="fas fa-search"></i>
+              </a>
+            </div>
+          </div>
+
+          <div href="javascript:void(0)" class="item item-2">
+            <img
+              src="./images/1_collection1.jpg"
+              alt="1_collection1"
+              class="cover-img"
+            />
+            <div class="overlay">
+              <a href="javascript:void(0)" class="contain"> </a>
+              <a href="javascript:void(0)" class="toogle">
+                <i class="fas fa-link"></i>
+              </a>
+              <a href="./images/1_collection1.jpg" class="toogle">
+                <i class="fas fa-search"></i>
+              </a>
+            </div>
+          </div>
+
+          <div href="javascript:void(0)" class="item item-3">
+            <img
+              src="./images/2_collection11.webp"
+              alt="2_collection11"
+              class="cover-img"
+            />
+            <div class="overlay">
+              <a href="javascript:void(0)" class="contain"> </a>
+              <a href="javascript:void(0)" class="toogle">
+                <i class="fas fa-link"></i>
+              </a>
+              <a href="./images/2_collection11.webp" class="toogle">
+                <i class="fas fa-search"></i>
+              </a>
+            </div>
+          </div>
+
+          <div href="javascript:void(0)" class="item item-4">
+            <img
+              src="./images/5_collectionb1.jpg"
+              alt="5_collectionb1"
+              class="cover-img"
+            />
+            <div class="overlay">
+              <a href="javascript:void(0)" class="contain"> </a>
+              <a href="javascript:void(0)" class="toogle">
+                <i class="fas fa-link"></i>
+              </a>
+              <a href="./images/5_collectionb1.jpg" class="toogle">
+                <i class="fas fa-search"></i>
+              </a>
+            </div>
+          </div>
+
+          <div href="javascript:void(0)" class="item item-5">
+            <img
+              src="./images/5_collection1.webp"
+              alt="5_collection1"
+              class="cover-img"
+            />
+            <div class="overlay">
+              <a href="javascript:void(0)" class="contain"> </a>
+              <a href="javascript:void(0)" class="toogle">
+                <i class="fas fa-link"></i>
+              </a>
+              <a href="./images/5_collection1.webp" class="toogle">
+                <i class="fas fa-search"></i>
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -315,16 +471,48 @@
           </div>
         </div>
         <div class="banner text-center">
-          <h1>We can help you in any project</h1>
-          <p class="long-space">
-            THROUGH CREATIVE IDEAS, INNOVATION & SHEER DETERMINATION
-          </p>
-          <a href="javascript:void(0)" class="btn">GET IN TOUCH</a>
+          <div class="container">
+            <h1>We can help you in any project</h1>
+            <p class="long-space">
+              THROUGH CREATIVE IDEAS, INNOVATION & SHEER DETERMINATION
+           </p>
+            <a href="javascript:void(0)" class="btn">GET IN TOUCH</a>
+          </div>
         </div>
       </section>
+
+      <footer id="footer" class="wrapper">
+        <div class="copyright">
+          © Copyright 2012 - 2020 | Avada Theme by
+          <a href="javascript:void(0)">Theme Fusion</a> | All Rights Reserved |
+          Powered by <a href="javascript:void(0)">WordPress</a>
+        </div>
+        <div class="socials">
+          <a href="javascript:void(0)" class="tooltip">
+            <i class="fab fa-facebook-f"></i>
+            <span class="tooltip-text">Facebook</span>
+          </a>
+          <a href="javascript:void(0)" class="tooltip">
+            <i class="fab fa-twitter"></i>
+            <span class="tooltip-text">Twitter</span>
+          </a>
+          <a href="javascript:void(0)" class="tooltip">
+            <i class="fab fa-instagram"></i>
+            <span class="tooltip-text">Instagram</span>
+          </a>
+          <a href="javascript:void(0)" class="tooltip">
+            <i class="fab fa-pinterest-p"></i>
+            <span class="tooltip-text">Pinterest</span>
+          </a>
+        </div>
+      </footer>
     </main>
 
+    <button id="top-btn">
+      <i class="fas fa-angle-up"></i>
+    </button>
     <script src="js/scroll.js"></script>
     <script src="js/slideshow.js"></script>
+    <script src="js/dropdown.js"></script>
   </body>
 </html>

@@ -12,3 +12,10 @@
 .long-space {
   letter-spacing: 2px;
 }
+
+@media screen and (max-width: 768px) {
+  .intro-wrapper {
+    width: 100%;
+    min-width: 150px;
+  }
+}

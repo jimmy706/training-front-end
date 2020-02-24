@@ -9,6 +9,7 @@ section#services {
       .staff-avatar {
         width: 100%;
         margin-bottom: 1.5rem;
+        max-width: 300px;
       }
     }
   }
@@ -18,7 +19,8 @@ section#services {
     .img-wrapper {
       background: url("../images/girl_covered1.jpg") no-repeat center;
       background-size: cover;
-      min-height: 495px;
+      max-height: 495px;
+      min-height: 400px;
       height: 100%;
       width: 100%;
     }
@@ -30,6 +32,17 @@ section#services {
       .banner-desc {
         margin: 1rem 0;
       }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section#services {
+    .staff {
+      grid-template-columns: 1fr;
+    }
+    .banner {
+      grid-template-columns: 1fr;
     }
   }
 }

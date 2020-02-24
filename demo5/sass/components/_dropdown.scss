@@ -1,0 +1,17 @@
+.dropdown-menu {
+  display: none;
+  animation: dropdown 0.4s ease;
+  overflow: hidden;
+  &.open {
+    display: block;
+  }
+}
+
+@keyframes dropdown {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

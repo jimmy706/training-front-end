@@ -10,26 +10,131 @@
   width: 100%;
   z-index: 999;
   transition: background 0.3s ease;
+  .logo-wrapper {
+    display: block;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
   background: transparent;
   .header__nav {
     .nav-item {
       float: left;
+      background: transparent;
+      transition: background 0.3s ease;
+      position: relative;
+      &:hover {
+        background: $black-light;
+      }
+      &.active {
+        background: $black-light;
+      }
+      &.dropdown-btn {
+        &:hover {
+          .dropdown-menu {
+            display: block;
+          }
+        }
+      }
     }
     .nav-link {
       display: block;
       line-height: 1;
       font-size: 15px;
       padding: 42px 20px;
-      background: transparent;
-      &.active {
-        background: $black-light;
-      }
     }
-    .dropdown-toogle {
+    .bars-icon {
       font-size: 1.4rem;
       color: $primary;
       cursor: pointer;
       display: none;
+    }
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      width: 100%;
+      li {
+        background-color: #00000070;
+        width: 100%;
+        transition: background 0.3s ease;
+        &:hover {
+          background-color: $black-light;
+        }
+        a {
+          display: block;
+          line-height: 1;
+          font-size: 15px;
+          padding: 15px 20px;
+          border-top: 1px solid rgb(129, 129, 129);
+        }
+      }
+    }
+  }
+  &.sticky {
+    background: rgba(12, 12, 13, 0.86);
+  }
+  #header__mb-nav {
+    position: absolute;
+    z-index: 99;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    transform: translateY(100%);
+    li {
+      display: block;
+      width: 100%;
+      background-color: $black;
+      transition: background-color 0.3s ease;
+      &.active {
+        background-color: $primary;
+      }
+      &:hover {
+        background-color: $primary;
+      }
+      a {
+        display: block;
+        line-height: 1;
+        font-size: 15px;
+        padding: 15px 20px;
+        border-top: 1px solid rgba(29, 29, 29, 0.1);
+        font-size: 12px;
+      }
+    }
+    #mb-collections {
+      width: 100%;
+      li {
+        padding-left: 20px;
+        a {
+          &::before {
+            content: "- ";
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1090px) {
+  #header {
+    position: relative;
+    background: $black;
+    padding: 10px 20px;
+    .header__nav {
+      .nav-link {
+        display: none;
+      }
+      .bars-icon {
+        display: block;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 426px) {
+  #header {
+    .logo-wrapper {
+      width: 150px;
     }
   }
 }

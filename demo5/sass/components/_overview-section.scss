@@ -27,7 +27,7 @@ section#overview {
     }
   }
   .banner {
-    padding: 200px;
+    padding: 200px 2rem;
     display: flex;
     background: url("../images/quote_bg_studio1.webp") no-repeat left top;
     background-size: cover;
@@ -37,14 +37,44 @@ section#overview {
       border: 10px solid $white;
       box-sizing: border-box;
       padding: 50px 40px;
+      margin-left: auto;
     }
     .button-wrapper {
       background-color: $primary-light;
-      padding: 0 4rem;
+      padding: 0 3rem;
+      box-sizing: border-box;
       display: flex;
       align-items: center;
+      margin-right: auto;
       .btn {
         font-size: 18px;
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section#overview {
+    .studio {
+      grid-template-columns: 1fr;
+      .img-wrapper {
+        padding-top: 52.25%;
+        height: auto;
+      }
+    }
+    .banner {
+      flex-direction: column;
+      .banner-content {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 3rem;
+      }
+      .button-wrapper {
+        width: 100%;
+        margin-right: 0;
+        padding: 3rem 0;
+        justify-content: center;
       }
     }
   }
