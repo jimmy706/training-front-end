@@ -11,6 +11,11 @@ section#posts {
     background-color: $black;
     padding: 4rem;
 
+    .news-list {
+      display: flex;
+      flex-direction: column;
+    }
+
     .news-item {
       margin: 2rem 0;
       .img-wrapper {

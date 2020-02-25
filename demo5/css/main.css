@@ -588,6 +588,9 @@ section#posts {
   section#posts .news {
     background-color: #0c0c0d;
     padding: 4rem; }
+    section#posts .news .news-list {
+      display: flex;
+      flex-direction: column; }
     section#posts .news .news-item {
       margin: 2rem 0; }
       section#posts .news .news-item .img-wrapper {
