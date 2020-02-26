@@ -1,0 +1,21 @@
+section.overview {
+  width: 100%;
+  .bg-wrapper {
+    background: url("../images/kids_conner_4.webp") no-repeat center;
+    background-size: cover;
+    height: 415px;
+  }
+  .container {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 2rem;
+  }
+  .img-wrapper {
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

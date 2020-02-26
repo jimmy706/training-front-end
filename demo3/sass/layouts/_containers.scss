@@ -4,6 +4,9 @@
   .flex-item {
     flex: 1;
   }
+  &.nowrap {
+    flex-wrap: nowrap;
+  }
 }
 
 .wrapper {

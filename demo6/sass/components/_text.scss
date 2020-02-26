@@ -1,0 +1,23 @@
+.text-center {
+  text-align: center !important;
+}
+
+.text-white {
+  color: $white;
+}
+
+.text-dark {
+  color: $dark;
+}
+
+.lato {
+  font-family: "Lato";
+}
+
+.intro-wrapper {
+  width: 80%;
+  min-width: 200px;
+  margin-bottom: 6rem;
+  margin-left: auto;
+  margin-right: auto;
+}

@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Amatic+SC:400,700&display=swap");
+
+@import "./base/variables";
+@import "./base/reset";
+
+@import "./layouts/container";
+
+@import "./components/bg";
+@import "./components/tooltip";
+@import "./components/icons";
+@import "./components/buttons";
+@import "./components/line";
+@import "./components/text";
+@import "./components/card";
+@import "./components/sidebar";
+@import "./components/overview-section";
+@import "./components/services-section";
+@import "./components/staff-section";
+@import "./components/classes-section";
+@import "./components/activities-section";
+@import "./components/footer";

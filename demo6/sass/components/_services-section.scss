@@ -1,0 +1,47 @@
+section.services {
+  background: url("../images/bg_section_1.webp") no-repeat center;
+  background-size: cover;
+  .container {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3rem;
+  }
+  .service-item {
+    display: flex;
+    .img-wrapper {
+      width: 45%;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .content {
+      width: 100%;
+      .service-name {
+        font-family: "Lato";
+        color: $white;
+        position: relative;
+        padding-bottom: 1rem;
+        &::before {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 25px;
+          background-color: $warning;
+          height: 2px;
+        }
+      }
+    }
+  }
+  .banner {
+    background: url("../images/3rd_section_img.webp") no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 340px;
+  }
+}

@@ -1,0 +1,43 @@
+.btn-action {
+  padding: 0.8rem 2rem;
+  border-radius: 30px;
+  font-size: 14px;
+  color: $white;
+  background-color: $danger;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  border: 0;
+  font-weight: bold;
+  line-height: 1;
+  &:hover {
+    background-color: $warning;
+  }
+}
+
+#top-btn {
+  background-color: #696969;
+  color: $white;
+  position: fixed;
+  transition: background-color 0.3s ease;
+  bottom: -5px;
+  right: 60px;
+  z-index: 99;
+  padding: 10px 15px;
+  cursor: pointer;
+  display: none;
+  opacity: 0.95;
+  border-radius: 3px;
+  font-size: 0.8rem;
+  &:hover {
+    background-color: $primary;
+  }
+  &.block {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #top-btn {
+    bottom: 15px;
+  }
+}

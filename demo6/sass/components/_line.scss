@@ -1,0 +1,25 @@
+.line {
+  height: 0;
+  width: 50%;
+  max-width: 456px;
+  min-width: 200px;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 2px dashed $dark;
+  border-left: 0;
+  margin: 2rem 0;
+}
+
+.line-warning {
+  @extend .line;
+  border-color: $warning;
+}
+
+.line-danger {
+  @extend .line;
+  border-color: $danger;
+}
+
+.line-center {
+  margin: 2rem auto;
+}

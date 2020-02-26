@@ -122,6 +122,8 @@ iframe {
   flex-wrap: wrap; }
   .flexbox .flex-item {
     flex: 1; }
+  .flexbox.nowrap {
+    flex-wrap: nowrap; }
 
 .wrapper {
   padding-top: 4.5rem;

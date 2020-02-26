@@ -1,0 +1,58 @@
+section.activities {
+  .banner {
+    padding-top: 5rem;
+    padding-bottom: 7rem;
+    background: url("../images/family-bbq-bkgd.webp") no-repeat center;
+    background-size: cover;
+    .intro-wrapper {
+      margin-bottom: 3rem;
+    }
+    .date-wrapper {
+      display: flex;
+      justify-content: center;
+      .wrapper-unit {
+        padding: 0.5rem 1.5rem;
+        background-color: $dark;
+        margin-right: 10px;
+        color: $white;
+        font-size: 1.125rem;
+        .num {
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+  .gallery-wrapper {
+    padding: 4rem 0;
+  }
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 2rem;
+    grid-row-gap: 1rem;
+    .img-wrapper {
+      display: block;
+      img {
+        width: 100%;
+        height: 100%;
+        transition: transform 0.3s ease-out;
+        &:hover {
+          transform: scale(1.03);
+          box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.2);
+        }
+      }
+    }
+  }
+  .register-wrapper {
+    .flexbox {
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+    }
+    .clound-border {
+      display: block;
+      fill: #3b539b;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.body-bg {
+  background: url("../images/background.webp") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.bg-white {
+  background-color: $white;
+}
+
+.bg-success {
+  background-color: $success;
+}
+
+.bg-blue {
+  background-color: $blue-bg;
+}

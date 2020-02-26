@@ -1,0 +1,36 @@
+.footer {
+  padding: 6rem 0;
+  background-color: #3b539b;
+  text-align: center;
+  .footer__nav {
+    margin-bottom: 1rem;
+    .nav-item {
+      display: inline-block;
+      margin-right: 1rem;
+      &.active {
+        .nav-link {
+          color: #7291de;
+        }
+      }
+    }
+    .nav-link {
+      color: $white;
+      transition: color 0.3s ease;
+      &:hover {
+        color: #7291de;
+      }
+    }
+  }
+  .copyright {
+    font-size: 12px;
+    color: #7291de;
+    a {
+      color: #7291de;
+      font-size: 12px;
+      transition: color 0.3s ease;
+      &:hover {
+        color: $white;
+      }
+    }
+  }
+}
