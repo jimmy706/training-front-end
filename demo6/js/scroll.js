@@ -14,12 +14,16 @@ window.addEventListener("scroll", function() {
 
   if (distance > 245) {
     var top = distance - 245;
+    var wHeight = window.innerHeight + window.scrollY;
+    var bodyHeight = document.body.offsetHeight;
     if (!topBtn.classList.contains("block")) {
       topBtn.classList.add("block");
     }
     sidebar.style.top = `${top}px`;
-    if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
-      sidebar.style.top = `${top - 32}px`;
+    if (wHeight >= bodyHeight) {
+      sidebar.style.top = `${top -
+        (wHeight - bodyHeight) -
+        (window.innerHeight > 600 ? 32 : 80)}px`;
     }
   } else {
     sidebar.style.top = "0";
