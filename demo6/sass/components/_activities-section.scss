@@ -56,3 +56,42 @@ section.activities {
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  section.activities {
+    .gallery {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .register-wrapper {
+      .flexbox {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  section.activities {
+    .banner {
+      .date-wrapper {
+        display: block;
+        .wrapper-unit {
+          text-align: center;
+          width: 80px;
+          display: block;
+          margin: 1rem auto;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  section.activities {
+    .gallery {
+      grid-template-columns: 1fr;
+    }
+  }
+}

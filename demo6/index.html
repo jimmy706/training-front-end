@@ -62,6 +62,40 @@
         </div>
       </nav>
       <main class="main-content">
+        <header class="header-mb">
+          <nav class="mb-nav">
+            <a href="javascript:void(0)">
+              <img
+                src="./images/daycare-mobile-logo-1.webp"
+                alt="daycare-mobile-logo-1"
+              />
+            </a>
+            <span class="dropdown-toogle" data-target="#nav-mb-list">
+              <i class="fas fa-bars"></i>
+            </span>
+          </nav>
+          <ul class="nav-list dropdown-menu" id="nav-mb-list">
+            <li class="nav-item active">
+              <a href="javascript:void(0)" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0)" class="nav-link">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0)" class="nav-link">Our Classes</a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0)" class="nav-link">Lastest News</a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0)" class="nav-link">Resources</a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0)" class="nav-link">Contact Us</a>
+            </li>
+          </ul>
+        </header>
+
         <section class="overview bg-white">
           <div class="bg-wrapper"></div>
           <div class="container">
@@ -299,25 +333,53 @@
           <div class="banner">
             <div class="flexbox">
               <div class="number-wrapper">
-                <h2 class="lato">189</h2>
+                <h2
+                  class="lato numscroller"
+                  data-min="1"
+                  data-max="189"
+                  data-increment="3"
+                >
+                  189
+                </h2>
                 <span class="content">
                   LITTE PEOPLE
                 </span>
               </div>
               <div class="number-wrapper">
-                <h2 class="lato">25</h2>
+                <h2
+                  class="lato numscroller"
+                  data-min="1"
+                  data-max="25"
+                  data-increment="1"
+                >
+                  25
+                </h2>
                 <span class="content">
                   TEACHERS
                 </span>
               </div>
               <div class="number-wrapper">
-                <h2 class="lato">175</h2>
+                <h2
+                  class="lato numscroller"
+                  data-min="1"
+                  data-max="175"
+                  data-increment="3"
+                >
+                  175
+                </h2>
                 <span class="content">
                   ACTIVITIES
                 </span>
               </div>
               <div class="number-wrapper">
-                <h2 class="lato">378</h2>
+                <h2
+                  class="lato numscroller"
+                  data-min="1"
+                  data-max="378"
+                  data-increment="4"
+                >
+                  378
+                </h2>
                 <span class="content">
                   HAPPY PARENTS
                 </span>
@@ -633,6 +695,10 @@
     <button id="top-btn">
       <i class="fas fa-angle-up"></i>
     </button>
+    <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/scroll.js"></script>
+    <script src="js/dropdown.js"></script>
+    <script src="js/numscroller-1.0.js"></script>
+    <script></script>
   </body>
 </html>

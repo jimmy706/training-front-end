@@ -1,0 +1,19 @@
+.dropdown-menu {
+  display: none;
+  animation: dropdown 1s ease;
+  overflow: hidden;
+  overflow: hidden;
+  transition: height 0.3s ease;
+  &.open {
+    display: block;
+  }
+}
+
+@keyframes dropdown {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

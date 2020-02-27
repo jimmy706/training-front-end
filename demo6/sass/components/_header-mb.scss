@@ -1,0 +1,41 @@
+.header-mb {
+  display: none;
+  background: RGB(54, 97, 176);
+  color: $white;
+  .mb-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    position: relative;
+    box-sizing: border-box;
+    .dropdown-toogle {
+      font-size: 1.2rem;
+    }
+  }
+  .nav-item {
+    &.active {
+      .nav-link {
+        background-color: #4f72c3;
+      }
+    }
+  }
+  .nav-link {
+    color: $white;
+    display: block;
+    line-height: 1;
+    padding: 1.2rem 1.5rem;
+    background-color: $light-blue-bg;
+    border-top: 1px solid #5282c4;
+    transition: background-color 0.3s ease;
+    &:hover {
+      background-color: #4f72c3;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .header-mb {
+    display: block;
+  }
+}

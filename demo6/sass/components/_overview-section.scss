@@ -13,9 +13,28 @@ section.overview {
     grid-gap: 2rem;
   }
   .img-wrapper {
+    text-align: center;
     img {
       width: 100%;
       height: 100%;
+      max-width: 400px;
+      max-height: 400px;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  section.overview {
+    .bg-wrapper {
+      height: 350px;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  section.overview {
+    .container {
+      grid-template-columns: 1fr;
     }
   }
 }
