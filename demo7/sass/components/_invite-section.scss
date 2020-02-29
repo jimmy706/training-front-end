@@ -1,0 +1,42 @@
+#invite {
+  .invite-desc {
+    margin-top: 4rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    max-width: 760px;
+    min-width: 200px;
+    p {
+      &:nth-child(1) {
+        margin-bottom: 2rem;
+      }
+      &:nth-child(2) {
+        margin-bottom: 3rem;
+      }
+    }
+  }
+  .links-wrapper {
+    a {
+      color: $danger;
+      transition: color 0.3s ease;
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
+  .banner-wrapper {
+    width: 100%;
+    position: relative;
+    height: 600px;
+    .banner {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: url("../images/Parallax_image_01-1.jpg") no-repeat center
+        center;
+      background-size: cover;
+    }
+  }
+}

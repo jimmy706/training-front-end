@@ -1,0 +1,23 @@
+#venue {
+  background-color: $primary;
+  .containt {
+    display: grid;
+    grid-template-columns: 2fr 1.3fr;
+
+    .img-wrapper {
+      background: url("../images/post_06.webp") no-repeat left;
+      background-size: cover;
+      height: 100%;
+    }
+    .content {
+      padding: 4rem;
+      color: $white;
+      .section-title {
+        color: $white;
+        &::before {
+          background-color: $white;
+        }
+      }
+    }
+  }
+}

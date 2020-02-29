@@ -1,0 +1,69 @@
+#gallery {
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    .gallery-item {
+      display: block;
+      img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        transition: transform 0.3s ease;
+        &:hover {
+          transform: scale(1.02);
+          box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.1);
+        }
+      }
+    }
+  }
+  .quotes {
+    display: flex;
+    .quote-container {
+      font-size: 18px;
+      color: $dark;
+      padding: 6rem 4rem;
+      &:nth-child(1) {
+        background: url("../images/groom_bg.webp") no-repeat center;
+        background-size: cover;
+      }
+      &:nth-child(2) {
+        background: url("../images/bride_bg.webp") no-repeat center;
+        background-size: cover;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+      }
+      .quote-text {
+        display: block;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        font-weight: normal;
+      }
+      .author {
+        letter-spacing: 1.5px;
+      }
+    }
+  }
+  .banner {
+    margin-top: 6rem;
+    height: 600px;
+    width: 100%;
+    position: relative;
+    .banner-img {
+      background: url("../images/parallax_image_02-1.webp") no-repeat center
+        center;
+      background-size: cover;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      position: absolute;
+      background-attachment: fixed;
+    }
+  }
+}

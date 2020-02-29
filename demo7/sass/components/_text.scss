@@ -1,0 +1,57 @@
+.text-center {
+  text-align: center;
+}
+
+.w-normal {
+  font-weight: $normal-weight;
+}
+
+.w-light {
+  font-weight: $light-weight;
+}
+
+.w-bold {
+  font-weight: $bold-weight;
+}
+
+.text-white {
+  color: $white;
+}
+
+.text-dark {
+  color: $dark;
+}
+
+.text-danger {
+  color: $danger;
+}
+
+.intro-wrapper {
+  margin: 0 auto 3rem auto;
+  width: 55%;
+  min-width: 250px;
+  text-align: center;
+}
+
+.section-title {
+  color: $dark;
+  padding-bottom: 2rem;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 1px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: $primary;
+  }
+  &.title-left {
+    text-align: left;
+    &::before {
+      left: 0%;
+      transform: unset;
+    }
+  }
+}

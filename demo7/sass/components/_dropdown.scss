@@ -1,0 +1,8 @@
+.dropdown-menu {
+  display: none;
+  overflow: hidden;
+  transition: height 0.5s ease;
+  &.open {
+    display: block;
+  }
+}

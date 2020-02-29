@@ -1,0 +1,17 @@
+.btn-action {
+  font-size: 14px;
+  padding: 0.8em 2em;
+  background-color: $white;
+  color: $primary;
+  font-weight: $normal-weight;
+  border: 1px solid $white;
+  border-radius: 30px;
+  line-height: 1;
+  font-family: "Montserrat";
+  cursor: pointer;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  &:hover {
+    background-color: transparent;
+    color: $white;
+  }
+}

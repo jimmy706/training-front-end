@@ -1,0 +1,28 @@
+.header {
+  position: sticky;
+  top: 0;
+  background: $primary;
+  padding: 0 2rem;
+  z-index: 99;
+  box-shadow: 0 1px 5px 0px rgba(0, 0, 0, 0.1);
+
+  .header__nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .nav-link {
+      display: block;
+      padding: 56px 20px;
+      color: $light-primary;
+      font-size: 14px;
+      font-family: "Montserrat";
+      transition: color 0.3s ease;
+      &:hover {
+        color: $white;
+      }
+      &.active {
+        color: $white;
+      }
+    }
+  }
+}
