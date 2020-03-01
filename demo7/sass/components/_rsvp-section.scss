@@ -1,0 +1,66 @@
+#rsvp {
+  background: url("../images/rsvp_bg.webp") no-repeat center center;
+  background-size: cover;
+  .section-title {
+    color: $white;
+    &::before {
+      background-color: $white;
+    }
+  }
+  .rsvp-form {
+    width: 70%;
+    min-width: 200px;
+    margin: 2rem auto;
+    background: $white;
+    box-sizing: border-box;
+    padding: 1rem 2rem;
+
+    .form-group {
+      margin-bottom: 1.5rem;
+      position: relative;
+      .icon-wrapper {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 48px;
+        height: 48px;
+        line-height: 48px;
+        text-align: center;
+        font-size: 13px;
+        border: 1px solid #a9a9a9;
+        background-color: $white;
+      }
+      .form-control {
+        display: block;
+        width: 100%;
+        border: 1px solid #a9a9a9;
+        font-size: 13px;
+        padding: 1rem 0.5rem;
+        box-sizing: border-box;
+        color: #a9a9a9;
+      }
+      textarea {
+        @extend .form-control;
+        padding: 0.2rem 0.5rem;
+        resize: vertical;
+        height: 150px;
+      }
+    }
+    .submit-btn {
+      width: 100%;
+      padding: 1rem 0;
+      display: block;
+      background-color: $danger;
+      text-transform: uppercase;
+      text-align: center;
+      color: $white;
+      font-size: 18px;
+      font-family: "Montserrat";
+      transition: background-color 0.3s ease;
+      &:hover {
+        cursor: pointer;
+        background-color: $primary;
+      }
+    }
+  }
+}

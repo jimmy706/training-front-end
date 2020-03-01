@@ -1,0 +1,28 @@
+#footer {
+  background: $primary;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  .wrap-text {
+    span {
+      font-size: 24px;
+      color: $light-primary;
+    }
+    h2 {
+      margin: 0;
+      line-height: 1;
+    }
+  }
+  .copyright {
+    margin-top: 3rem;
+    color: $light-primary;
+    font-size: 14px;
+    a {
+      font-size: 14px;
+      color: #ddd;
+      transition: color 0.3s ease;
+      &:hover {
+        color: $white;
+      }
+    }
+  }
+}

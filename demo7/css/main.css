@@ -179,8 +179,7 @@ iframe {
 .intro-wrapper {
   margin: 0 auto 3rem auto;
   width: 55%;
-  min-width: 250px;
-  text-align: center; }
+  min-width: 250px; }
 
 .section-title {
   color: #333333;
@@ -216,6 +215,25 @@ iframe {
   .btn-action:hover {
     background-color: transparent;
     color: #ffffff; }
+
+#top-btn {
+  background-color: #696969;
+  color: #ffffff;
+  position: fixed;
+  transition: background-color 0.3s ease;
+  bottom: -5px;
+  right: 60px;
+  z-index: 99;
+  padding: 10px 15px;
+  cursor: pointer;
+  display: none;
+  opacity: 0.95;
+  border-radius: 3px;
+  font-size: 0.8rem; }
+  #top-btn:hover {
+    background-color: #90a7ad; }
+  #top-btn.block {
+    display: block; }
 
 .card .img-wrapper {
   position: relative;
@@ -569,5 +587,109 @@ iframe {
     left: 0;
     position: absolute;
     background-attachment: fixed; }
+
+#details {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr; }
+  #details .page-content {
+    padding: 4rem; }
+  #details .questions {
+    margin-top: 5rem; }
+  #details .question-wrapper {
+    border-bottom: 1px solid #b1b1b1; }
+    #details .question-wrapper.on-close .minus-icon {
+      display: none; }
+    #details .question-wrapper.on-close .plus-icon {
+      display: inline-block; }
+    #details .question-wrapper.on-open .minus-icon {
+      display: inline-block; }
+    #details .question-wrapper.on-open .plus-icon {
+      display: none; }
+    #details .question-wrapper .question {
+      cursor: pointer;
+      margin-bottom: 0.5rem;
+      margin-top: 1rem; }
+      #details .question-wrapper .question i {
+        color: #333333;
+        font-size: 1.2rem;
+        margin-right: 0.7rem; }
+      #details .question-wrapper .question span {
+        color: #b9665e; }
+
+#rsvp {
+  background: url("../images/rsvp_bg.webp") no-repeat center center;
+  background-size: cover; }
+  #rsvp .section-title {
+    color: #ffffff; }
+    #rsvp .section-title::before {
+      background-color: #ffffff; }
+  #rsvp .rsvp-form {
+    width: 70%;
+    min-width: 200px;
+    margin: 2rem auto;
+    background: #ffffff;
+    box-sizing: border-box;
+    padding: 1rem 2rem; }
+    #rsvp .rsvp-form .form-group {
+      margin-bottom: 1.5rem;
+      position: relative; }
+      #rsvp .rsvp-form .form-group .icon-wrapper {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 48px;
+        height: 48px;
+        line-height: 48px;
+        text-align: center;
+        font-size: 13px;
+        border: 1px solid #a9a9a9;
+        background-color: #ffffff; }
+      #rsvp .rsvp-form .form-group .form-control, #rsvp .rsvp-form .form-group textarea {
+        display: block;
+        width: 100%;
+        border: 1px solid #a9a9a9;
+        font-size: 13px;
+        padding: 1rem 0.5rem;
+        box-sizing: border-box;
+        color: #a9a9a9; }
+      #rsvp .rsvp-form .form-group textarea {
+        padding: 0.2rem 0.5rem;
+        resize: vertical;
+        height: 150px; }
+    #rsvp .rsvp-form .submit-btn {
+      width: 100%;
+      padding: 1rem 0;
+      display: block;
+      background-color: #b9665e;
+      text-transform: uppercase;
+      text-align: center;
+      color: #ffffff;
+      font-size: 18px;
+      font-family: "Montserrat";
+      transition: background-color 0.3s ease; }
+      #rsvp .rsvp-form .submit-btn:hover {
+        cursor: pointer;
+        background-color: #90a7ad; }
+
+#footer {
+  background: #90a7ad;
+  padding-top: 2rem;
+  padding-bottom: 1rem; }
+  #footer .wrap-text span {
+    font-size: 24px;
+    color: #c8d6d9; }
+  #footer .wrap-text h2 {
+    margin: 0;
+    line-height: 1; }
+  #footer .copyright {
+    margin-top: 3rem;
+    color: #c8d6d9;
+    font-size: 14px; }
+    #footer .copyright a {
+      font-size: 14px;
+      color: #ddd;
+      transition: color 0.3s ease; }
+      #footer .copyright a:hover {
+        color: #ffffff; }
 
 /*# sourceMappingURL=main.css.map */

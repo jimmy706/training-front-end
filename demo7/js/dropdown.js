@@ -4,6 +4,7 @@ var dropdownToogles = Array.from(
 var dropdowns = Array.from(document.getElementsByClassName("dropdown-menu"));
 
 dropdownToogles.forEach(toggle => {
+  toggle.classList.add("on-close");
   toggle.addEventListener("click", function() {
     var target = this.dataset["target"];
     if (target) {
@@ -16,7 +17,10 @@ dropdownToogles.forEach(toggle => {
           targetHeight += node.offsetHeight;
         });
         dropdownTarget.style.height = `${targetHeight}px`;
+        this.classList.add("on-open");
       } else {
+        this.classList.remove("on-open");
+        this.classList.add("on-close");
         dropdownTarget.style.height = 0;
         setTimeout(function() {
           dropdownTarget.classList.remove("open");
