@@ -1,0 +1,149 @@
+html {
+  font-size: 14px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.57;
+  font-family: "Karla";
+  color: $dark;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: #4c4c4c;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+button {
+  border: 0;
+}
+
+button:focus,
+button:active,
+input:active,
+input:focus,
+textarea:active,
+textarea:focus,
+option:active,
+option:focus,
+select:active,
+select:focus {
+  outline: none;
+}
+
+button[disabled],
+input[disabled] {
+  cursor: default;
+}
+
+select {
+  font-family: inherit;
+}
+
+textarea {
+  resize: vertical;
+  font-family: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 3.75rem;
+  margin-top: 0rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+}
+
+h2 {
+  font-size: 2.625rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+h3 {
+  font-size: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+h5 {
+  font-size: 1rem;
+  margin-top: 0;
+  margin-bottom: 0.8rem;
+}
+
+h6 {
+  font-size: 0.8rem;
+  margin-top: 0;
+  margin-bottom: 0.8rem;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1rem;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+li {
+  display: inline-block;
+}
+
+.clean {
+  clear: both;
+}
+
+iframe {
+  border: 0;
+}
