@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: 1.5fr 1fr;
   .page-content {
-    padding: 4rem;
+    padding: 4rem 0;
   }
   .questions {
     margin-top: 5rem;
@@ -38,6 +38,15 @@
       span {
         color: $danger;
       }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #details {
+    grid-template-columns: 1fr;
+    .map-wrapper {
+      height: 700px;
     }
   }
 }

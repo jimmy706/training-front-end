@@ -69,3 +69,38 @@
     }
   }
 }
+
+@media screen and (max-width: 1024px) {
+  #story {
+    .story-item {
+      width: 90%;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #story {
+    .story-item {
+      width: 100%;
+      flex-direction: column;
+      justify-content: center;
+      .img-wrapper {
+        margin: 1.5rem auto;
+      }
+      .story-content {
+        text-align: center;
+        width: 100%;
+        .story-header {
+          justify-content: center;
+          &::before {
+            left: 50%;
+            transform: translateX(-50%);
+          }
+        }
+      }
+    }
+    .banner {
+      height: 500px;
+    }
+  }
+}

@@ -50,8 +50,12 @@ button[disabled],
 input[disabled] {
   cursor: default; }
 
+select {
+  font-family: inherit; }
+
 textarea {
-  resize: vertical; }
+  resize: vertical;
+  font-family: inherit; }
 
 h1,
 h2,
@@ -129,7 +133,7 @@ iframe {
 .main-content {
   position: relative;
   z-index: 10;
-  margin-top: 580px;
+  margin-top: calc(100vh - 140px);
   background-color: #ffffff; }
 
 .container {
@@ -149,6 +153,17 @@ iframe {
   padding-top: 6rem;
   padding-bottom: 6rem; }
 
+@media screen and (max-width: 1200px) {
+  .main-content {
+    margin-top: 0; } }
+@media screen and (max-width: 768px) {
+  .container {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem; } }
+@media screen and (max-width: 425px) {
+  .container {
+    padding-left: 1.8rem;
+    padding-right: 1.8rem; } }
 .f-left {
   float: left; }
 
@@ -200,6 +215,12 @@ iframe {
       left: 0%;
       transform: unset; }
 
+@media screen and (max-width: 1024px) {
+  .intro-wrapper {
+    width: 80%; } }
+@media screen and (max-width: 768px) {
+  .intro-wrapper {
+    width: 100%; } }
 .btn-action {
   font-size: 14px;
   padding: 0.8em 2em;
@@ -235,6 +256,9 @@ iframe {
   #top-btn.block {
     display: block; }
 
+@media screen and (max-width: 768px) {
+  #top-btn {
+    bottom: 15px; } }
 .card .img-wrapper {
   position: relative;
   width: 100%; }
@@ -258,13 +282,26 @@ iframe {
   position: sticky;
   top: 0;
   background: #90a7ad;
-  padding: 0 2rem;
   z-index: 99;
   box-shadow: 0 1px 5px 0px rgba(0, 0, 0, 0.1); }
+  .header .mb-wrapper {
+    display: none; }
+  .header .bar-btn {
+    display: none;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 1.2rem; }
+  .header .logo-wrapper {
+    display: block;
+    width: 340px; }
+    .header .logo-wrapper img {
+      width: 100%;
+      height: auto; }
   .header .header__nav {
     display: flex;
     justify-content: space-around;
-    align-items: center; }
+    align-items: center;
+    padding: 0 2rem; }
     .header .header__nav .nav-link {
       display: block;
       padding: 56px 20px;
@@ -276,7 +313,38 @@ iframe {
         color: #ffffff; }
       .header .header__nav .nav-link.active {
         color: #ffffff; }
+  .header #header__nav-mb .nav-list {
+    display: flex;
+    flex-direction: column; }
+    .header #header__nav-mb .nav-list .nav-item {
+      display: block; }
+      .header #header__nav-mb .nav-list .nav-item .nav-link {
+        color: #ffffff;
+        padding: 0.8rem 1rem;
+        border-top: 1px solid rgba(223, 223, 223, 0.459);
+        display: block;
+        background-color: #90a7ad;
+        transition: background-color 0.3s ease;
+        font-size: 12px; }
+        .header #header__nav-mb .nav-list .nav-item .nav-link.active {
+          background-color: #97acb1; }
+        .header #header__nav-mb .nav-list .nav-item .nav-link:hover {
+          background-color: #97acb1; }
 
+@media screen and (max-width: 1200px) {
+  .header {
+    position: relative; }
+    .header .mb-wrapper {
+      display: block; }
+    .header .logo-wrapper {
+      width: 260px; }
+    .header .bar-btn {
+      display: block; }
+    .header .header__nav {
+      padding: 1rem 2rem;
+      justify-content: space-between; }
+      .header .header__nav .nav-list {
+        display: none; } }
 .header-banner {
   position: fixed;
   width: 100%;
@@ -287,7 +355,7 @@ iframe {
   background: url("../images/home_slider.webp") no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
-  height: 580px; }
+  height: calc(100vh - 140px); }
   .header-banner .banner-content {
     width: 100%;
     position: absolute;
@@ -297,6 +365,14 @@ iframe {
     padding: 0 2rem;
     box-sizing: border-box; }
 
+@media screen and (max-width: 1200px) {
+  .header-banner {
+    position: relative;
+    height: calc(100vh - 106px);
+    background-attachment: scroll; } }
+@media screen and (max-width: 768px) {
+  .header-banner .banner-content h1 {
+    font-size: 10vw; } }
 #invite .invite-desc {
   margin-top: 4rem;
   margin-left: auto;
@@ -326,6 +402,9 @@ iframe {
     background: url("../images/Parallax_image_01-1.jpg") no-repeat center center;
     background-size: cover; }
 
+@media screen and (max-width: 768px) {
+  #invite .invite-desc {
+    width: 100%; } }
 #timings .timeline {
   width: 65.66%;
   margin: 6rem auto 0 auto;
@@ -352,7 +431,10 @@ iframe {
     #timings .timeline .dot .card {
       width: 40%;
       box-shadow: 0 2px 0 0 #ebeaea;
-      position: relative; }
+      position: relative;
+      background-color: #ffffff;
+      position: relative;
+      z-index: 30; }
       #timings .timeline .dot .card.left::after {
         content: "";
         position: absolute;
@@ -401,7 +483,8 @@ iframe {
         border: 1px solid #ebeaea;
         font-size: 20px; }
       #timings .timeline .dot .card .time-text {
-        transition: color 0.3s ease; }
+        transition: color 0.3s ease;
+        line-height: 1.2; }
         #timings .timeline .dot .card .time-text:hover {
           color: #90a7ad; }
   #timings .timeline .line-wrapper {
@@ -450,16 +533,40 @@ iframe {
 #timings .countdown-wrapper {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  color: #ffffff; }
+  color: #ffffff;
+  grid-gap: 0.5rem; }
   #timings .countdown-wrapper .unit-wrapper {
     background-color: #ffffff;
     padding: 0.8rem 1.2rem;
     line-height: 1;
     border-radius: 5px;
     color: #7e8890;
-    margin: 0 0.5rem;
     font-size: 18px; }
 
+@media screen and (max-width: 950px) {
+  #timings .banner {
+    flex-direction: column; }
+  #timings .countdown-wrapper {
+    margin: 1.5rem 0; } }
+@media screen and (max-width: 768px) {
+  #timings .timeline {
+    width: 100%; }
+    #timings .timeline .dot .card {
+      width: 45%; } }
+@media screen and (max-width: 670px) {
+  #timings .timeline .line-wrapper {
+    z-index: -1; }
+  #timings .timeline .dot {
+    flex-direction: column;
+    padding: 0; }
+    #timings .timeline .dot .card {
+      width: 100%;
+      margin-bottom: 2rem; }
+  #timings .countdown-wrapper {
+    grid-template-columns: repeat(2, 1fr); } }
+@media screen and (max-width: 400px) {
+  #timings .countdown-wrapper {
+    grid-template-columns: 1fr; } }
 #venue {
   background-color: #90a7ad; }
   #venue .containt {
@@ -477,6 +584,11 @@ iframe {
         #venue .containt .content .section-title::before {
           background-color: #ffffff; }
 
+@media screen and (max-width: 850px) {
+  #venue .containt {
+    grid-template-columns: 1fr; }
+    #venue .containt .img-wrapper {
+      height: 500px; } }
 #story .story-item {
   display: flex;
   width: 65%;
@@ -534,6 +646,26 @@ iframe {
     left: 0;
     position: absolute; }
 
+@media screen and (max-width: 1024px) {
+  #story .story-item {
+    width: 90%; } }
+@media screen and (max-width: 768px) {
+  #story .story-item {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center; }
+    #story .story-item .img-wrapper {
+      margin: 1.5rem auto; }
+    #story .story-item .story-content {
+      text-align: center;
+      width: 100%; }
+      #story .story-item .story-content .story-header {
+        justify-content: center; }
+        #story .story-item .story-content .story-header::before {
+          left: 50%;
+          transform: translateX(-50%); }
+  #story .banner {
+    height: 500px; } }
 #gallery .gallery-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -588,11 +720,21 @@ iframe {
     position: absolute;
     background-attachment: fixed; }
 
+@media screen and (max-width: 768px) {
+  #gallery .gallery-grid {
+    grid-template-columns: repeat(2, 1fr); }
+  #gallery .quotes {
+    flex-direction: column; }
+  #gallery .banner {
+    height: 400px; } }
+@media screen and (max-width: 500px) {
+  #gallery .gallery-grid {
+    grid-template-columns: 1fr; } }
 #details {
   display: grid;
   grid-template-columns: 1.5fr 1fr; }
   #details .page-content {
-    padding: 4rem; }
+    padding: 4rem 0; }
   #details .questions {
     margin-top: 5rem; }
   #details .question-wrapper {
@@ -616,6 +758,11 @@ iframe {
       #details .question-wrapper .question span {
         color: #b9665e; }
 
+@media screen and (max-width: 768px) {
+  #details {
+    grid-template-columns: 1fr; }
+    #details .map-wrapper {
+      height: 700px; } }
 #rsvp {
   background: url("../images/rsvp_bg.webp") no-repeat center center;
   background-size: cover; }
@@ -629,20 +776,24 @@ iframe {
     margin: 2rem auto;
     background: #ffffff;
     box-sizing: border-box;
-    padding: 1rem 2rem; }
+    padding: 2rem; }
     #rsvp .rsvp-form .form-group {
       margin-bottom: 1.5rem;
       position: relative; }
       #rsvp .rsvp-form .form-group .icon-wrapper {
         position: absolute;
         right: 0;
-        top: 0;
+        top: 1px;
         width: 48px;
-        height: 48px;
-        line-height: 48px;
-        text-align: center;
+        height: calc(100% - 2px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
         font-size: 13px;
         border: 1px solid #a9a9a9;
+        border-bottom: 0;
+        border-top: 0;
+        box-sizing: border-box;
         background-color: #ffffff; }
       #rsvp .rsvp-form .form-group .form-control, #rsvp .rsvp-form .form-group textarea {
         display: block;
@@ -652,10 +803,15 @@ iframe {
         padding: 1rem 0.5rem;
         box-sizing: border-box;
         color: #a9a9a9; }
+        #rsvp .rsvp-form .form-group .form-control::placeholder, #rsvp .rsvp-form .form-group textarea::placeholder {
+          color: #a9a9a9;
+          font-family: "Merriweather"; }
       #rsvp .rsvp-form .form-group textarea {
         padding: 0.2rem 0.5rem;
         resize: vertical;
         height: 150px; }
+      #rsvp .rsvp-form .form-group #attend {
+        background-color: #ffffff; }
     #rsvp .rsvp-form .submit-btn {
       width: 100%;
       padding: 1rem 0;
@@ -671,6 +827,12 @@ iframe {
         cursor: pointer;
         background-color: #90a7ad; }
 
+@media screen and (max-width: 768px) {
+  #rsvp .rsvp-form {
+    width: 100%; } }
+@media screen and (max-width: 400px) {
+  #rsvp .rsvp-form {
+    padding: 1rem; } }
 #footer {
   background: #90a7ad;
   padding-top: 2rem;

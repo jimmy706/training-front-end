@@ -1,7 +1,7 @@
 .main-content {
   position: relative;
   z-index: 10;
-  margin-top: 580px;
+  margin-top: calc(100vh - 140px);
   background-color: $white;
 }
 
@@ -24,4 +24,24 @@
 .section-p {
   padding-top: 6rem;
   padding-bottom: 6rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .main-content {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .container {
+    padding-left: 1.8rem;
+    padding-right: 1.8rem;
+  }
 }

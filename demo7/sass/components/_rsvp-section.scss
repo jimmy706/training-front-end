@@ -13,7 +13,7 @@
     margin: 2rem auto;
     background: $white;
     box-sizing: border-box;
-    padding: 1rem 2rem;
+    padding: 2rem;
 
     .form-group {
       margin-bottom: 1.5rem;
@@ -21,13 +21,17 @@
       .icon-wrapper {
         position: absolute;
         right: 0;
-        top: 0;
+        top: 1px;
         width: 48px;
-        height: 48px;
-        line-height: 48px;
-        text-align: center;
+        height: calc(100% - 2px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
         font-size: 13px;
         border: 1px solid #a9a9a9;
+        border-bottom: 0;
+        border-top: 0;
+        box-sizing: border-box;
         background-color: $white;
       }
       .form-control {
@@ -38,12 +42,20 @@
         padding: 1rem 0.5rem;
         box-sizing: border-box;
         color: #a9a9a9;
+        &::placeholder {
+          color: #a9a9a9;
+          font-family: "Merriweather";
+        }
       }
+
       textarea {
         @extend .form-control;
         padding: 0.2rem 0.5rem;
         resize: vertical;
         height: 150px;
+      }
+      #attend {
+        background-color: $white;
       }
     }
     .submit-btn {
@@ -61,6 +73,22 @@
         cursor: pointer;
         background-color: $primary;
       }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #rsvp {
+    .rsvp-form {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #rsvp {
+    .rsvp-form {
+      padding: 1rem;
     }
   }
 }

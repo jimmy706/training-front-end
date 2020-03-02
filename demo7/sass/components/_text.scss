@@ -54,3 +54,15 @@
     }
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .intro-wrapper {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .intro-wrapper {
+    width: 100%;
+  }
+}

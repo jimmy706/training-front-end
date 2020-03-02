@@ -28,6 +28,9 @@
         width: 40%;
         box-shadow: 0 2px 0 0 $light;
         position: relative;
+        background-color: $white;
+        position: relative;
+        z-index: 30;
         &.left::after {
           content: "";
           position: absolute;
@@ -89,6 +92,7 @@
         }
         .time-text {
           transition: color 0.3s ease;
+          line-height: 1.2;
           &:hover {
             color: $primary;
           }
@@ -150,14 +154,67 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     color: $white;
+    grid-gap: 0.5rem;
     .unit-wrapper {
       background-color: $white;
       padding: 0.8rem 1.2rem;
       line-height: 1;
       border-radius: 5px;
       color: #7e8890;
-      margin: 0 0.5rem;
       font-size: 18px;
+    }
+  }
+}
+
+@media screen and (max-width: 950px) {
+  #timings {
+    .banner {
+      flex-direction: column;
+    }
+    .countdown-wrapper {
+      margin: 1.5rem 0;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #timings {
+    .timeline {
+      width: 100%;
+      .dot {
+        .card {
+          width: 45%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 670px) {
+  #timings {
+    .timeline {
+      .line-wrapper {
+        z-index: -1;
+      }
+      .dot {
+        flex-direction: column;
+        padding: 0;
+        .card {
+          width: 100%;
+          margin-bottom: 2rem;
+        }
+      }
+    }
+    .countdown-wrapper {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #timings {
+    .countdown-wrapper {
+      grid-template-columns: 1fr;
     }
   }
 }

@@ -59,7 +59,40 @@
               <a href="#rsvp" class="nav-link">RSVP</a>
             </li>
           </ul>
+          <span class="dropdown-toogle bar-btn" data-target="#header__nav-mb">
+            <i class="fas fa-bars"></i>
+          </span>
         </nav>
+        <div class="mb-wrapper">
+          <nav id="header__nav-mb" class="dropdown-menu">
+            <ul class="nav-list">
+              <li class="nav-item ">
+                <a href="#home" class="nav-link active">HOME</a>
+              </li>
+              <li class="nav-item ">
+                <a href="#invite" class="nav-link">INVITE</a>
+              </li>
+              <li class="nav-item ">
+                <a href="#timings" class="nav-link">TIMINGS</a>
+              </li>
+              <li class="nav-item ">
+                <a href="#venue" class="nav-link">VENUE</a>
+              </li>
+              <li class="nav-item active">
+                <a href="#story" class="nav-link">STORY</a>
+              </li>
+              <li class="nav-item ">
+                <a href="#gallery" class="nav-link">GALLERY</a>
+              </li>
+              <li class="nav-item ">
+                <a href="#details" class="nav-link">DETAILS</a>
+              </li>
+              <li class="nav-item ">
+                <a href="#rsvp" class="nav-link">RSVP</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </header>
 
       <section id="invite" class="page-section">
@@ -120,10 +153,7 @@
                 <li class="time-item card left">
                   <div class="img-wrapper">
                     <a href="javascript:void(0)" class="overlay-link"></a>
-                    <img
-                      src="images/timeline_01-400x267.jpg"
-                      alt="timeline_01-400x267"
-                    />
+                    <img src="images/timeline_01.webp" alt="timeline_01" />
                     <div class="overlay">
                       <a href="javascript:void(0)" class="link-btn">
                         <i class="fas fa-link"></i>
@@ -143,10 +173,7 @@
                 <li class="time-item card right">
                   <div class="img-wrapper">
                     <a href="javascript:void(0)" class="overlay-link"></a>
-                    <img
-                      src="images/timeline_02-400x267.jpg"
-                      alt="timeline_02-400x267"
-                    />
+                    <img src="images/timeline_02.jpg" alt="timeline_02" />
                     <div class="overlay">
                       <a href="javascript:void(0)" class="link-btn">
                         <i class="fas fa-link"></i>
@@ -187,10 +214,7 @@
                 <li class="time-item card right">
                   <div class="img-wrapper">
                     <a href="javascript:void(0)" class="overlay-link"></a>
-                    <img
-                      src="images/timeline_04-200x133.jpg"
-                      alt="timeline_04-200x133"
-                    />
+                    <img src="images/timeline_04.webp" alt="timeline_04" />
                     <div class="overlay">
                       <a href="javascript:void(0)" class="link-btn">
                         <i class="fas fa-link"></i>
@@ -219,19 +243,19 @@
             </div>
             <div class="countdown-wrapper">
               <div class=" unit-wrapper">
-                <span class="num">132</span>
+                <span class="num" id="day-left">132</span>
                 <span class="unit">Days</span>
               </div>
               <div class=" unit-wrapper">
-                <span class="num">10</span>
+                <span class="num" id="hour-left">10</span>
                 <span class="unit">Hours</span>
               </div>
               <div class=" unit-wrapper">
-                <span class="num">01</span>
+                <span class="num" id="min-left">01</span>
                 <span class="unit">Min</span>
               </div>
               <div class=" unit-wrapper">
-                <span class="num">00</span>
+                <span class="num" id="sec-left">00</span>
                 <span class="unit">Sec</span>
               </div>
             </div>
@@ -464,98 +488,100 @@
 
       <section class="page-section" id="details">
         <div class="page-content">
-          <img src="./images/rose.webp" alt="rose" />
-          <h2 class="section-title title-left">
-            Fine Details
-          </h2>
-          <em>
-            Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-            cupidatat non proident.
-          </em>
-          <ul class="questions">
-            <li class="dropdown-toogle question-wrapper" data-target="#ans-1">
-              <div class="question">
-                <i class="fas fa-minus-square minus-icon"></i>
-                <i class="fas fa-plus-square plus-icon"></i>
-                <span>Are children welcome?</span>
-              </div>
-              <div class="dropdown-menu ans" id="ans-1">
-                <p>
-                  Duis aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                  occaecat cupidatat non proident, sunt in culpa qui officia
-                  deserunt mollit anim id est laborum.
-                </p>
-              </div>
-            </li>
-            <li class="dropdown-toogle question-wrapper" data-target="#ans-2">
-              <div class="question">
-                <i class="fas fa-minus-square minus-icon"></i>
-                <i class="fas fa-plus-square plus-icon"></i>
-                <span>Should i get you a gift?</span>
-              </div>
-              <div class="dropdown-menu ans" id="ans-2">
-                <p>
-                  Duis aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                  occaecat cupidatat non proident, sunt in culpa qui officia
-                  deserunt mollit anim id est laborum.
-                </p>
-              </div>
-            </li>
-            <li class="dropdown-toogle question-wrapper" data-target="#ans-3">
-              <div class="question">
-                <i class="fas fa-minus-square minus-icon"></i>
-                <i class="fas fa-plus-square plus-icon"></i>
-                <span>Will vegetarian meals be served?</span>
-              </div>
-              <div class="dropdown-menu ans" id="ans-3">
-                <p>
-                  Duis aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                  occaecat cupidatat non proident, sunt in culpa qui officia
-                  deserunt mollit anim id est laborum.
-                </p>
-              </div>
-            </li>
-            <li class="dropdown-toogle question-wrapper" data-target="#ans-4">
-              <div class="question">
-                <i class="fas fa-minus-square minus-icon"></i>
-                <i class="fas fa-plus-square plus-icon"></i>
-                <span>What time is reception?</span>
-              </div>
-              <div class="dropdown-menu ans" id="ans-4">
-                <p>
-                  Duis aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                  occaecat cupidatat non proident, sunt in culpa qui officia
-                  deserunt mollit anim id est laborum.
-                </p>
-              </div>
-            </li>
-            <li class="dropdown-toogle question-wrapper" data-target="#ans-5">
-              <div class="question">
-                <i class="fas fa-minus-square minus-icon"></i>
-                <i class="fas fa-plus-square plus-icon"></i>
-                <span>Is there a dress code?</span>
-              </div>
-              <div class="dropdown-menu ans" id="ans-5">
-                <p>
-                  Duis aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                  occaecat cupidatat non proident, sunt in culpa qui officia
-                  deserunt mollit anim id est laborum.
-                </p>
-              </div>
-            </li>
-          </ul>
+          <div class="container">
+            <img src="./images/rose.webp" alt="rose" />
+            <h2 class="section-title title-left">
+              Fine Details
+            </h2>
+            <em>
+              Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+              cupidatat non proident.
+            </em>
+            <ul class="questions">
+              <li class="dropdown-toogle question-wrapper" data-target="#ans-1">
+                <div class="question">
+                  <i class="fas fa-minus-square minus-icon"></i>
+                  <i class="fas fa-plus-square plus-icon"></i>
+                  <span>Are children welcome?</span>
+                </div>
+                <div class="dropdown-menu ans" id="ans-1">
+                  <p>
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.
+                  </p>
+                </div>
+              </li>
+              <li class="dropdown-toogle question-wrapper" data-target="#ans-2">
+                <div class="question">
+                  <i class="fas fa-minus-square minus-icon"></i>
+                  <i class="fas fa-plus-square plus-icon"></i>
+                  <span>Should i get you a gift?</span>
+                </div>
+                <div class="dropdown-menu ans" id="ans-2">
+                  <p>
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.
+                  </p>
+                </div>
+              </li>
+              <li class="dropdown-toogle question-wrapper" data-target="#ans-3">
+                <div class="question">
+                  <i class="fas fa-minus-square minus-icon"></i>
+                  <i class="fas fa-plus-square plus-icon"></i>
+                  <span>Will vegetarian meals be served?</span>
+                </div>
+                <div class="dropdown-menu ans" id="ans-3">
+                  <p>
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.
+                  </p>
+                </div>
+              </li>
+              <li class="dropdown-toogle question-wrapper" data-target="#ans-4">
+                <div class="question">
+                  <i class="fas fa-minus-square minus-icon"></i>
+                  <i class="fas fa-plus-square plus-icon"></i>
+                  <span>What time is reception?</span>
+                </div>
+                <div class="dropdown-menu ans" id="ans-4">
+                  <p>
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.
+                  </p>
+                </div>
+              </li>
+              <li class="dropdown-toogle question-wrapper" data-target="#ans-5">
+                <div class="question">
+                  <i class="fas fa-minus-square minus-icon"></i>
+                  <i class="fas fa-plus-square plus-icon"></i>
+                  <span>Is there a dress code?</span>
+                </div>
+                <div class="dropdown-menu ans" id="ans-5">
+                  <p>
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="map-wrapper">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2469.988268792266!2d-1.259431784333372!3d51.75153807967601!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876c6afed5e2e93%3A0xb6c8d8b783546a4a!2sOxford%20Town%20Hall!5e0!3m2!1sen!2s!4v1583028560932!5m2!1sen!2s"
             width="100%"
-            height="900"
+            height="100%"
             frameborder="0"
             style="border:0;"
             allowfullscreen=""
@@ -647,5 +673,6 @@
 
     <script src="js/scroll.js"></script>
     <script src="js/dropdown.js"></script>
+    <script src="js/countdown.js"></script>
   </body>
 </html>

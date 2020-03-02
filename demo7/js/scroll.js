@@ -1,6 +1,4 @@
-var headerLinks = Array.from(
-  document.querySelectorAll("#header .header__nav .nav-link")
-);
+var headerLinks = Array.from(document.querySelectorAll("#header .nav-link"));
 
 var sections = Array.from(document.getElementsByClassName("page-section"));
 var topBtn = document.getElementById("top-btn");

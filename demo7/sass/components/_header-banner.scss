@@ -8,7 +8,7 @@
   background: url("../images/home_slider.webp") no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
-  height: 580px;
+  height: calc(100vh - 140px);
   .banner-content {
     width: 100%;
     position: absolute;
@@ -17,5 +17,23 @@
     transform: translateY(-50%);
     padding: 0 2rem;
     box-sizing: border-box;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .header-banner {
+    position: relative;
+    height: calc(100vh - 106px);
+    background-attachment: scroll;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header-banner {
+    .banner-content {
+      h1 {
+        font-size: 10vw;
+      }
+    }
   }
 }

@@ -56,8 +56,13 @@ input[disabled] {
   cursor: default;
 }
 
+select {
+  font-family: inherit;
+}
+
 textarea {
   resize: vertical;
+  font-family: inherit;
 }
 
 h1,
