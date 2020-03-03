@@ -1,0 +1,20 @@
+.interact-link {
+  position: relative;
+  padding-bottom: 0.2rem;
+  &:hover::before {
+    transform: scale(1);
+    transform-origin: left;
+  }
+  &::before {
+    content: "";
+    transition: transform 0.3s ease;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background: #dddddd;
+    left: 0;
+    transform-origin: right;
+    transform: scale(0);
+  }
+}

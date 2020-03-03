@@ -4,5 +4,15 @@
 
 @import "./base/variables";
 @import "./base/reset";
+@import "./base/extends";
+@import "./base/animation";
 
+@import "./layouts/container";
+
+@import "./components/text";
+@import "./components/badge";
+@import "./components/buttons";
 @import "./components/header";
+@import "./components/dropdown";
+@import "./components/search-wrapper";
+@import "./components/form";

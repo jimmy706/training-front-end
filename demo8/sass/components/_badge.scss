@@ -1,0 +1,36 @@
+.badge-container {
+  position: relative;
+  .badge-text {
+    position: absolute;
+    z-index: 20;
+    color: $white;
+    background-color: $dark;
+    padding: 3px 6px;
+    font-size: 8px;
+    line-height: 1;
+    top: 20px;
+    right: -5px;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 70%;
+      left: 20%;
+      transform: translateX(-50%);
+      border: transparent 5px solid;
+      border-left-color: $dark;
+      z-index: -1;
+    }
+    &.danger-badge {
+      background-color: $danger;
+      &::before {
+        border-left-color: $danger;
+      }
+    }
+    &.primary-badge {
+      background-color: $primary;
+      &::before {
+        border-left-color: $primary;
+      }
+    }
+  }
+}

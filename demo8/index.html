@@ -3,12 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css"
     />
     <link rel="stylesheet" href="./css/main.css" />
-    <title>Document</title>
+    <title>Basel</title>
   </head>
   <body>
     <header id="header">
@@ -37,17 +38,264 @@
           </li>
         </ul>
       </div>
-      <nav class="header__nav">
+      <nav class="header__nav" id="header__nav">
         <ul class="nav-list">
           <li class="nav-item active">
             <a href="javascript:void(0)" class="nav-link">
               HOME
             </a>
           </li>
-          <li class="nav-item dropdown-item">
-            <a href="javascript:void(0)" class="nav-link">
-              SHOP
+          <li class="nav-item dropdown-handle">
+            <a href="javascript:void(0)" class="nav-link badge-container">
+              SHOP <i class="fas fa-chevron-down"></i>
+              <span class="badge-text danger-badge">SALE</span>
             </a>
+            <div class="dropdown-content fullwidth-dropdown">
+              <div class="grid container">
+                <div class="shop-content">
+                  <div class="content-wrapper">
+                    <strong>
+                      <a href="javascript:void(0)" class="nav-link">
+                        SHOP STYLE
+                      </a>
+                    </strong>
+                    <ul>
+                      <li>
+                        <a href="javascript:void(0)" class="nav-link">
+                          Masory grid
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)" class="nav-link">
+                          Alternative shop
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)" class="nav-link">
+                          Default style
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)" class="nav-link">
+                          Lorem ipsum
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)" class="nav-link">
+                          Tellus elementum
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)" class="nav-link">
+                          Molestie ac
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)" class="nav-link">
+                          Cras semper
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)" class="nav-link">
+                          Habitasse platea
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)" class="nav-link">
+                          Vestibulum lectus
+                        </a>
+                      </li>
+                    </ul>
+                    <div class="content-footer">
+                      <strong class="service-title">
+                        <i class="fas fa-truck"></i> FREE SHIPPING
+                      </strong>
+                      <p>Free for $50+ orders</p>
+                    </div>
+                  </div>
+                  <div class="content-wrapper">
+                    <strong>
+                      <a href="javascript:void(0)" class="nav-link">
+                        SHOP STYLE
+                      </a>
+                    </strong>
+                    <ul>
+                      <li>
+                        <a href="javascript:void(0)" class="nav-link">
+                          Masory grid
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)" class="nav-link">
+                          Alternative shop
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)" class="nav-link">
+                          Default style
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)" class="nav-link">
+                          Lorem ipsum
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)" class="nav-link">
+                          Tellus elementum
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)" class="nav-link">
+                          Molestie ac
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)" class="nav-link">
+                          Cras semper
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)" class="nav-link">
+                          Habitasse platea
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)" class="nav-link">
+                          Vestibulum lectus
+                        </a>
+                      </li>
+                    </ul>
+                    <div class="content-footer">
+                      <strong class="service-title">
+                        <i class="fas fa-phone"></i> BUYER SUPPORT
+                      </strong>
+                      <p>Contact us 24/7</p>
+                    </div>
+                  </div>
+                  <div class="content-wrapper">
+                    <strong>
+                      <a href="javascript:void(0)" class="nav-link">
+                        SHOP STYLE
+                      </a>
+                    </strong>
+                    <ul>
+                      <li>
+                        <a href="javascript:void(0)" class="nav-link">
+                          Masory grid
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)" class="nav-link">
+                          Alternative shop
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)" class="nav-link">
+                          Default style
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)" class="nav-link">
+                          Lorem ipsum
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)" class="nav-link">
+                          Tellus elementum
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)" class="nav-link">
+                          Molestie ac
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)" class="nav-link">
+                          Cras semper
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)" class="nav-link">
+                          Habitasse platea
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)" class="nav-link">
+                          Vestibulum lectus
+                        </a>
+                      </li>
+                    </ul>
+                    <div class="content-footer">
+                      <strong class="service-title">
+                        <i class="fas fa-lock"></i> TOTAL SECURITY
+                      </strong>
+                      <p>Secure checkout</p>
+                    </div>
+                  </div>
+                  <div class="content-wrapper">
+                    <strong>
+                      <a href="javascript:void(0)" class="nav-link">
+                        SHOP STYLE
+                      </a>
+                    </strong>
+                    <ul>
+                      <li>
+                        <a href="javascript:void(0)" class="nav-link">
+                          Masory grid
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)" class="nav-link">
+                          Alternative shop
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)" class="nav-link">
+                          Default style
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)" class="nav-link">
+                          Lorem ipsum
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)" class="nav-link">
+                          Tellus elementum
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)" class="nav-link">
+                          Molestie ac
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)" class="nav-link">
+                          Cras semper
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)" class="nav-link">
+                          Habitasse platea
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)" class="nav-link">
+                          Vestibulum lectus
+                        </a>
+                      </li>
+                    </ul>
+                    <div class="content-footer">
+                      <strong class="service-title">
+                        <i class="fas fa-reply"></i> RETURN POLICY
+                      </strong>
+                      <p>14 days ago</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </li>
           <li class="nav-item">
             <a href="javascript:void(0)" class="nav-link">
@@ -69,18 +317,40 @@
           <img src="./images/logo-basel.svg" alt="logo-basel" />
         </a>
         <div class="header-interact">
-          <a href="javascript:void(0)" class="login-btn">
-            Login/Register
-          </a>
+          <em class="login-btn">
+            <a href="javascript:void(0)">
+              Login/Register
+            </a>
+          </em>
           <ul class="icon-list">
             <li>
-              <a href="javascript:void(0)">
+              <a
+                href="javascript:void(0)"
+                id="search-toggle"
+                class="search-toggle"
+              >
                 <i class="fas fa-search"></i>
               </a>
+              <div class="search-overlap" id="search-wrapper">
+                <div class="container">
+                  <form>
+                    <div class="form-group">
+                      <input
+                        class="form-control search-input lora"
+                        type="text"
+                        placeholder="Search for products"
+                      />
+                      <span class="close-btn"></span>
+                    </div>
+                  </form>
+                </div>
+              </div>
             </li>
             <li>
               <a href="javascript:void(0)" class="fav-icon">
-                <i class="far fa-heart"></i>
+                <span class="badge">
+                  0
+                </span>
               </a>
             </li>
             <li>
@@ -94,5 +364,9 @@
         </div>
       </nav>
     </header>
+
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script src="js/search-toggle.js"></script>
+    <script src="js/modal.js"></script>
   </body>
 </html>
