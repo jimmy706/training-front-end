@@ -1,0 +1,111 @@
+.login-sidebar {
+  box-sizing: border-box;
+  width: 340px;
+  .sidebar-header {
+    padding: 2rem 1.5rem;
+    background-color: $black;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 1;
+    box-sizing: border-box;
+    .sidebar-title {
+      margin: 0;
+    }
+    .close {
+      cursor: pointer;
+      position: relative;
+      margin-right: 25px;
+      &::before {
+        content: "";
+        width: 20px;
+        height: 2px;
+        background-color: $white;
+        right: -25px;
+        top: 50%;
+        transition: transform 0.3s ease;
+        position: absolute;
+      }
+      &::after {
+        content: "";
+        width: 20px;
+        height: 2px;
+        background-color: $white;
+        right: -25px;
+        top: 50%;
+        transition: transform 0.3s ease;
+        position: absolute;
+      }
+      &:hover {
+        &::before {
+          transform: rotate(45deg);
+        }
+        &::after {
+          transform: rotate(-45deg);
+        }
+      }
+    }
+  }
+
+  .sidebar-body {
+    padding: 1rem 1.5rem 0 1.5rem;
+    .login-form {
+      .form-control {
+        padding: 1.4rem 1rem;
+        border: 1px solid #ddd;
+        &:focus {
+          border: 1px solid #333;
+        }
+      }
+    }
+    .space-title {
+      position: relative;
+      text-align: center;
+      font-weight: 600;
+      color: $black;
+      margin: 1.2rem 0;
+      span {
+        padding: 0 1rem;
+        position: relative;
+        z-index: 30;
+        background-color: $white;
+      }
+      &::before {
+        content: "";
+        width: 100%;
+        background-color: #ddd;
+        height: 1px;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        position: absolute;
+        z-index: 20;
+      }
+    }
+  }
+  .sidebar-footer {
+    padding: 0 1.5rem;
+    hr {
+      margin-top: 1rem;
+      margin-bottom: 1.5rem;
+    }
+    .user-icon {
+      display: block;
+      font-size: 50px;
+      color: #ddd;
+      margin-bottom: 1rem;
+    }
+    .create-acc-link {
+      color: #3e3e3e;
+      transition: color 0.3s ease;
+      margin-top: 1rem;
+      text-decoration: underline;
+      display: block;
+      &:hover {
+        color: #292929;
+        text-decoration: underline;
+      }
+    }
+  }
+}

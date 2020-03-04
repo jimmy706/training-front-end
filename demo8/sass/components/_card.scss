@@ -1,0 +1,88 @@
+.product-card {
+  .card-header {
+    position: relative;
+    overflow: hidden;
+    &:hover {
+      .img-wrapper {
+        opacity: 0;
+        visibility: hidden;
+      }
+      .hover-img {
+        opacity: 1;
+        visibility: visible;
+      }
+      .quickshop-btn {
+        transform: translateY(0);
+      }
+    }
+    .img-wrapper {
+      width: 100%;
+      height: 350px;
+      display: block;
+      transition: all 0.3s ease-in;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .hover-img {
+      opacity: 0;
+      visibility: hidden;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      transition: all 0.3s ease-in;
+    }
+    .interact-list {
+      position: absolute;
+      z-index: 15;
+      top: 10px;
+      right: 15px;
+      li {
+        margin: 0;
+        margin-bottom: 1rem;
+      }
+    }
+    .quickshop-btn {
+      position: absolute;
+      width: 100%;
+      left: 0;
+      bottom: 0;
+      transform: translateY(100%);
+      z-index: 30;
+      transition: all 0.3s ease;
+    }
+  }
+
+  .card-body {
+    .colors {
+      li {
+        width: 12px;
+        height: 12px;
+        cursor: pointer;
+        border-radius: 50%;
+        display: inline-block;
+        background: $black;
+        margin: 0 0.2rem;
+        &.blue {
+          background: #1b9bb4;
+        }
+        &.brown {
+          background: #ab6927;
+        }
+        &.red {
+          background: #db4433;
+        }
+        &.yello {
+          background: #f7ea21;
+        }
+      }
+    }
+    .card-title {
+      @extend .lora;
+      font-size: 15px;
+    }
+  }
+}

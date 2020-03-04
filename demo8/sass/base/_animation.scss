@@ -6,3 +6,12 @@
     opacity: 1;
   }
 }
+
+@keyframes right-to-left {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}

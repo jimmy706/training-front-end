@@ -42,7 +42,7 @@
 
     .nav-list {
       .dropdown-handle {
-        a:nth-child(1) {
+        & > a:nth-child(1) {
           position: relative;
           display: flex;
           align-items: center;
@@ -68,6 +68,9 @@
             grid-template-columns: repeat(5, 1fr);
             .content-wrapper {
               padding: 0 2rem;
+              &:last-child {
+                padding-right: 0;
+              }
             }
             .content-footer {
               margin-top: 3rem;
@@ -88,22 +91,40 @@
             height: unset;
             line-height: 1.57;
             transition: all 0.3s ease;
+            display: block;
             &:hover {
               transform: translateX(5px);
             }
           }
+          .product-card {
+            .card-title {
+              margin: 0;
+            }
+            .interact-list {
+              li {
+                margin: 0;
+                margin-bottom: 1rem;
+              }
+            }
+            .colors {
+              li {
+                display: inline-block;
+              }
+            }
+          }
         }
       }
-      a {
-        display: inline-block;
-        height: 95px;
-        line-height: 95px;
-      }
+
       .nav-item {
         &.active {
           .nav-link {
             color: $primary;
           }
+        }
+        & > a {
+          display: inline-block;
+          height: 95px;
+          line-height: 95px;
         }
       }
     }
@@ -111,6 +132,7 @@
       display: flex;
       align-items: center;
       width: 15%;
+      min-width: 150px;
       img {
         width: 100%;
         height: auto;

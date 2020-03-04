@@ -8,12 +8,12 @@
     padding: 3px 6px;
     font-size: 8px;
     line-height: 1;
-    top: 20px;
-    right: -5px;
+    top: -15px;
+    right: -20px;
     &::before {
       content: "";
       position: absolute;
-      top: 70%;
+      top: 60%;
       left: 20%;
       transform: translateX(-50%);
       border: transparent 5px solid;
@@ -30,6 +30,12 @@
       background-color: $primary;
       &::before {
         border-left-color: $primary;
+      }
+    }
+    &.hot-badge {
+      background-color: $hot;
+      &::before {
+        border-left-color: $hot;
       }
     }
   }
