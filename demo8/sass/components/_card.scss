@@ -40,6 +40,8 @@
       z-index: 15;
       top: 10px;
       right: 15px;
+      display: flex;
+      flex-direction: column;
       li {
         margin: 0;
         margin-bottom: 1rem;
@@ -59,9 +61,41 @@
       z-index: 30;
       transition: all 0.3s ease;
     }
+    .card-badge {
+      color: $white;
+      background-color: $black;
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
+      border-radius: 50%;
+      text-align: center;
+      display: block;
+      position: absolute;
+      z-index: 50;
+      top: 5px;
+      left: 10px;
+      &.green-badge {
+        background-color: #448d44;
+      }
+      &.primary-badge {
+        background-color: $primary;
+      }
+    }
   }
 
   .card-body {
+    padding: 1rem 0;
+    .price {
+      color: #4c4c4c;
+      .off-price {
+        font-size: 14px;
+        color: #bdbdbd;
+        text-decoration: line-through;
+      }
+      .sell-price {
+        color: $primary;
+      }
+    }
     .colors {
       li {
         width: 12px;
@@ -88,6 +122,10 @@
     .card-title {
       @extend .lora;
       font-size: 15px;
+      color: #252222;
+      &:hover {
+        color: #252525;
+      }
     }
   }
 }
