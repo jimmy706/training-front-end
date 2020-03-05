@@ -58,6 +58,18 @@
   }
 }
 
+.btn-white {
+  @extend .btn;
+  background-color: $white;
+  color: $black;
+  border-color: $white;
+  &:hover {
+    color: $white;
+    border-color: $black;
+    background-color: $black;
+  }
+}
+
 .btn-outline {
   background: transparent;
   border: 2px solid $black;

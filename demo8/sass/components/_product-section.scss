@@ -55,4 +55,58 @@ section.products {
       }
     }
   }
+  .banner {
+    text-align: center;
+    margin-top: 4rem;
+    background: url("../images/main-big-baner-8.jpg") no-repeat center;
+    background-size: cover;
+    padding: 7rem 4.5rem;
+    color: $white;
+    .sub-title {
+      display: block;
+      font-size: 26px;
+    }
+    .banner-title {
+      font-weight: 400;
+      font-size: 58px;
+    }
+    .banner-desc {
+      width: 33%;
+      margin: 0 auto 1.5rem auto;
+    }
+    .input-wrapper {
+      max-width: 600px;
+      margin: 0 auto;
+      position: relative;
+      &::before {
+        content: "\f0e0";
+        font-family: "Font Awesome 5 Free";
+        position: absolute;
+        left: 5px;
+        top: 5px;
+        font-size: 1.4rem;
+        color: rgba(white, 0.6);
+        font-weight: bold;
+      }
+      input {
+        height: 43px;
+        box-sizing: border-box;
+        border: 0;
+        background: transparent;
+        border-bottom: 1px solid white;
+        margin: 0;
+        color: white;
+        width: 80%;
+        float: left;
+        &::placeholder {
+          color: rgba(white, 0.6);
+        }
+        padding-left: 30px;
+      }
+      .submit-btn {
+        float: left;
+        width: 19%;
+      }
+    }
+  }
 }

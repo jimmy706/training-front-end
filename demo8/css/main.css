@@ -318,7 +318,7 @@ iframe {
   .close-btn:hover::after {
     transform: rotate(0); }
 
-.btn {
+.btn, .btn-white {
   background-color: #000000;
   color: #ffffff;
   display: inline-block;
@@ -327,10 +327,19 @@ iframe {
   cursor: pointer;
   font-size: 1rem;
   transition: all 0.3s ease; }
-  .btn:hover {
+  .btn:hover, .btn-white:hover {
     color: #ffffff;
     background-color: #232323;
     border-color: #232323; }
+
+.btn-white {
+  background-color: #ffffff;
+  color: #000000;
+  border-color: #ffffff; }
+  .btn-white:hover {
+    color: #ffffff;
+    border-color: #000000;
+    background-color: #000000; }
 
 .btn-outline {
   background: transparent;
@@ -537,6 +546,97 @@ iframe {
     color: #252222; }
     .product-card .card-body .card-title:hover {
       color: #252525; }
+
+.news-card:hover .card-header .img-wrapper::before {
+  opacity: 1; }
+.news-card:hover .card-header .img-wrapper img {
+  transform: scale(1.1); }
+.news-card .card-header {
+  position: relative; }
+  .news-card .card-header .img-wrapper {
+    width: 100%;
+    height: 100%;
+    display: block;
+    overflow: hidden; }
+    .news-card .card-header .img-wrapper::before {
+      content: "";
+      position: absolute;
+      background-color: rgba(0, 0, 0, 0.5);
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      transition: all 0.3s ease;
+      transition-delay: 0.2s;
+      opacity: 0;
+      z-index: 1; }
+    .news-card .card-header .img-wrapper img {
+      display: block;
+      height: 100%;
+      transition: transform 0.6s ease-in-out;
+      width: 100%; }
+  .news-card .card-header .date {
+    position: absolute;
+    background-color: #ffffff;
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #000000;
+    top: 10px;
+    left: 10px;
+    text-align: center;
+    z-index: 5; }
+    .news-card .card-header .date .day {
+      font-size: 24px;
+      margin: 0;
+      line-height: 1; }
+    .news-card .card-header .date .month {
+      margin: 0;
+      line-height: 1; }
+  .news-card .card-header .tags {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0.2rem 1rem;
+    background-color: #179a94;
+    z-index: 5; }
+    .news-card .card-header .tags p {
+      margin: 0;
+      color: #ffffff; }
+    .news-card .card-header .tags a {
+      color: #ffffff;
+      line-height: 1; }
+      .news-card .card-header .tags a:hover {
+        text-decoration: underline; }
+.news-card .card-body {
+  text-align: center; }
+  .news-card .card-body .news-title {
+    font-size: 22px;
+    color: #000000;
+    font-family: "Lora";
+    transition: color 0.3s ease;
+    display: block;
+    margin: 0.5rem 0; }
+    .news-card .card-body .news-title:hover {
+      color: #1daaa2; }
+  .news-card .card-body .author-wrapp {
+    margin-bottom: 1rem; }
+    .news-card .card-body .author-wrapp .author {
+      font-family: "Lato"; }
+      .news-card .card-body .author-wrapp .author:after {
+        content: "/";
+        display: inline-block;
+        margin: 0 0.3rem; }
+      .news-card .card-body .author-wrapp .author a {
+        color: #179a94; }
+        .news-card .card-body .author-wrapp .author a:hover {
+          color: #1daaa2;
+          text-decoration: underline; }
+    .news-card .card-body .author-wrapp .comment a {
+      color: #4c4c4c; }
+      .news-card .card-body .author-wrapp .comment a:hover {
+        color: #787878;
+        text-decoration: underline; }
 
 .modal {
   position: fixed;
@@ -1083,5 +1183,56 @@ section.products .product-grid {
     transform: translateY(-100%); }
   section.products .product-grid .product-card:hover .price-wrap .swap-wrap .select-btn {
     transform: translateY(-100%); }
+section.products .banner {
+  text-align: center;
+  margin-top: 4rem;
+  background: url("../images/main-big-baner-8.jpg") no-repeat center;
+  background-size: cover;
+  padding: 7rem 4.5rem;
+  color: #ffffff; }
+  section.products .banner .sub-title {
+    display: block;
+    font-size: 26px; }
+  section.products .banner .banner-title {
+    font-weight: 400;
+    font-size: 58px; }
+  section.products .banner .banner-desc {
+    width: 33%;
+    margin: 0 auto 1.5rem auto; }
+  section.products .banner .input-wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative; }
+    section.products .banner .input-wrapper::before {
+      content: "\f0e0";
+      font-family: "Font Awesome 5 Free";
+      position: absolute;
+      left: 5px;
+      top: 5px;
+      font-size: 1.4rem;
+      color: rgba(255, 255, 255, 0.6);
+      font-weight: bold; }
+    section.products .banner .input-wrapper input {
+      height: 43px;
+      box-sizing: border-box;
+      border: 0;
+      background: transparent;
+      border-bottom: 1px solid white;
+      margin: 0;
+      color: white;
+      width: 80%;
+      float: left;
+      padding-left: 30px; }
+      section.products .banner .input-wrapper input::placeholder {
+        color: rgba(255, 255, 255, 0.6); }
+    section.products .banner .input-wrapper .submit-btn {
+      float: left;
+      width: 19%; }
+
+section.news .news-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3rem;
+  margin-bottom: 1.5rem; }
 
 /*# sourceMappingURL=main.css.map */
