@@ -1,15 +1,127 @@
 .header-banner {
   .swiper-slide {
-    height: calc(100vh - 143px);
+    height: 600px;
+    position: relative;
     .img-wrapper {
       width: 100%;
       height: 100%;
-      overflow: hidden;
-      position: relative;
+      position: absolute;
+      z-index: -1;
       img {
-        position: absolute;
         width: 100%;
         height: 100%;
+      }
+    }
+    .swiper-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100%;
+      transform: translate(-50%, -50%);
+      max-width: 1200px;
+    }
+    &.slide-1 {
+      .swiper-content {
+        z-index: 20;
+        .year-overlay {
+          position: absolute;
+          font-size: 240px;
+          font-weight: lighter;
+          letter-spacing: 2px;
+          z-index: -1;
+          color: rgba(255, 255, 255, 0.4);
+          font-family: "Lora";
+          top: -130px;
+          left: 50px;
+        }
+        .swiper-title {
+          font-size: 120px;
+          line-height: 1;
+          margin: 0;
+        }
+        .sub-title {
+          font-size: 80px;
+          font-weight: 700;
+          line-height: 1;
+          margin-bottom: 2rem;
+          display: block;
+        }
+      }
+      .bag-wrapper {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        img {
+          position: absolute;
+          right: 5%;
+          top: -30px;
+          transform: rotate(10deg);
+          z-index: -1;
+        }
+      }
+    }
+    &.slide-2 {
+      .swiper-content {
+        z-index: 20;
+        .year-overlay {
+          position: absolute;
+          font-size: 240px;
+          font-weight: lighter;
+          letter-spacing: 2px;
+          z-index: -1;
+          color: rgba(0, 0, 0, 0.1);
+          font-family: "Lora";
+          top: -107px;
+          left: -23px;
+        }
+        .swiper-title {
+          font-size: 80px;
+          line-height: 1.1;
+          font-weight: lighter;
+          margin: 0;
+        }
+        .text-desc {
+          color: #757575;
+          font-size: 16px;
+          margin-bottom: 1.5rem;
+        }
+      }
+      .img-wrapper {
+        .child-img {
+          height: 600px;
+          width: 50%;
+          left: 50%;
+          position: absolute;
+        }
+      }
+    }
+    &.slide-3 {
+      .swiper-content {
+        z-index: 20;
+        .year-overlay {
+          position: absolute;
+          font-size: 240px;
+          font-weight: lighter;
+          letter-spacing: 2px;
+          z-index: -1;
+          color: rgba(255, 255, 255, 0.4);
+          font-family: "Lora";
+          top: -130px;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+        .swiper-title {
+          font-size: 120px;
+          line-height: 1;
+          margin: 0;
+        }
+        .sub-title {
+          font-size: 80px;
+          font-weight: 700;
+          line-height: 1;
+          margin-bottom: 2rem;
+          display: block;
+        }
       }
     }
   }

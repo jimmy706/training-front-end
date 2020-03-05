@@ -43,6 +43,11 @@
       li {
         margin: 0;
         margin-bottom: 1rem;
+        a {
+          &:hover {
+            color: $black;
+          }
+        }
       }
     }
     .quickshop-btn {

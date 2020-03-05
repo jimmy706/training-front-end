@@ -1,13 +1,6 @@
 #header {
   position: relative;
-  .nav-link {
-    color: $black;
-    padding: 0 0.7rem;
-    transition: color 0.3s ease;
-    &:hover {
-      color: $primary;
-    }
-  }
+
   .contact {
     padding: 1rem 4rem;
     background-color: $primary;
@@ -29,190 +22,198 @@
       @extend .interact-link;
     }
   }
-  .header__nav {
-    z-index: 999;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: sticky;
-    top: 0;
-    box-shadow: 0 1px 5px 0px rgba(0, 0, 0, 0.1);
-    padding: 0 4rem;
-    position: relative;
+}
 
-    .nav-list {
-      .dropdown-handle {
-        & > a:nth-child(1) {
-          position: relative;
-          display: flex;
-          align-items: center;
-          .fa-chevron-down {
-            font-size: 0.5rem;
-            opacity: 0.7;
-            margin-left: 0.3rem;
-          }
-        }
-        &:hover {
-          .fullwidth-dropdown {
-            top: 100%;
-          }
-        }
-        .fullwidth-dropdown {
-          width: 100%;
-          background-color: $white;
-          top: 120%;
-          left: 0;
-          padding: 2rem 0;
-          .shop-content {
-            display: grid;
-            grid-template-columns: repeat(5, 1fr);
-            .content-wrapper {
-              padding: 0 2rem;
-              &:last-child {
-                padding-right: 0;
-              }
-            }
-            .content-footer {
-              margin-top: 3rem;
-              border-right: 1px solid #ddd;
-              .service-title {
-                color: $black;
-                margin-bottom: 0.5rem;
-                display: block;
-                line-height: 1;
-              }
-            }
-          }
-          li {
-            display: block;
-            margin-top: 1rem;
-          }
-          .nav-link {
-            height: unset;
-            line-height: 1.57;
-            transition: all 0.3s ease;
-            display: block;
-            &:hover {
-              transform: translateX(5px);
-            }
-          }
-          .product-card {
-            .card-title {
-              margin: 0;
-            }
-            .interact-list {
-              li {
-                margin: 0;
-                margin-bottom: 1rem;
-              }
-            }
-            .colors {
-              li {
-                display: inline-block;
-              }
-            }
-          }
+.header__nav {
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 1px 5px 0px rgba(0, 0, 0, 0.1);
+  padding: 0 4rem;
+  background: $white;
+  .nav-link {
+    color: $black;
+    padding: 0 0.7rem;
+    transition: color 0.3s ease;
+    &:hover {
+      color: $primary;
+    }
+  }
+  .nav-list {
+    .dropdown-handle {
+      & > a:nth-child(1) {
+        position: relative;
+        display: flex;
+        align-items: center;
+        .fa-chevron-down {
+          font-size: 0.5rem;
+          opacity: 0.7;
+          margin-left: 0.3rem;
         }
       }
-
-      .nav-item {
-        &.active {
-          .nav-link {
-            color: $primary;
+      &:hover {
+        .fullwidth-dropdown {
+          top: 100%;
+        }
+      }
+      .fullwidth-dropdown {
+        width: 100%;
+        background-color: $white;
+        top: 120%;
+        left: 0;
+        padding: 2rem 0;
+        .shop-content {
+          display: grid;
+          grid-template-columns: repeat(5, 1fr);
+          .content-wrapper {
+            padding: 0 2rem;
+            &:last-child {
+              padding-right: 0;
+            }
+          }
+          .content-footer {
+            margin-top: 3rem;
+            border-right: 1px solid #ddd;
+            .service-title {
+              color: $black;
+              margin-bottom: 0.5rem;
+              display: block;
+              line-height: 1;
+            }
           }
         }
-        & > a {
-          display: inline-block;
-          height: 95px;
-          line-height: 95px;
+        li {
+          display: block;
+          margin-top: 1rem;
+        }
+        .nav-link {
+          height: unset;
+          line-height: 1.57;
+          transition: all 0.3s ease;
+          display: block;
+          &:hover {
+            transform: translateX(5px);
+          }
+        }
+        .product-card {
+          .card-title {
+            margin: 0;
+          }
+          .interact-list {
+            li {
+              margin: 0;
+              margin-bottom: 1rem;
+            }
+          }
+          .colors {
+            li {
+              display: inline-block;
+            }
+          }
         }
       }
     }
-    .logo-wrapper {
+
+    .nav-item {
+      &.active {
+        .nav-link {
+          color: $primary;
+        }
+      }
+      & > a {
+        display: inline-block;
+        height: 95px;
+        line-height: 95px;
+      }
+    }
+  }
+  .logo-wrapper {
+    display: flex;
+    align-items: center;
+    width: 15%;
+    min-width: 150px;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .header-interact {
+    display: flex;
+    .login-btn {
+      display: block;
+      border-right: 2px solid #dddddd75;
+      margin-right: 1.5rem;
+      padding-right: 1.5rem;
       display: flex;
       align-items: center;
-      width: 15%;
-      min-width: 150px;
-      img {
-        width: 100%;
-        height: auto;
+      height: 95px;
+      a {
+        height: unset;
+        @extend .interact-link;
+        line-height: 1.5;
       }
     }
-    .header-interact {
+    .icon-list {
       display: flex;
-      .login-btn {
-        display: block;
-        border-right: 2px solid #dddddd75;
-        margin-right: 1.5rem;
-        padding-right: 1.5rem;
-        display: flex;
-        align-items: center;
-        height: 95px;
+      align-items: center;
+      li {
+        margin-right: 1rem;
         a {
-          height: unset;
-          @extend .interact-link;
-          line-height: 1.5;
-        }
-      }
-      .icon-list {
-        display: flex;
-        align-items: center;
-        li {
-          margin-right: 1rem;
-          a {
-            color: $black;
-            line-height: 1;
-            i {
-              font-size: 1.1rem;
-            }
+          color: $black;
+          line-height: 1;
+          i {
+            font-size: 1.1rem;
           }
-          .fav-icon {
-            position: relative;
-            font-size: 1.3rem;
+        }
+        .fav-icon {
+          position: relative;
+          font-size: 1.3rem;
+          &::before {
+            content: "\f004";
+            font-family: "Font Awesome 5 Free";
+            opacity: 1;
+            animation: faded 0.3s ease;
+          }
+          &::after {
+            content: "\f004";
+            font-family: "Font Awesome 5 Free";
+            opacity: 1;
+            font-weight: bold;
+            display: none;
+            animation: faded 0.3s ease;
+          }
+          &:hover {
             &::before {
-              content: "\f004";
-              font-family: "Font Awesome 5 Free";
-              opacity: 1;
-              animation: faded 0.3s ease;
+              display: none;
             }
             &::after {
-              content: "\f004";
-              font-family: "Font Awesome 5 Free";
-              opacity: 1;
-              font-weight: bold;
-              display: none;
-              animation: faded 0.3s ease;
-            }
-            &:hover {
-              &::before {
-                display: none;
-              }
-              &::after {
-                display: inline-block;
-              }
-            }
-            .badge {
-              position: absolute;
-              top: -6px;
-              right: -10px;
-              height: 15px;
-              width: 15px;
-              font-size: 10px;
-              border-radius: 50%;
-              background-color: $primary;
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              color: $white;
-              z-index: 5;
+              display: inline-block;
             }
           }
-          .search-toggle {
+          .badge {
+            position: absolute;
+            top: -6px;
+            right: -10px;
+            height: 15px;
+            width: 15px;
+            font-size: 10px;
+            border-radius: 50%;
+            background-color: $primary;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: $white;
+            z-index: 5;
+          }
+        }
+        .search-toggle {
+          font-size: 1.3rem;
+          position: relative;
+          i {
             font-size: 1.3rem;
-            position: relative;
-            i {
-              font-size: 1.3rem;
-            }
           }
         }
       }
