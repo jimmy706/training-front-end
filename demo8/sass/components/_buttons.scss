@@ -147,3 +147,31 @@
   display: block !important;
   width: 100%;
 }
+
+#top-btn {
+  background-color: #fff;
+  border: 1px solid black;
+  color: black;
+  position: fixed;
+  transition: all 0.3s ease;
+  border-radius: 50%;
+  bottom: 20px;
+  right: 60px;
+  z-index: 99;
+  cursor: pointer;
+  opacity: 0.95;
+  font-size: 1.2rem;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  padding: 0;
+  box-sizing: border-box;
+  display: none;
+  &:hover {
+    background-color: $primary;
+    color: white;
+  }
+  &.block {
+    display: block;
+  }
+}
