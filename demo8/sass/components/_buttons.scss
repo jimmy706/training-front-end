@@ -155,8 +155,8 @@
   position: fixed;
   transition: all 0.3s ease;
   border-radius: 50%;
-  bottom: 20px;
-  right: 60px;
+  bottom: 80px;
+  right: 20px;
   z-index: 99;
   cursor: pointer;
   opacity: 0.95;
@@ -170,6 +170,7 @@
   &:hover {
     background-color: $primary;
     color: white;
+    border-color: $primary;
   }
   &.block {
     display: block;

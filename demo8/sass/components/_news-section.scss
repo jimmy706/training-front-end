@@ -53,3 +53,32 @@ section.news {
     }
   }
 }
+
+@media screen and (max-width: 1100px) {
+  section.news {
+    .news-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section.news {
+    .banner-content {
+      .intro-wrap {
+        border-right: 0;
+      }
+      .about-wrap {
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  section.news {
+    .news-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+}

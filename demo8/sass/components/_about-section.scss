@@ -113,3 +113,44 @@ section.about {
     }
   }
 }
+
+@media screen and (max-width: 1200px) {
+  section.about {
+    .partners {
+      .partner-wrapper {
+        .title {
+          display: none;
+        }
+        .swiper-container {
+          .swiper-slide {
+            max-width: unset;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section.about {
+    .flexbox {
+      flex-direction: column;
+    }
+    .about-wrapper {
+      width: 100%;
+      padding: 0;
+      margin-bottom: 3rem;
+      .section-title {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 426px) {
+  section.about {
+    .gallery-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}

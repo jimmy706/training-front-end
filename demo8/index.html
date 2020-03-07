@@ -417,7 +417,7 @@
               id="search-toggle"
               class="search-toggle"
             >
-              <i class="fas fa-search"></i>
+              <i class="fas fa-search icon"></i>
             </a>
             <div class="search-overlap" id="search-wrapper">
               <div class="container">
@@ -442,10 +442,23 @@
             </a>
           </li>
           <li>
-            <a href="javascript:void(0)" class="header-cart">
-              <i class="fas fa-shopping-cart"></i>
+            <a
+              href="javascript:void(0)"
+              class="header-cart modal-toggle"
+              data-target="#cart-modal"
+            >
+              <i class="fas fa-shopping-cart icon"></i>
               <span class="item-number">0</span>
               <span class="money">/£0.00</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="javascript:void(0)"
+              class="modal-toggle mb-toggle-sidebar"
+              data-target="#mb-sidebar"
+            >
+              <i class="fas fa-bars icon"></i>
             </a>
           </li>
         </ul>
@@ -513,7 +526,6 @@
               </h2>
               <p class="text-desc">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                <br />
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
               <div class="button-wrapper">
@@ -2646,6 +2658,53 @@
       </div>
     </footer>
 
+    <div id="footer-menu">
+      <ul>
+        <li>
+          <a href="javascript:void(0)">
+            <span class="icon-wrapper">
+              <i class="fas fa-border-all"></i>
+            </span>
+            <span>
+              Shop
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="javascript:void(0)">
+            <span class="icon-wrapper num-wrapper footer-fav">
+              <span class="badge">0</span>
+              <i class="far fa-heart"></i>
+            </span>
+            <span>
+              Whistlist
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="javascript:void(0)">
+            <span class="icon-wrapper num-wrapper footer-fav">
+              <span class="badge">0</span>
+              <i class="fas fa-shopping-cart"></i>
+            </span>
+            <span>
+              Cart
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="javascript:void(0)">
+            <span class="icon-wrapper">
+              <i class="fas fa-user"></i>
+            </span>
+            <span>
+              My account
+            </span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
     <div class="modal" id="login-modal">
       <div class="modal-content right-sidebar login-sidebar">
         <div class="sidebar-header">
@@ -2729,6 +2788,78 @@
       </div>
     </div>
 
+    <div class="modal" id="cart-modal">
+      <div class="modal-content right-sidebar cart-sidebar">
+        <div class="sidebar-header">
+          <h3 class="sidebar-title text-white">SHOPPING CART</h3>
+          <div class="close text-white">
+            <span>CLOSE</span>
+          </div>
+        </div>
+        <div class="sidebar-body">
+          <div class="empty-cart text-center">
+            <i class="fas fa-shopping-cart cart-empty-icon"></i>
+            <span>No products in the cart.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="mb-sidebar">
+      <div class="modal-content left-sidebar mb-sidebar">
+        <div class="sidebar-header">
+          <form class="search-form">
+            <input type="text" placeholder="Search for products" />
+            <button class="search-icon" type="submit">
+              <i class="fas fa-search"></i>
+            </button>
+          </form>
+        </div>
+        <div class="sidebar-body">
+          <ul class="nav-list">
+            <li class="active">
+              <a href="javascript:void(0)">HOME</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)"
+                >SHOP
+                <span
+                  class="dropdown-toogle"
+                  data-target="#shop-menu-content"
+                ></span
+              ></a>
+              <ul class="dropdown-menu" id="shop-menu-content">
+                <li>
+                  <a href="javascript:void(0)">SHOP</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">SINGLE PRODUCT</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">CHECKOUT</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="javascript:void(0)">BLOG</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">PORTFOLIO</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">CART</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">MY ACCOUNT</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">LOGIN / REGISTER</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
     <button id="top-btn">
       <i class="fas fa-chevron-up"></i>
     </button>
@@ -2738,6 +2869,7 @@
     <script src="js/search-toggle.js"></script>
     <script src="js/modal.js"></script>
     <script src="js/scroll.js"></script>
+    <script src="js/dropdown.js"></script>
     <script>
       new Swiper("#header-banner", {
         loop: true,
@@ -2759,12 +2891,20 @@
         }
       });
       new Swiper("#partners-swiper", {
-        slidesPerView: 5,
-        spaceBetween: 20
+        slidesPerView: 2,
+        spaceBetween: 10,
+        breakpoints: {
+          430: {
+            slidesPerView: 4,
+            spaceBetween: 20
+          },
+          770: {
+            slidesPerView: 5,
+            spaceBetween: 20
+          }
+        }
       });
-
-      var bagParallax = document.getElementById("bag-parallax");
-      new Parallax(bagParallax);
+      new Parallax(document.getElementById("bag-parallax"));
       new Parallax(document.getElementById("child-wrapper-img"));
       new Parallax(document.getElementById("year-wrapper"));
     </script>

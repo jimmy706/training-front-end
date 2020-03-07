@@ -24,6 +24,20 @@
       transform: translateX(0);
     }
   }
+
+  .left-sidebar {
+    position: absolute;
+    left: 0;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+    background-color: $black;
+    height: 100vh;
+    overflow: auto;
+    color: $white;
+    &.on-open {
+      transform: translateX(0);
+    }
+  }
   &.open {
     opacity: 1;
     visibility: visible;

@@ -14,6 +14,7 @@
     margin: 0 auto 2rem auto;
     .footer-logo {
       max-width: 300px;
+      width: 100%;
     }
     .socials {
       .icon-wrapper {
@@ -68,6 +69,31 @@
       color: $white;
       &:hover {
         text-decoration: underline;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #footer {
+    margin-bottom: 68px;
+    .footer-body {
+      grid-template-columns: 1fr 1fr;
+      .footer-content:last-child {
+        grid-column-start: 1;
+        grid-column-end: 3;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  #footer {
+    .footer-body {
+      grid-template-columns: 1fr;
+      .footer-content:last-child {
+        grid-column-start: 1;
+        grid-column-end: 2;
       }
     }
   }

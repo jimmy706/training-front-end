@@ -27,9 +27,11 @@
     margin-bottom: 1rem;
     color: $light-gray;
     line-height: 1;
+    letter-spacing: 1.5px;
   }
   .section-title {
     line-height: 1;
+    font-weight: 400;
   }
   .title-seperate {
     position: relative;
@@ -41,7 +43,7 @@
       content: "";
       position: absolute;
       background-color: #dcdcdc;
-      height: 0.5px;
+      height: 1px;
       width: 100%;
       z-index: -1;
       top: 50%;
@@ -58,7 +60,8 @@
   }
   .desc-text {
     display: block;
-    width: 65%;
+    width: 100%;
+    max-width: 470px;
     margin: 0 auto;
     font-size: 16px;
     .your-store-link {
@@ -69,6 +72,15 @@
         color: $black;
         text-decoration: underline;
       }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .intro-wrapper {
+    width: 100%;
+    .section-title {
+      font-size: 20px;
     }
   }
 }
