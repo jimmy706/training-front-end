@@ -1370,6 +1370,13 @@ iframe {
     font-size: 15vw; }
   .header-banner .swiper-slide.slide-3 .swiper-content .sub-title {
     font-size: 10vw; } }
+@media screen and (max-width: 425px) {
+  .header-banner .swiper-slide {
+    height: 450px; }
+    .header-banner .swiper-slide.slide-2 .img-wrapper .child-img {
+      transform: scale(1.3);
+      width: 100%;
+      height: 400px; } }
 section.category .grid {
   margin-top: 3rem;
   margin-bottom: 2.5rem;

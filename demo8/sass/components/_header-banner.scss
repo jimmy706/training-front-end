@@ -282,3 +282,21 @@
     }
   }
 }
+
+@media screen and (max-width: 425px) {
+  .header-banner {
+    .swiper-slide {
+      height: 450px;
+
+      &.slide-2 {
+        .img-wrapper {
+          .child-img {
+            transform: scale(1.3);
+            width: 100%;
+            height: 400px;
+          }
+        }
+      }
+    }
+  }
+}
