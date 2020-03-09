@@ -55,64 +55,9 @@
         }
       }
       &:hover {
-        .fullwidth-dropdown {
+        .dropdown-content {
+          background-color: $white;
           top: 100%;
-        }
-      }
-      .fullwidth-dropdown {
-        width: 100%;
-        background-color: $white;
-        top: 120%;
-        left: 0;
-        padding: 2rem 0;
-        .shop-content {
-          display: grid;
-          grid-template-columns: repeat(5, 1fr);
-          .content-wrapper {
-            padding: 0 2rem;
-            &:last-child {
-              padding-right: 0;
-            }
-          }
-          .content-footer {
-            margin-top: 3rem;
-            border-right: 1px solid #ddd;
-            .service-title {
-              color: $black;
-              margin-bottom: 0.5rem;
-              display: block;
-              line-height: 1;
-            }
-          }
-        }
-        li {
-          display: block;
-          margin-top: 1rem;
-        }
-        .nav-link {
-          height: unset;
-          line-height: 1.57;
-          transition: all 0.3s ease;
-          display: block;
-          &:hover {
-            transform: translateX(5px);
-          }
-        }
-        .product-card {
-          .card-title {
-            margin: 0;
-          }
-          .interact-list {
-            li {
-              margin: 0;
-              margin-bottom: 1rem;
-            }
-          }
-          .colors {
-            li {
-              display: inline-block;
-            }
-          }
         }
       }
     }

@@ -1,0 +1,148 @@
+.header__nav {
+  .dropdown-content {
+    top: 120%;
+    .nav-link {
+      height: unset;
+      line-height: 1.57;
+      transition: all 0.3s ease;
+      display: block;
+      color: $dark;
+      padding: 0;
+      &:hover {
+        transform: translateX(5px);
+        color: $primary;
+      }
+    }
+  }
+  .fullwidth-dropdown {
+    width: 100%;
+    top: 120%;
+    left: 0;
+    padding: 2rem 0;
+    .shop-content {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      .content-wrapper {
+        padding: 0 2rem;
+        strong {
+          color: $black;
+          font-size: 16px;
+        }
+        &:last-child {
+          padding-right: 0;
+        }
+      }
+      .content-footer {
+        margin-top: 3rem;
+        border-right: 1px solid #ddd;
+        .service-title {
+          color: $black;
+          margin-bottom: 0.5rem;
+          display: block;
+          line-height: 1;
+        }
+      }
+    }
+    li {
+      display: block;
+      margin-top: 1rem;
+    }
+
+    .product-card {
+      .card-title {
+        margin: 0;
+      }
+      .interact-list {
+        li {
+          margin: 0;
+          margin-bottom: 1rem;
+        }
+      }
+      .colors {
+        li {
+          display: inline-block;
+        }
+      }
+    }
+  }
+  .pages {
+    padding: 1rem 2rem;
+    width: 80%;
+    max-width: 1250px;
+    max-height: 450px;
+    overflow: auto;
+    .page-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-gap: 1.5rem;
+      a {
+        display: block;
+        .page-name {
+          color: $black;
+          text-transform: uppercase;
+          font-size: 15px;
+          font-weight: 700;
+          text-align: center;
+          &:hover {
+            text-decoration: underline;
+          }
+          span {
+            color: $primary;
+          }
+        }
+      }
+      img {
+        display: block;
+        width: 100%;
+      }
+    }
+  }
+  .blog-menu {
+    li {
+      display: block;
+      .nav-link {
+        line-height: 2.5;
+        padding: 0 1rem;
+      }
+    }
+  }
+  .page-menu {
+    padding: 1rem 2rem;
+    li {
+      display: block;
+      margin-top: 1rem;
+      .nav-link {
+        text-transform: capitalize;
+        i {
+          margin-right: 5px;
+        }
+      }
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(200px, 1fr));
+      grid-gap: 2rem;
+    }
+  }
+  .feature-menu {
+    padding: 1rem 2rem;
+    padding-right: 200px;
+    background: url("../images/menu-baner-1.jpg") no-repeat center right;
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(150px, 1fr));
+      grid-gap: 2rem;
+    }
+    .list-title {
+      color: $black;
+      font-size: 15px;
+      &:hover {
+        color: $primary;
+      }
+    }
+    li {
+      display: block;
+      margin-top: 1rem;
+    }
+  }
+}
