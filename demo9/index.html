@@ -15,6 +15,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css"
     />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css" />
+
     <link rel="stylesheet" href="./css/main.css" />
     <title>Home</title>
   </head>
@@ -661,20 +663,192 @@
         </ul>
         <div class="header-interact">
           <ul>
-            <li class="toggle">
-              <a href="javascript:void(0)">
-                <i class="pe-7s-search"></i>
+            <li class="toggle" style="position: relative;">
+              <a href="javascript:void(0)" class="nav-link" id="search-toggle">
+                <i class="pe-7s-search search-icon"></i>
+                <i class="pe-7s-close close-icon"></i>
               </a>
+              <div class="search-form" id="header-search-form">
+                <form>
+                  <input type="search" placeholder="Search..." />
+                </form>
+              </div>
             </li>
-            <li class="toggle">
-              <a href="javascript:void(0)">
-                <i class="pe-7s-cart"></i>
+            <li class="toggle" id="cart-toggle">
+              <a href="javascript:void(0)" class="nav-link">
+                <div class="header-cart">
+                  <i class="pe-7s-cart"></i>
+                  <span class="badge">
+                    0
+                  </span>
+                </div>
               </a>
+              <nav class="cart-sidebar text-center">
+                <h3 class="sidebar-title">
+                  Recently Added Items:
+                </h3>
+                <div class="cart-content">
+                  <div class="empty-wrap">
+                    <h2 class="empty-title">Cart is Empty</h2>
+                    <div class="icon-wrapper">
+                      <i class="fas fa-ban"></i>
+                      <i class="pe-7s-cart"></i>
+                    </div>
+                  </div>
+                </div>
+              </nav>
             </li>
           </ul>
         </div>
       </div>
     </nav>
+
+    <section class="header-banner">
+      <div class="swiper-container" id="main-banner">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide slide-1">
+            <img src="./images/slide-4-2340x850.jpg" class="banner-img" />
+            <img src="./images/flex-iphone6-screen.png" class="screen-img" />
+            <div class="banner-content">
+              <h1 class="banner-title">
+                A professional design based
+                <br />
+                on vibrancy and elegance
+              </h1>
+              <p class="banner-desc">
+                Flex is an exquisite design bursting with sharpness and bold,
+                but complementary visuals; within a rich framework of emphasized
+                typography and iconography.
+              </p>
+              <div class="btn-wrapper">
+                <a
+                  href="javascript:void(0)"
+                  class="btn btn-light"
+                  style="margin-right: 15px;"
+                >
+                  <i class="fas fa-eye btn-icon text-primary"></i>
+                  Retina Perfect
+                </a>
+                <a href="javascript:void(0)" class="btn btn-light">
+                  Flex It More!
+                  <i class="pe-7s-diamond text-primary btn-icon"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide slide-2">
+            <div class="video-wrapper">
+              <video
+                src="./images/Explore.mp4"
+                autoplay
+                width="2340"
+                height="980"
+                loop
+              ></video>
+            </div>
+            <div class="banner-content">
+              <h2 class="overlay-text">S</h2>
+              <h2 class="top-text">
+                <span style="color: #7b412e">Sync </span>
+                <span>Up.</span>
+              </h2>
+              <h2 class="bottom-text">
+                <span style="color: rgba(169, 113, 43, 0.9)">Stay </span>
+                <span>!Inspired</span>
+              </h2>
+            </div>
+          </div>
+          <div class="swiper-slide slide-3">
+            <img src="./images/slide-3-2340x850.jpg" class="banner-img" />
+            <div class="banner-content">
+              <h1 class="banner-title">
+                This is Flex, a highly user friendly interface template.
+              </h1>
+              <div class="flexbox">
+                <p class="banner-desc">
+                  Easily configure complex layouts with the Drag & Drop <br />
+                  interface for the whole site or specific pages.
+                </p>
+                <a href="javascript:void(0)" class="btn-light btn">
+                  <i class="far fa-hand-point-right"></i> Show Features
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide slide-4">
+            <img
+              src="./images/slide-11-2340x850.jpg"
+              alt=""
+              class="banner-img"
+            />
+            <div class="banner-content">
+              <h3>
+                Drag & Drop
+              </h3>
+              <h2>
+                Layout Builder
+              </h2>
+              <p>
+                Unlimited positions, with drag and drop add, delete, move and
+                resize capabilities.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide slide-5">
+            <div class="content">
+              <img src="./images/slide-1-2340x850.jpg" class="banner-img" />
+              <div class="phone-wrapper">
+                <h5 class="phone-sub-title">
+                  MOST <span class="text-primary">FLEXIBLE</span> JOOMLA
+                  TEMPLATE
+                </h5>
+                <div class="phone-content">
+                  <h4>Pursue your passion.</h4>
+                  <p>
+                    With continuous heart rate readings, surge keeps you in the
+                    zone.
+                  </p>
+                  <a href="javascript:void(0)" class="btn btn-light">
+                    <i class="fa fa-heartbeat btn-icon text-primary"></i>
+                    Hear Rate
+                  </a>
+                </div>
+              </div>
+              <div class="banner-content">
+                <h3>
+                  Creative, adaptive
+                  <br />
+                  and ever-ready to serve you.
+                </h3>
+                <p>
+                  Good seasons, day place male evening life after together
+                  gathered let void she'd grass created days upon after above
+                  great. Seasons earth face seasons so for called have fly
+                  seasons of one waters.
+                </p>
+                <div class="flexbox btn-wrapper">
+                  <a href="javascript:void(0)" class="btn btn-action">
+                    <i class="fa fa-cloud-download-alt btn-icon text-white"></i>
+                    Download
+                  </a>
+                  <a href="javascript:void(0)" class="btn btn-dark">
+                    Learn More
+                    <i class="btn-icon"></i>
+                  </a>
+                  <a href="javascirpt:void(0)" class="btn btn-default">
+                    Exercise <i class="fab fa-leanpub btn-icon"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-button-next swiper-btn"></div>
+        <div class="swiper-button-prev swiper-btn"></div>
+      </div>
+    </section>
 
     <div class="modal" id="login-modal">
       <div class="modal-content modal-center">
@@ -726,5 +900,23 @@
     </div>
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
     <script src="./js/modal.js"></script>
+    <script src="js/header-interact.js"></script>
+    <script>
+      new Swiper(".swiper-container", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev"
+        },
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true
+        },
+        autoplay: {
+          delay: 8000,
+          disableOnInteraction: false
+        }
+      });
+    </script>
   </body>
 </html>

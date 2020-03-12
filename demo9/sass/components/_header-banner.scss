@@ -1,0 +1,452 @@
+#main-banner {
+  &:hover {
+    .swiper-btn {
+      opacity: 1;
+    }
+  }
+  .swiper-pagination-bullets .swiper-pagination-bullet {
+    border: 2px solid $light-primary;
+    cursor: pointer;
+    box-sizing: border-box;
+    width: 10px;
+    height: 10px;
+    background-color: $white;
+    &.swiper-pagination-bullet-active {
+      background-color: $primary;
+    }
+  }
+  .swiper-btn {
+    color: $white;
+    font-weight: lighter;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  .swiper-slide {
+    position: relative;
+    height: 100vh;
+    max-height: 600px;
+    min-height: 350px;
+    overflow: hidden;
+    .banner-img {
+      width: 100%;
+      height: auto;
+      position: absolute;
+      z-index: -1;
+      max-height: 550px;
+      height: 550px;
+    }
+    .btn {
+      font-size: 20px;
+      .btn-icon {
+        margin: 0 5px;
+      }
+    }
+  }
+  .slide-1 {
+    .banner-content {
+      padding-left: 200px;
+      position: absolute;
+      width: 100%;
+      top: 50%;
+      transform: translateY(-50%);
+      box-sizing: border-box;
+    }
+    .banner-title {
+      font-size: 55px;
+      color: #ff7564;
+      font-weight: 200;
+      line-height: 1;
+      text-shadow: 2px 4px 10px #222;
+      opacity: 0;
+      transform: translateX(40px);
+      transition: all 1s ease;
+    }
+    .banner-desc {
+      color: #dedede;
+      font-size: 20px;
+      display: block;
+      width: 45%;
+      margin-top: 2rem;
+      margin-bottom: 3rem;
+      min-width: 200px;
+      opacity: 0;
+      transform: translateX(-40px);
+      transition: all 1s ease;
+    }
+
+    .screen-img {
+      visibility: visible;
+      width: 37%;
+      height: 83%;
+      position: absolute;
+      transform: scale(0.64);
+      right: 8.5%;
+      bottom: 8%;
+      opacity: 0;
+      transition: opacity 2s linear;
+    }
+    .btn-wrapper {
+      opacity: 0;
+      transition: all 1s ease;
+      transform: translateY(-40px);
+    }
+    &.swiper-slide-active {
+      .screen-img {
+        opacity: 1;
+        transition-delay: 2s;
+      }
+      .banner-title {
+        transition-delay: 4s;
+        opacity: 1;
+        transform: translateX(0px);
+      }
+      .banner-desc {
+        transition-delay: 4s;
+        opacity: 1;
+        transform: translateX(0px);
+      }
+      .btn-wrapper {
+        opacity: 1;
+        transform: translateY(0);
+        transition-delay: 5s;
+      }
+    }
+  }
+  .slide-2 {
+    color: $white;
+    .video-wrapper {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      overflow: hidden;
+      height: 550px;
+      max-height: 550px;
+      background-color: $black;
+      width: 100vw;
+      z-index: -1;
+      video {
+        opacity: 0;
+        visibility: hidden;
+        transition: all 2s ease;
+      }
+    }
+    .overlay-text {
+      color: rgba(255, 255, 255, 0.1);
+      font-size: 400px;
+      top: -40px;
+      right: 200px;
+      position: absolute;
+      font-weight: 400;
+      transition: opacity 1s ease;
+      opacity: 0;
+    }
+    .top-text {
+      font-size: 80px;
+      right: 50px;
+      top: 30px;
+      font-weight: lighter;
+      position: absolute;
+      transition: all 1s ease;
+      z-index: 5;
+      opacity: 0;
+      transform: translateY(-40px);
+    }
+    .bottom-text {
+      font-size: 80px;
+      right: 30px;
+      top: 120px;
+      font-weight: lighter;
+      position: absolute;
+      transition: all 1s ease;
+      z-index: 5;
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    &.swiper-slide-active {
+      .video-wrapper {
+        video {
+          visibility: visible;
+          opacity: 1;
+        }
+      }
+      .overlay-text {
+        opacity: 1;
+      }
+      .top-text {
+        transition-delay: 1s;
+        opacity: 1;
+        transform: translateY(0);
+      }
+      .bottom-text {
+        transition-delay: 1.5s;
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  }
+  .slide-3 {
+    .flexbox {
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+      align-items: center;
+      justify-content: center;
+    }
+    .banner-content {
+      position: absolute;
+      color: $white;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 70%;
+    }
+    .banner-title {
+      font-size: 55px;
+      font-weight: 200;
+      line-height: 1;
+      text-shadow: 2px 4px 10px #222;
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 1s ease;
+      text-align: center;
+    }
+    .banner-desc {
+      text-align: right;
+      font-size: 20px;
+      margin-right: 1rem;
+      padding-right: 1rem;
+      border-right: 1px solid $white;
+      margin-bottom: 0;
+      transition: all 1s ease;
+      opacity: 0;
+      transform: translateY(-40px);
+    }
+    .btn-light {
+      transition: all 1s ease;
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    &.swiper-slide-active {
+      .banner-title {
+        transition-delay: 1s;
+        opacity: 1;
+        transform: translateY(0);
+      }
+      .banner-desc {
+        opacity: 1;
+        transform: translateY(0);
+        transition-delay: 1.5s;
+      }
+      .btn-light {
+        transition-delay: 1.8s;
+        opacity: 1;
+        transform: translateY(0px);
+      }
+    }
+  }
+  .slide-4 {
+    .banner-content {
+      padding-left: 200px;
+      position: absolute;
+      width: 100%;
+      top: 40%;
+      transform: translateY(-50%);
+      box-sizing: border-box;
+      color: $white;
+    }
+    h3 {
+      font-size: 55px;
+      font-weight: 200;
+      line-height: 1;
+      text-shadow: 2px 4px 10px #222;
+      opacity: 0;
+      transform: translateX(40px);
+      transition: all 1s ease;
+    }
+    h2 {
+      font-size: 80px;
+      font-weight: 200;
+      line-height: 1;
+      text-shadow: 2px 4px 10px #222;
+      opacity: 0;
+      transform: translateX(-40px);
+      transition: all 1s ease;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid $white;
+      margin-bottom: 2rem;
+      display: block;
+      width: 50%;
+    }
+    p {
+      font-size: 25px;
+      margin-bottom: 0;
+      transition: all 1s ease;
+      width: 50%;
+      opacity: 0;
+      transform: translateY(-40px);
+    }
+    &.swiper-slide-active {
+      h3 {
+        transition-delay: 1s;
+        opacity: 1;
+        transform: translateX(0);
+      }
+      h2 {
+        transition-delay: 1.5s;
+        opacity: 1;
+        transform: translateX(0);
+      }
+      p {
+        transition-delay: 2s;
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  }
+  .slide-5 {
+    .content {
+      width: 100%;
+      position: relative;
+      overflow: hidden;
+      height: 550px;
+    }
+    .phone-wrapper {
+      width: 350px;
+      height: 500px;
+      left: 180px;
+      bottom: 0;
+      transform-origin: left bottom;
+      opacity: 1;
+      position: absolute;
+      background: url("../images/iPhone6_mockup_front.png") no-repeat center;
+      background-size: cover;
+      color: $white;
+      box-sizing: border-box;
+      transform: translateY(100%);
+      transition: all 1s ease;
+      h5 {
+        position: absolute;
+        top: 230px;
+        left: 0;
+        font-size: 10px;
+        color: #b0b0b0;
+        font-weight: 400;
+        text-align: center;
+        width: 100%;
+        transition: all 1s ease;
+        opacity: 0;
+        transform: translateY(-40px);
+      }
+      .phone-content {
+        position: absolute;
+        top: 300px;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 4rem;
+        text-align: center;
+        transition: all 1s ease;
+        opacity: 0;
+        transform: translateY(40px);
+        h4 {
+          font-size: 18px;
+          font-weight: 400;
+          color: #aaa;
+        }
+        p {
+          font-size: 10px;
+          color: #707070;
+          display: block;
+          margin: 1rem 0;
+        }
+        .btn {
+          display: block;
+          padding: 0.4em 1.5em;
+          box-sizing: border-box;
+          width: 100%;
+        }
+      }
+    }
+    .banner-content {
+      position: absolute;
+      width: 80%;
+      top: 50%;
+      min-width: 250px;
+      max-width: 900px;
+      right: 0;
+      padding-right: 100px;
+      transform: translateY(-50%);
+      box-sizing: border-box;
+      h3 {
+        font-size: 50px;
+        border-bottom: 1px solid $white;
+        margin-bottom: 2rem;
+        padding-bottom: 1rem;
+        color: #1a1a1a;
+        font-weight: 400;
+        position: relative;
+        display: inline-block;
+        transform: translateX(40px);
+        opacity: 0;
+        transition: all 1s ease;
+        transition-delay: 0.8s;
+        &::before {
+          content: "";
+          width: 70%;
+          background: $primary;
+          height: 1px;
+          position: absolute;
+          bottom: -1px;
+          left: 0;
+          z-index: 10;
+        }
+      }
+      p {
+        font-size: 20px;
+        margin-bottom: 2rem;
+        transition: all 1s ease;
+        transition-delay: 1.5s;
+        opacity: 0;
+        transform: translateX(40px);
+      }
+      .btn {
+        padding: 0.4em 1.5em;
+        margin-right: 10px;
+      }
+      .btn-wrapper {
+        opacity: 0;
+        transform: translateY(40px);
+        transition: all 1s ease;
+        transition-delay: 2s;
+      }
+    }
+    &.swiper-slide-active {
+      .phone-wrapper {
+        transform: translateY(0);
+        transition-delay: 0.5s;
+        h5 {
+          opacity: 1;
+          transform: translateY(0);
+          transition-delay: 1.5s;
+        }
+        .phone-content {
+          opacity: 1;
+          transform: translateY(0);
+          transition-delay: 2s;
+        }
+      }
+      .banner-content {
+        h3 {
+          transform: translateX(0);
+          opacity: 1;
+        }
+        p {
+          transform: translateX(0);
+          opacity: 1;
+        }
+        .btn-wrapper {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    }
+  }
+}

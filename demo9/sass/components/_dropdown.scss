@@ -7,6 +7,7 @@
   opacity: 0;
   visibility: hidden;
   box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.3);
+  z-index: 99;
   &:hover {
     .dropdown-content {
       opacity: 1;

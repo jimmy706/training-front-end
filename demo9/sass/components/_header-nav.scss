@@ -2,6 +2,13 @@
   background-color: $black;
   position: relative;
   color: $white;
+  .nav-link {
+    padding: 0 1rem;
+    position: relative;
+    display: block;
+    height: 90px;
+    line-height: 90px;
+  }
   a {
     color: $white;
   }
@@ -131,13 +138,7 @@
     .nav-item {
       display: inline-block;
     }
-    .nav-link {
-      padding: 0 1rem;
-      position: relative;
-      display: block;
-      height: 90px;
-      line-height: 90px;
-    }
+
     .dropdown-handle {
       &:hover {
         .dropdown-content {
@@ -160,7 +161,7 @@
     }
   }
   .header-interact {
-    margin-left: 2rem;
+    margin-left: 50px;
     .toggle {
       display: inline-block;
       margin-right: 2rem;
