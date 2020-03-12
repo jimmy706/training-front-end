@@ -1,0 +1,30 @@
+.text-primary {
+  color: $primary !important;
+}
+
+.text-light-primary {
+  color: $light-primary !important;
+}
+
+.text-white {
+  color: $white !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.img-wrapper {
+  display: block;
+  width: 100%;
+  height: 100%;
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.raleway {
+  font-family: "Raleway ";
+}

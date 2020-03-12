@@ -1,0 +1,16 @@
+.btn-action {
+  border: 0;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  background-color: rgba(241, 72, 51, 0.9);
+  cursor: pointer;
+  color: $white;
+  padding: 0.6em 1.5em;
+  font-size: 1rem;
+  &:hover {
+    background-color: $strong-primary;
+  }
+  &:active {
+    background-color: $blue;
+  }
+}

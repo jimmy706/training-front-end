@@ -1,0 +1,117 @@
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0.7);
+  overflow-x: hidden;
+  overflow-y: auto;
+  z-index: 99999;
+  opacity: 0;
+  visibility: hidden;
+  .modal-center {
+    min-width: 300px;
+    width: 40%;
+    margin: 40px auto 0 auto;
+    background: $white;
+    border-radius: 3px;
+    opacity: 1;
+    box-sizing: border-box;
+    padding: 15px;
+    opacity: 0;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+    &.large-modal {
+      width: 60%;
+    }
+    .modal-header,
+    .modal-body {
+      padding: 15px 20px;
+      position: relative;
+    }
+    .modal-title {
+      margin: 0;
+      font-size: 2.12rem;
+      font-weight: 300;
+      display: flex;
+      align-items: center;
+    }
+    .close {
+      position: absolute;
+      top: -5px;
+      right: 5px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      border: 1px solid $dark-text;
+      box-sizing: border-box;
+      width: 30px;
+      height: 30px;
+      background: transparent;
+      font-size: 1.8rem;
+      opacity: 0.4;
+      line-height: 1;
+      cursor: pointer;
+      &:hover {
+        opacity: 1;
+      }
+    }
+    &.on-open {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .right-sidebar {
+    position: absolute;
+    right: 0;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    background-color: $white;
+    height: 100vh;
+    overflow: auto;
+    &.on-open {
+      transform: translateX(0);
+    }
+  }
+
+  .left-sidebar {
+    position: absolute;
+    left: 0;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+    background-color: $black;
+    height: 100vh;
+    overflow: auto;
+    color: $white;
+    &.on-open {
+      transform: translateX(0);
+    }
+  }
+  &.open {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+// @media screen and (max-width: 768px) {
+//   .modal {
+//     .modal-content {
+//       width: 80%;
+//       .modal-title {
+//         font-size: 1.3rem;
+//       }
+//     }
+//   }
+// }
+
+// @media screen and (max-width: 550px) {
+//   .modal {
+//     .modal-content {
+//       width: 95%;
+//     }
+//   }
+// }

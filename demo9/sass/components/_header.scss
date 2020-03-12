@@ -1,0 +1,65 @@
+.header {
+  background-color: $dark;
+  padding: 0.5rem 0;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  a {
+    color: #b2b2b2;
+    transition: color 0.3s ease;
+  }
+  .socials {
+    a {
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
+  .contact {
+    display: flex;
+    align-self: center;
+    li {
+      display: flex;
+      align-items: center;
+      &:first-child {
+        padding-right: 10px;
+        border-right: 1px solid #696969;
+      }
+    }
+    i {
+      color: $orange;
+      margin-right: 5px;
+    }
+    a {
+      font-size: 14px;
+      &:hover {
+        color: #ddd;
+      }
+    }
+  }
+}
+
+#login-modal {
+  .login-form {
+    font-size: 14px;
+    .remember-wrapper {
+      margin-bottom: 2rem;
+      margin-top: 0.5rem;
+    }
+
+    a {
+      color: $black;
+      text-transform: color 0.3s ease;
+      font-weight: 700;
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
+}
