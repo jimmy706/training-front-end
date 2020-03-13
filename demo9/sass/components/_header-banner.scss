@@ -450,3 +450,40 @@
     }
   }
 }
+
+.header-banner {
+  .addon-container {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    background-color: $white;
+  }
+  .addon {
+    flex: 1;
+    padding: 0 2rem;
+    box-sizing: border-box;
+    .addon-icon {
+      font-size: 87px;
+      line-height: 1;
+      margin-bottom: 1.5rem;
+      color: $primary;
+      display: block;
+    }
+    .addon-title {
+      margin-bottom: 1rem;
+      position: relative;
+      display: inline-block;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid #ddd;
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: -1px;
+        width: 70%;
+        height: 2px;
+        display: block;
+        left: 0;
+        background-color: $primary;
+      }
+    }
+  }
+}
