@@ -1,0 +1,221 @@
+#footer {
+  color: #b3b3b3;
+  .line-white {
+    margin: 2rem 0;
+    height: 1px;
+  }
+  .icon-wrap {
+    font-size: 50px;
+    line-height: 90px;
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    border: 2px solid #835656;
+    box-sizing: border-box;
+    color: #ff9494;
+    text-align: center;
+  }
+  .group-title {
+    font-size: 25px;
+    color: $light-primary;
+    margin-bottom: 2rem;
+    line-height: 1;
+    padding-bottom: 0.8rem;
+    position: relative;
+    display: inline-block;
+    box-shadow: inset 0 -1px 0 #ddd;
+    padding-right: 20px;
+    &::before {
+      content: "";
+      width: 70%;
+      height: 1.5px;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      background-color: #f47363;
+    }
+  }
+  .footer-intro {
+    background: #373737 url("../images/section-background-stripes.svg") center;
+    padding: 4rem 0;
+    position: relative;
+    border-bottom: 1px solid #444;
+    &::before {
+      content: "";
+      width: 70%;
+      height: 0.5px;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 0;
+      background-color: $primary;
+    }
+  }
+  .content {
+    background: #37383a url("../images/section-background-stripes2.svg") center;
+    padding: 4rem 0;
+    .tagname {
+      display: inline-block;
+      color: #666666;
+      transition: all 0.3s ease;
+      border-radius: 3px;
+      border: 1px solid #ddd;
+      padding: 6px 8px;
+      line-height: 1;
+      margin: 3px 0 3px 2px;
+      font-size: 13px;
+      &:hover {
+        color: $white;
+        border-color: $strong-primary;
+        background-color: $primary;
+      }
+      span {
+        min-width: 8px;
+        margin: 0 -1px 0 3px;
+        padding: 3px 7px;
+        font-size: 11px;
+        font-weight: 700;
+        line-height: 1.3;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: baseline;
+        background-color: rgba(0, 0, 0, 0.12);
+        border-radius: 10px;
+        display: inline-block;
+      }
+    }
+    .footer-logo {
+      width: 120px;
+      height: 40px;
+      display: block;
+    }
+    .join-form {
+      input[type="email"] {
+        float: left;
+        width: calc(100% - 50px);
+        height: 35px;
+        padding: 0;
+        padding-left: 10px;
+        border: 1px solid $white;
+        background-color: transparent;
+        color: #a3a3a3;
+        font-size: 12px;
+        min-height: unset;
+        border-radius: 0;
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
+        border-right: 0;
+        &:focus {
+          border-color: $primary;
+        }
+      }
+      button[type="submit"] {
+        float: left;
+        box-sizing: border-box;
+        padding: 0;
+        width: 50px;
+        height: 35px;
+        line-height: 0;
+        border-radius: 0;
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
+        .open-mail {
+          display: none;
+        }
+        &:hover {
+          .open-mail {
+            display: inline;
+          }
+          .close-mail {
+            display: none;
+          }
+        }
+      }
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 2rem;
+    }
+    .article-list {
+      display: flex;
+      flex-direction: column;
+      color: #999999;
+      font-size: 13px;
+      li:not(:last-child) {
+        margin-bottom: 1rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 1px solid $white;
+      }
+      a {
+        color: $primary;
+        transition: color 0.3s ease;
+        &:hover {
+          color: $light-primary;
+        }
+        &.article-title {
+          font-size: 15px;
+          color: #f47363;
+          &:hover {
+            color: $light-primary;
+          }
+        }
+      }
+      .article-content {
+        font-size: 13px;
+      }
+      .article-sub-content {
+        font-size: 12px;
+        span {
+          margin-right: 10px;
+        }
+        a {
+          font-size: 12px;
+        }
+      }
+    }
+    .content-wrap {
+      p {
+        font-size: 90%;
+      }
+    }
+  }
+  .nums-wrapper {
+    background: #2e2e2e url("../images/section-background-stripes2.svg") center;
+    padding: 4rem 0;
+    .container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+    .num-wrap {
+      text-align: center;
+      h4 {
+        color: $white;
+        font-size: 18px;
+      }
+      h2 {
+        font-family: "Open Sans", sans-serif;
+        font-size: 42px;
+        color: $light-primary;
+        font-weight: 400;
+        white-space: nowrap;
+      }
+      .icon-wrap {
+        color: #d16a6b;
+        margin: 1rem auto;
+      }
+    }
+  }
+  .copyright {
+    background-color: #37383a;
+    padding: 1rem 0;
+    font-size: 1rem;
+    a {
+      color: #d6d6d6;
+      transition: color 0.3s ease;
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+}
