@@ -2,12 +2,24 @@
   background-color: $black;
   position: relative;
   color: $white;
+  z-index: 100;
+  &.sticky {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    .nav-link {
+      height: 70px;
+      line-height: 70px;
+    }
+  }
   .nav-link {
     padding: 0 1rem;
     position: relative;
     display: block;
     height: 90px;
     line-height: 90px;
+    transition: all 0.5s ease;
   }
   a {
     color: $white;

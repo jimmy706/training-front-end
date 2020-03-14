@@ -1,0 +1,146 @@
+section.service {
+  .intro-wrapper {
+    position: relative;
+    padding-bottom: 2rem;
+    margin: 3rem auto;
+    text-align: center;
+    .flexbox {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1rem;
+    }
+    em {
+      color: #999999;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: $primary;
+      width: 150px;
+      height: 2px;
+    }
+    .time {
+      display: block;
+      padding: 1rem 1.5rem;
+      line-height: 1;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-size: 36px;
+      margin-left: 1.5rem;
+    }
+  }
+  .service-content {
+    display: flex;
+    margin: 2rem 0;
+    .img-wrapper {
+      flex: 1;
+      width: 100%;
+      padding-right: 60px;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    .tabs-container {
+      flex: 1;
+      margin-left: 2rem;
+    }
+  }
+  .customer-note {
+    background: #c44c3d url("../images/section-background-stripes2.svg") center
+      center;
+    position: relative;
+    color: $white;
+    text-align: center;
+    padding: 40px 0;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 40px;
+      width: 100%;
+      background: rgba(241, 72, 51, 0.7)
+        url("../images/section-background-stripes2.svg");
+      z-index: 5;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 40px;
+      width: 100%;
+      background: rgba(241, 72, 51, 0.7)
+        url("../images/section-background-stripes2.svg");
+    }
+    .container {
+      padding-top: 5rem;
+      padding-bottom: 5rem;
+    }
+    .swiper-slide {
+      padding-bottom: 60px;
+      h5 {
+        font-size: 24px;
+        margin-top: 1.5rem;
+      }
+    }
+    .swiper-pagination-bullets .swiper-pagination-bullet {
+      background-color: rgba(255, 255, 255, 0.9);
+    }
+    .swiper-button-next,
+    .swiper-button-prev {
+      background: rgba(0, 0, 0, 0.2);
+      width: 40px;
+      height: 40px;
+      text-align: center;
+      &::after {
+        color: $white;
+        font-size: 14px;
+      }
+    }
+    .title-wrapper {
+      margin-bottom: 3rem;
+      i {
+        font-size: 120px;
+        display: block;
+      }
+      h3 {
+        text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);
+        font-size: 30px;
+        position: relative;
+        overflow: hidden;
+        display: inline-block;
+        transition: all 0.5s ease;
+        span {
+          display: inline-block;
+          height: 42px;
+          font-style: 30px;
+          text-transform: uppercase;
+          white-space: nowrap;
+          &::after {
+            background-color: $primary;
+          }
+        }
+      }
+    }
+  }
+}
+
+#service-2 {
+  h4 {
+    font-size: 28px;
+    margin-bottom: 1.5rem;
+    b {
+      font-weight: 500;
+    }
+    i {
+      font-style: normal;
+      display: inline-block;
+    }
+  }
+}
