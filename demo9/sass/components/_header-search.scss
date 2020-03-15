@@ -21,9 +21,9 @@
   top: 100%;
   left: -100px;
   transition: all 0.3s cubic-bezier(0.405, 0.02, 0.325, 0.95);
-  transform: translateY(-50px) rotateX(90deg) scale(0.8);
+  transform: translateY(-50px) translateX(-50%) rotateX(90deg) scale(0.8);
   opacity: 0;
-  z-index: 99;
+  z-index: 1000;
   input[type="search"] {
     text-align: center;
     font-size: 1.2rem;
@@ -33,7 +33,7 @@
     width: 350px;
   }
   &.on-open {
-    transform: translateY(0px) rotateX(0deg) scale(1);
+    transform: translateY(0px) translateX(-50%) rotateX(0deg) scale(1);
     opacity: 1;
   }
 }

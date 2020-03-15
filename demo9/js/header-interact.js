@@ -18,6 +18,8 @@ cartToggle.addEventListener("click", e => {
   if (!cartToggle.classList.contains("open")) {
     cartToggle.classList.add("open");
   } else {
-    cartToggle.classList.remove("open");
+    if (e.target === cartToggle) {
+      cartToggle.classList.remove("open");
+    }
   }
 });

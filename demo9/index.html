@@ -667,6 +667,14 @@
         </ul>
         <div class="header-interact">
           <ul class="flexbox">
+            <li class="modal-toggle" data-target="#sidebar-mb">
+              <a href="javascript:void(0)" class="nav-link">
+                <i
+                  class="fas fa-bars text-primary"
+                  style="font-size: 1.2rem;"
+                ></i>
+              </a>
+            </li>
             <li class="toggle" style="position: relative;">
               <a href="javascript:void(0)" class="nav-link" id="search-toggle">
                 <i class="pe-7s-search search-icon"></i>
@@ -1456,6 +1464,114 @@
       </div>
     </div>
 
+    <div class="modal" id="sidebar-mb">
+      <nav class="modal-content right-sidebar ">
+        <div class="sidebar-header">
+          <a href="javascript:void(0)" class="close">
+            <i class="far fa-times-circle"></i>
+          </a>
+          <form>
+            <div class="form-group">
+              <input
+                type="search"
+                class="form-control"
+                placeholder="Search..."
+              />
+            </div>
+          </form>
+        </div>
+        <div class="sidebar-body">
+          <ul>
+            <li class="nav-item active">
+              <a href="javascript:void(0)" class="nav-link"> Home</a>
+              <span class="dropdown-toogle" data-target="#mb-menu-1">
+                <i class="pe-7s-angle-down angle-down"></i>
+                <i class="pe-7s-angle-up angle-up"></i>
+              </span>
+              <div class="dropdown-menu" id="mb-menu-1">
+                <ul>
+                  <li>
+                    <a href="javascript:void(0)">Home Version 1</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">Home Version 2</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">Home Version 3</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">Home Version 4</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">Full Windows Background</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item ">
+              <a href="javascript:void(0)" class="nav-link">
+                Headers
+              </a>
+              <span class="dropdown-toogle" data-target="#mb-menu-2">
+                <i class="pe-7s-angle-down angle-down"></i>
+                <i class="pe-7s-angle-up angle-up"></i>
+              </span>
+              <div class="dropdown-menu" id="mb-menu-2">
+                <ul>
+                  <li>
+                    <a href="javascript:void(0)">Header (Centered)</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">Header (Adspace)</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">Header (Transparent)</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">Header (Video Background)</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0)">Page Builder</a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0)">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0)">Pages</a>
+              <span class="dropdown-toogle" data-target="#mb-menu-3">
+                <i class="pe-7s-angle-down angle-down"></i>
+                <i class="pe-7s-angle-up angle-up"></i>
+              </span>
+              <div class="dropdown-menu" id="mb-menu-3">
+                <ul>
+                  <li>
+                    <a href="javascript:void(0)">
+                      <i class="pe-7s-note"></i> Blog
+                    </a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">
+                      <i class="pe-7s-ribbon"></i>
+                      Various
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0)">Posts</a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0)">Shop</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
     <footer id="footer">
       <div class="footer-intro text-center">
         <div class="container">
@@ -1710,6 +1826,7 @@
     <script src="js/header-interact.js"></script>
     <script src="./js/scroll.js"></script>
     <script src="./js/tabs.js"></script>
+    <script src="./js/dropdown.js"></script>
     <script src="./js/text.js"></script>
     <script>
       new Swiper("#main-banner", {
@@ -1721,11 +1838,11 @@
         pagination: {
           el: ".swiper-pagination",
           clickable: true
-        },
-        autoplay: {
-          delay: 8000,
-          disableOnInteraction: false
         }
+        // autoplay: {
+        //   delay: 8000,
+        //   disableOnInteraction: false
+        // }
       });
       new Swiper("#customer-swiper", {
         navigation: {
@@ -1743,8 +1860,18 @@
         }
       });
       new Swiper("#partners-swiper", {
-        slidesPerView: 5,
+        slidesPerView: 2,
         spaceBetween: 10,
+        breakpoints: {
+          427: {
+            slidesPerView: 4,
+            spaceBetween: 30
+          },
+          770: {
+            slidesPerView: 5,
+            spaceBetween: 40
+          }
+        },
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev"
@@ -1753,16 +1880,6 @@
         autoplay: {
           delay: 6000,
           disableOnInteraction: false
-        },
-        breakpoints: {
-          430: {
-            slidesPerView: 4,
-            spaceBetween: 30
-          },
-          770: {
-            slidesPerView: 5,
-            spaceBetween: 40
-          }
         }
       });
     </script>

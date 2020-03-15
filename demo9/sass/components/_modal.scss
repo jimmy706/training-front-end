@@ -83,7 +83,7 @@
     left: 0;
     transform: translateX(-100%);
     transition: transform 0.3s ease-in-out;
-    background-color: $black;
+    background-color: $white;
     height: 100vh;
     overflow: auto;
     color: $white;
@@ -97,21 +97,21 @@
   }
 }
 
-// @media screen and (max-width: 768px) {
-//   .modal {
-//     .modal-content {
-//       width: 80%;
-//       .modal-title {
-//         font-size: 1.3rem;
-//       }
-//     }
-//   }
-// }
+@media screen and (max-width: 768px) {
+  .modal {
+    .modal-center {
+      width: 80%;
+      .modal-title {
+        font-size: 1.3rem;
+      }
+    }
+  }
+}
 
-// @media screen and (max-width: 550px) {
-//   .modal {
-//     .modal-content {
-//       width: 95%;
-//     }
-//   }
-// }
+@media screen and (max-width: 550px) {
+  .modal {
+    .modal-center {
+      width: 95%;
+    }
+  }
+}

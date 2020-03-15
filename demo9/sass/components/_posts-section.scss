@@ -188,3 +188,23 @@ section.posts {
     }
   }
 }
+
+@media screen and (max-width: 1024px) {
+  section.posts {
+    .banner-1 {
+      .post-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section.posts {
+    .banner-1 {
+      .post-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+}

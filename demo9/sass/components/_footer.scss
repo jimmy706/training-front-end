@@ -23,7 +23,7 @@
     padding-bottom: 0.8rem;
     position: relative;
     display: inline-block;
-    box-shadow: inset 0 -1px 0 #ddd;
+    border-bottom: 1px solid #ddd;
     padding-right: 20px;
     &::before {
       content: "";
@@ -31,7 +31,7 @@
       height: 1.5px;
       position: absolute;
       left: 0;
-      bottom: 0;
+      bottom: -1px;
       background-color: #f47363;
     }
   }
@@ -208,13 +208,49 @@
   }
   .copyright {
     background-color: #37383a;
-    padding: 1rem 0;
+    padding: 1rem 2rem;
     font-size: 1rem;
     a {
       color: #d6d6d6;
       transition: color 0.3s ease;
       &:hover {
         color: #fff;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #footer {
+    .content {
+      .grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #footer {
+    .nums-wrapper {
+      .container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 426px) {
+  #footer {
+    .content {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+    .nums-wrapper {
+      .container {
+        grid-template-columns: 1fr;
       }
     }
   }

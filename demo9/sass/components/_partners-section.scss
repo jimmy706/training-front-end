@@ -92,3 +92,11 @@ section.partners {
     }
   }
 }
+
+@media screen and (max-width: 1024px) {
+  section.partners {
+    .grid {
+      grid-template-columns: 1fr;
+    }
+  }
+}

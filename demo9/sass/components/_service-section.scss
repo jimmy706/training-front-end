@@ -144,3 +144,40 @@ section.service {
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  section.service {
+    .service-content {
+      flex-direction: column;
+      .img-wrapper {
+        margin-bottom: 4rem;
+        padding: 0;
+      }
+      .tabs-container {
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  section.service {
+    .intro-wrapper {
+      .flexbox {
+        justify-content: flex-start;
+        h2 {
+          text-align: left;
+        }
+      }
+    }
+  }
+  #service-2 {
+    h4 {
+      height: 800px;
+      i {
+        font-style: normal;
+        display: block;
+      }
+    }
+  }
+}

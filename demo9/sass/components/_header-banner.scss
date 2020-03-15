@@ -23,7 +23,7 @@
   }
   .swiper-slide {
     position: relative;
-    height: 100vh;
+    height: 600px;
     max-height: 600px;
     min-height: 350px;
     overflow: hidden;
@@ -33,7 +33,8 @@
       position: absolute;
       z-index: -1;
       max-height: 550px;
-      height: 550px;
+      height: auto;
+      min-height: 370px;
     }
     .btn {
       font-size: 20px;
@@ -44,7 +45,7 @@
   }
   .slide-1 {
     .banner-content {
-      padding-left: 200px;
+      padding-left: 10%;
       position: absolute;
       width: 100%;
       top: 50%;
@@ -52,7 +53,7 @@
       box-sizing: border-box;
     }
     .banner-title {
-      font-size: 55px;
+      font-size: 4vw;
       color: #ff7564;
       font-weight: 200;
       line-height: 1;
@@ -134,7 +135,7 @@
       color: rgba(255, 255, 255, 0.1);
       font-size: 400px;
       top: -40px;
-      right: 200px;
+      right: 14%;
       position: absolute;
       font-weight: 400;
       transition: opacity 1s ease;
@@ -154,7 +155,7 @@
     .bottom-text {
       font-size: 80px;
       right: 30px;
-      top: 120px;
+      top: 20%;
       font-weight: lighter;
       position: absolute;
       transition: all 1s ease;
@@ -197,7 +198,9 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      width: 70%;
+      width: 100%;
+      box-sizing: border-box;
+      padding: 0 10%;
     }
     .banner-title {
       font-size: 55px;
@@ -245,7 +248,7 @@
   }
   .slide-4 {
     .banner-content {
-      padding-left: 200px;
+      padding-left: 11%;
       position: absolute;
       width: 100%;
       top: 40%;
@@ -310,9 +313,11 @@
       height: 550px;
     }
     .phone-wrapper {
-      width: 350px;
+      width: 40%;
+      max-width: 350px;
+      min-width: 220px;
       height: 500px;
-      left: 180px;
+      left: 11%;
       bottom: 0;
       transform-origin: left bottom;
       opacity: 1;
@@ -325,7 +330,7 @@
       transition: all 1s ease;
       h5 {
         position: absolute;
-        top: 230px;
+        top: 46.5%;
         left: 0;
         font-size: 10px;
         color: #b0b0b0;
@@ -338,7 +343,7 @@
       }
       .phone-content {
         position: absolute;
-        top: 300px;
+        top: 60%;
         width: 100%;
         box-sizing: border-box;
         padding: 0 4rem;
@@ -367,16 +372,15 @@
     }
     .banner-content {
       position: absolute;
-      width: 80%;
+      width: 100%;
       top: 50%;
-      min-width: 250px;
-      max-width: 900px;
+      padding-left: 45%;
       right: 0;
-      padding-right: 100px;
+      padding-right: 5%;
       transform: translateY(-50%);
       box-sizing: border-box;
       h3 {
-        font-size: 50px;
+        font-size: 3.5vw;
         border-bottom: 1px solid $white;
         margin-bottom: 2rem;
         padding-bottom: 1rem;
@@ -483,6 +487,117 @@
         display: block;
         left: 0;
         background-color: $primary;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #main-banner {
+    .swiper-slide {
+      height: 50vh;
+      padding-bottom: 60px;
+      .btn {
+        font-size: 1rem;
+      }
+    }
+    .slide-1 {
+      .banner-desc {
+        font-size: 0.9rem;
+      }
+      .screen-img {
+        right: 8.5%;
+        bottom: 8%;
+      }
+    }
+    .slide-2 {
+      .video-wrapper {
+        height: 370px;
+      }
+      .top-text,
+      .bottom-text {
+        font-size: 40px;
+      }
+      .overlay-text {
+        font-size: 30vw;
+      }
+    }
+    .slide-3 {
+      .banner-title {
+        font-size: 5vw;
+      }
+      .banner-desc {
+        font-size: 1rem;
+      }
+    }
+    .slide-4 {
+      h3 {
+        font-size: 4vw;
+      }
+      h2 {
+        font-size: 6vw;
+      }
+      p {
+        font-size: 1rem;
+        width: 80%;
+      }
+    }
+    .slide-5 {
+      .content {
+        height: 370px;
+      }
+      .phone-wrapper {
+        height: 300px;
+        width: 220px;
+        h5 {
+          font-size: 7px;
+        }
+        .phone-content {
+          padding: 0 1.5rem;
+          h4 {
+            font-size: 12px;
+          }
+          p {
+            font-size: 8px;
+          }
+          .btn {
+            font-size: 12px;
+          }
+        }
+      }
+      .banner-content {
+        p {
+          font-size: 1rem;
+        }
+        .btn {
+          font-size: 1.3vw;
+        }
+      }
+    }
+  }
+  .header-banner {
+    .addon-container {
+      .flexbox {
+        flex-direction: column;
+      }
+      .addon {
+        margin-bottom: 2rem;
+        padding: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #main-banner {
+    .slide-1 {
+      .btn-light:nth-child(2) {
+        display: none;
+      }
+    }
+    .slide-5 {
+      .banner-content {
+        display: none;
       }
     }
   }

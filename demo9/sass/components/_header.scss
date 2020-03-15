@@ -63,3 +63,14 @@
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  .header {
+    .socials {
+      display: none;
+    }
+    .container {
+      justify-content: center;
+    }
+  }
+}

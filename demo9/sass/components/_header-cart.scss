@@ -86,3 +86,16 @@
     }
   }
 }
+
+@media screen and (max-width: 425px) {
+  #cart-toggle {
+    .cart-sidebar {
+      width: 250px;
+    }
+    &.open {
+      .header-cart {
+        right: 20px;
+      }
+    }
+  }
+}
