@@ -720,7 +720,9 @@
         <div class="swiper-wrapper">
           <div class="swiper-slide slide-1">
             <img src="./images/slide-4-2340x850.jpg" class="banner-img" />
-            <img src="./images/flex-iphone6-screen.png" class="screen-img" />
+            <div class="screen-img">
+              <img src="./images/flex-iphone6-screen.png" />
+            </div>
             <div class="banner-content">
               <h1 class="banner-title">
                 A professional design based
@@ -810,6 +812,7 @@
             <div class="content">
               <img src="./images/slide-1-2340x850.jpg" class="banner-img" />
               <div class="phone-wrapper">
+                <img src="./images/iPhone6_mockup_front.png" alt="" />
                 <h5 class="phone-sub-title">
                   MOST <span class="text-primary">FLEXIBLE</span> JOOMLA
                   TEMPLATE
@@ -1452,9 +1455,9 @@
             <label for="remember" class="remember-wrapper">
               Remember me
             </label>
-            <div class="flexbox" style="align-items: center;">
+            <div class="flexbox">
               <button class="btn-action" type="submit">Log in</button>
-              <span style="margin-left: 20px;">
+              <span>
                 Forgot <a href="javascript:void(0)">Username</a> or
                 <a href="javascript:void(0)">Password</a>
               </span>
@@ -1818,6 +1821,10 @@
         <a href="javascript:void(0)">Aplikko</a>
       </div>
     </footer>
+
+    <button id="top-btn">
+      <i class="pe-7s-angle-up"></i>
+    </button>
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
     <script src="./assets/animated-headline-master/js/jquery-2.1.1.js"></script>
 
@@ -1864,7 +1871,7 @@
         spaceBetween: 10,
         breakpoints: {
           427: {
-            slidesPerView: 4,
+            slidesPerView: 3,
             spaceBetween: 30
           },
           770: {

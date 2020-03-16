@@ -12,7 +12,7 @@
   opacity: 0;
   visibility: hidden;
   .modal-center {
-    min-width: 300px;
+    min-width: 280px;
     width: 40%;
     margin: 40px auto 0 auto;
     background: $white;
@@ -112,6 +112,10 @@
   .modal {
     .modal-center {
       width: 95%;
+      .modal-header,
+      .modal-body {
+        padding: 20px 0px;
+      }
     }
   }
 }

@@ -52,3 +52,26 @@
     background-color: rgba(255, 255, 255, 0.1);
   }
 }
+
+#top-btn {
+  color: #555;
+  position: fixed;
+  transition: all 0.3s ease;
+  border-radius: 50%;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  cursor: pointer;
+  opacity: 0.9;
+  font-size: 60px;
+  background: transparent;
+  transition: all 0.3s ease;
+  display: none;
+  &:hover {
+    color: $black;
+    opacity: 1;
+  }
+  &.block {
+    display: block;
+  }
+}

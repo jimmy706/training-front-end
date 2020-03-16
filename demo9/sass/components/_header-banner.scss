@@ -1,4 +1,5 @@
 #main-banner {
+  overflow-x: hidden;
   &:hover {
     .swiper-btn {
       opacity: 1;
@@ -29,15 +30,14 @@
     overflow: hidden;
     .banner-img {
       width: 100%;
-      height: auto;
+      height: 550px;
       position: absolute;
       z-index: -1;
       max-height: 550px;
-      height: auto;
       min-height: 370px;
     }
     .btn {
-      font-size: 20px;
+      font-size: 1.2vw;
       .btn-icon {
         margin: 0 5px;
       }
@@ -76,7 +76,6 @@
     }
 
     .screen-img {
-      visibility: visible;
       width: 37%;
       height: 83%;
       position: absolute;
@@ -85,6 +84,10 @@
       bottom: 8%;
       opacity: 0;
       transition: opacity 2s linear;
+      img {
+        width: 100%;
+        height: 100%;
+      }
     }
     .btn-wrapper {
       opacity: 0;
@@ -94,22 +97,22 @@
     &.swiper-slide-active {
       .screen-img {
         opacity: 1;
-        transition-delay: 2s;
+        transition-delay: 1s;
       }
       .banner-title {
-        transition-delay: 4s;
+        transition-delay: 2.5s;
         opacity: 1;
         transform: translateX(0px);
       }
       .banner-desc {
-        transition-delay: 4s;
+        transition-delay: 2.5s;
         opacity: 1;
         transform: translateX(0px);
       }
       .btn-wrapper {
         opacity: 1;
         transform: translateY(0);
-        transition-delay: 5s;
+        transition-delay: 3s;
       }
     }
   }
@@ -315,19 +318,19 @@
     .phone-wrapper {
       width: 40%;
       max-width: 350px;
-      min-width: 220px;
       height: 500px;
       left: 11%;
       bottom: 0;
-      transform-origin: left bottom;
       opacity: 1;
       position: absolute;
-      background: url("../images/iPhone6_mockup_front.png") no-repeat center;
-      background-size: cover;
       color: $white;
       box-sizing: border-box;
       transform: translateY(100%);
       transition: all 1s ease;
+      img {
+        width: 100%;
+        height: 100%;
+      }
       h5 {
         position: absolute;
         top: 46.5%;
@@ -360,7 +363,7 @@
           font-size: 10px;
           color: #707070;
           display: block;
-          margin: 1rem 0;
+          margin: 1em 0;
         }
         .btn {
           display: block;
@@ -382,8 +385,8 @@
       h3 {
         font-size: 3.5vw;
         border-bottom: 1px solid $white;
-        margin-bottom: 2rem;
-        padding-bottom: 1rem;
+        margin-bottom: 1em;
+        padding-bottom: 1em;
         color: #1a1a1a;
         font-weight: 400;
         position: relative;
@@ -405,7 +408,7 @@
       }
       p {
         font-size: 20px;
-        margin-bottom: 2rem;
+        margin-bottom: 2em;
         transition: all 1s ease;
         transition-delay: 1.5s;
         opacity: 0;
@@ -492,13 +495,16 @@
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1026px) {
   #main-banner {
     .swiper-slide {
       height: 50vh;
       padding-bottom: 60px;
       .btn {
         font-size: 1rem;
+      }
+      .banner-img {
+        height: auto;
       }
     }
     .slide-1 {
@@ -591,13 +597,90 @@
 @media screen and (max-width: 768px) {
   #main-banner {
     .slide-1 {
-      .btn-light:nth-child(2) {
-        display: none;
+      .btn {
+        font-size: 10px;
+      }
+      .banner-desc {
+        font-size: 12px;
+      }
+    }
+    .slide-3 {
+      .banner-content {
+        padding: 0 15px;
+      }
+      .flexbox {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+      }
+      .banner-desc {
+        font-size: 12px;
+        padding-right: 0;
+        border: 0;
+        margin-right: 0;
+        margin-bottom: 1rem;
+        text-align: center;
+      }
+      .btn {
+        font-size: 10px;
       }
     }
     .slide-5 {
       .banner-content {
-        display: none;
+        font-size: 4vw;
+        padding-left: 35%;
+        padding-right: 0;
+        right: 7%;
+        h3 {
+          font-size: 100%;
+        }
+        p {
+          font-size: 40%;
+        }
+        .btn {
+          font-size: 40%;
+        }
+      }
+      .phone-wrapper {
+        width: 25%;
+        height: 80%;
+        left: 2%;
+        h5 {
+          font-size: 1vw;
+        }
+        .phone-content {
+          font-size: 2.5vw;
+          h4 {
+            font-size: 80%;
+          }
+          p {
+            font-size: 40%;
+          }
+          .btn {
+            font-size: 60%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 426px) {
+  #main-banner {
+    .slide-5 {
+      .phone-wrapper {
+        height: 50%;
+        width: 30%;
+        .phone-content {
+          font-size: 2vw;
+        }
+      }
+      .banner-content {
+        padding-left: 40%;
+        top: 70%;
+        .btn {
+          font-size: 30%;
+        }
       }
     }
   }
