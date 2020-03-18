@@ -1,0 +1,35 @@
+.dropdown-content {
+  opacity: 1;
+  visibility: visible;
+  position: absolute;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+  opacity: 0;
+  visibility: hidden;
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.3);
+  z-index: 99;
+  &:hover {
+    .dropdown-content {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}
+
+.dropdown-menu {
+  display: none;
+  overflow: hidden;
+  transition: height 0.5s ease;
+  &.open {
+    display: block;
+  }
+}
+
+.dropdown-handle {
+  &:hover {
+    .dropdown-content {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}

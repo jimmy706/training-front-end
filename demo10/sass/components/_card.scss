@@ -1,0 +1,117 @@
+.card-product {
+  position: relative;
+  max-width: 400px;
+  box-sizing: border-box;
+  background-color: $white;
+  margin-left: 15px;
+  z-index: 50;
+  .product-container {
+    padding: 15px;
+  }
+  .tag {
+    font-size: 12px;
+    color: #999;
+    transition: color 0.2s ease;
+    &:hover {
+      color: #333;
+    }
+  }
+  .img-wrapper {
+    img {
+      max-width: 300px;
+      max-height: 300px;
+    }
+  }
+  .product-title {
+    a {
+      display: block;
+      font-size: 1rem;
+      line-height: 1.4;
+      color: #0062bd;
+      font-weight: 700;
+    }
+  }
+  .price-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 20;
+    background-color: $white;
+    .price {
+      font-size: 20px;
+      line-height: 1;
+      color: #343f49;
+    }
+    .cart-btn {
+      font-size: 1.1rem;
+      font-weight: 700;
+      width: 35px;
+      height: 35px;
+      line-height: 35px;
+      text-align: center;
+      border-radius: 50%;
+      color: $white;
+      background-color: #ddd;
+    }
+  }
+  .hover-wrap {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    padding: 15px;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: $white;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    opacity: 0;
+    visibility: hidden;
+
+    a {
+      font-size: 12px;
+      color: #999;
+      transition: color 0.2s ease;
+      &:hover {
+        color: #333;
+      }
+    }
+    .wishlist {
+      position: relative;
+      &::before {
+        content: "\f004";
+        font-family: "Font Awesome 5 Free";
+        margin-right: 5px;
+      }
+    }
+    .compare {
+      position: relative;
+      &::before {
+        content: "\e61b";
+        font-family: "Pe-icon-7-stroke";
+        margin-right: 5px;
+        font-weight: bold;
+        font-size: 1rem;
+      }
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: calc(100% - 30px);
+      height: 0;
+      border-top: 1px solid #ddd;
+      display: block;
+    }
+  }
+  &:hover {
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.3);
+    .hover-wrap {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}

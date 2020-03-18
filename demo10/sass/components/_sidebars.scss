@@ -1,0 +1,48 @@
+#product-sidebar {
+  .modal-content {
+    background-color: #333333;
+    width: 40%;
+    min-width: 270px;
+    max-width: 300px;
+    overflow-y: auto;
+  }
+  .dropdown-menu {
+    li {
+      a {
+        background-color: $black;
+      }
+    }
+  }
+  li {
+    display: block;
+    a {
+      display: block;
+      padding: 1rem 1.5rem;
+      line-height: 1;
+      color: rgba(255, 255, 255, 0.7);
+      background-color: #333;
+      border-bottom: 1px solid #232323;
+      transition: background-color 0.3s ease;
+      &:hover {
+        background-color: #434343;
+      }
+    }
+  }
+  .dropdown-toggle {
+    &.on-open > a::after {
+      content: "\e682";
+    }
+    & > a {
+      position: relative;
+      &::after {
+        content: "\e688";
+        font-family: "Pe-icon-7-stroke";
+        font-size: 2rem;
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+}
