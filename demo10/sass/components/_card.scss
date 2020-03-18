@@ -1,9 +1,7 @@
 .card-product {
   position: relative;
-  max-width: 400px;
   box-sizing: border-box;
-  background-color: $white;
-  margin-left: 15px;
+  background-color: transparent;
   z-index: 50;
   .product-container {
     padding: 15px;
@@ -20,9 +18,13 @@
     img {
       max-width: 300px;
       max-height: 300px;
+      height: auto;
     }
   }
   .product-title {
+    display: block;
+    height: 40px;
+    overflow: hidden;
     a {
       display: block;
       font-size: 1rem;
@@ -53,6 +55,7 @@
       border-radius: 50%;
       color: $white;
       background-color: #ddd;
+      transition: background-color 0.3s ease;
     }
   }
   .hover-wrap {
@@ -62,9 +65,10 @@
     padding: 15px;
     box-sizing: border-box;
     width: 100%;
-    background-color: $white;
-    z-index: 10;
+    background-color: transparent;
+    z-index: 20;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     opacity: 0;
     visibility: hidden;
@@ -93,6 +97,7 @@
         margin-right: 5px;
         font-weight: bold;
         font-size: 1rem;
+        vertical-align: middle;
       }
     }
     &::before {
@@ -109,9 +114,22 @@
   }
   &:hover {
     box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.3);
+    background-color: $white;
     .hover-wrap {
       opacity: 1;
       visibility: visible;
+      background-color: $white;
     }
+    .price-wrap {
+      .cart-btn {
+        background-color: $primary;
+      }
+    }
+  }
+}
+
+.swiper-slide {
+  .card-product {
+    width: 100%;
   }
 }

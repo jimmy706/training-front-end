@@ -422,7 +422,7 @@
     <section class="main-banner">
       <div class="container">
         <div class="banner-content">
-          <div class="swiper-container">
+          <div class="swiper-container" id="main-swiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <div class="content-text">
@@ -544,55 +544,36 @@
     </section>
 
     <section class="product-carousel">
-      <div class="card-product">
-        <div class="product-container">
-          <a href="javascript:void(0)" class="tag">Laptops</a>
-          <div href="javascript:void(0)" class="product-content">
-            <h4 class="product-title">
-              <a href="javascript:void(0)"
-                >Eget mauris pharetra et ultrices neque ornare</a
-              >
-            </h4>
-            <a href="javascript:void(0)" class="img-wrapper">
-              <img
-                src="./images/Laptop-300x300.jpg"
-                alt=""
-                class="product-img"
-              />
-            </a>
-            <div class="action-wrap">
-              <div class="price-wrap">
-                <span class="price">£1,100.00</span>
-                <a href="javascript:void(0)" class="cart-btn tooltip">
-                  <i class="pe-7s-cart"></i>
-                  <span class="tooltip-text">Add to cart</span>
-                </a>
+      <div class="container">
+        <div class="tabs-container">
+          <nav class="nav-tabs">
+            <a href="#tab-1" class="nav-item active">Featured</a>
+            <a href="#tab-2" class="nav-item">On Sale</a>
+            <a href="#tab-3" class="nav-item">Top Rated</a>
+          </nav>
+          <div class="tab-content">
+            <div class="tab active" id="tab-1">
+              <div class="swiper-container product-swiper">
+                <div class="swiper-wrapper ">
+                  <div class="swiper-pagination"></div>
+                </div>
               </div>
-              
+            </div>
+            <div class="tab" id="tab-2">
+              <div class="swiper-container product-swiper">
+                <div class="swiper-wrapper"></div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+            <div class="tab" id="tab-3">
+              <div class="swiper-container product-swiper">
+                <div class="swiper-wrapper"></div>
+                <div class="swiper-pagination"></div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="hover-wrap">
-                <a href="javascript:void(0)" class="wishlist">Whishlist</a>
-                <a href="javascript:void(0)" class="compare">Compare</a>
-              </div>
       </div>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Potenti nullam ac
-        tortor vitae purus. Mauris vitae ultricies leo integer malesuada.
-        Accumsan lacus vel facilisis volutpat est. Mauris in aliquam sem
-        fringilla ut morbi tincidunt augue. Orci a scelerisque purus semper eget
-        duis at tellus at. Aliquet sagittis id consectetur purus ut.
-        Pellentesque elit eget gravida cum sociis natoque penatibus et magnis.
-        Tortor consequat id porta nibh venenatis. Dui ut ornare lectus sit.
-        Proin nibh nisl condimentum id venenatis a condimentum. Nunc sed velit
-        dignissim sodales. Maecenas accumsan lacus vel facilisis volutpat est
-        velit egestas. Auctor elit sed vulputate mi sit amet. Enim neque
-        volutpat ac tincidunt vitae semper quis lectus nulla. In est ante in
-        nibh mauris cursus mattis molestie. Eu facilisis sed odio morbi. Odio ut
-        sem nulla pharetra diam sit amet.
-      </p>
     </section>
 
     <div class="modal" id="product-sidebar">
@@ -791,16 +772,12 @@
         </ul>
       </div>
     </div>
+    <script src="./js/jquery-3.4.1.min.js"></script>
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
     <script src="./js/dropdown.js"></script>
     <script src="./js/modal.js"></script>
-    <script>
-      new Swiper(".swiper-container", {
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true
-        }
-      });
-    </script>
+    <script src="./js/product-data.js"></script>
+    <script src="js/tabs.js"></script>
+    <script src="./js/init.js"></script>
   </body>
 </html>

@@ -196,3 +196,17 @@ iframe {
   width: 30px;
   border-radius: 10px;
 }
+
+.owl-theme .owl-dots .owl-dot {
+  span {
+    width: 7px;
+    height: 7px;
+  }
+  &.active {
+    span {
+      background: $primary;
+      width: 30px;
+      border-radius: 10px;
+    }
+  }
+}

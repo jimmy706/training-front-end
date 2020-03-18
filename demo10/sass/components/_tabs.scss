@@ -4,41 +4,55 @@
     display: flex;
     width: 100%;
     border-bottom: 1px solid #ddd;
+    justify-content: center;
     .nav-item {
-      flex: 1;
       display: inline-block;
-      background-color: #f7f7f7;
-      color: #f14833;
-      font-size: 1rem;
+      font-size: 18px;
       line-height: 1;
-      padding: 1em 1.5em;
+      padding: 0.5em 1.5em;
       margin: 0 2px;
-      border-top-left-radius: 4px;
-      border-top-right-radius: 4px;
       text-align: center;
-      border: 1px solid #ddd;
-      border-bottom: 0;
       cursor: pointer;
       white-space: nowrap;
+      color: $dark-knight;
+      position: relative;
       &.active {
-        border-top: 2px solid $primary;
-        color: $black;
+        border-bottom: 2px solid $primary;
+        font-weight: bold;
+        &::after {
+          content: " ";
+          height: 4px;
+          width: 10px;
+          display: block;
+          position: absolute;
+          bottom: -5px;
+          left: 50%;
+          border-radius: 0 0 10px 10px;
+          transform: translateX(-50%);
+          background-color: $primary;
+        }
       }
     }
   }
   .tab-content {
-    display: flex;
-    flex-direction: column;
     width: 100%;
     overflow: hidden;
+    position: relative;
     .tab {
       transition: all 0.5s ease;
       padding: 2rem 1rem;
-      display: none;
       width: 100%;
+      position: absolute;
+      left: 100%;
+      transform: translateX(-100%);
+      opacity: 0;
       &.active {
         display: block;
-        animation: faded 0.5s ease;
+        visibility: visible;
+        position: relative;
+        opacity: 1;
+        left: 0;
+        transform: unset;
       }
     }
   }

@@ -4,15 +4,17 @@
 @import "./base/reset";
 
 @import "./layouts/container";
+@import "./layouts/swiper";
 
 @import "./components/buttons";
 @import "./components/text";
 @import "./components/tooltip";
 @import "./components/modal";
+@import "./components/card";
 @import "./components/tabs";
 @import "./components/header";
 @import "./components/form";
 @import "./components/dropdown";
 @import "./components/sidebars";
 @import "./components/main-banner";
-@import "./components/card";
+@import "./components/product-carousel-section";

@@ -13,6 +13,8 @@ tabsContainers.forEach(container => {
         tabTarget.classList.add("active");
         tabLinks.forEach(l => l.classList.remove("active"));
         link.classList.add("active");
+        renderProduct();
+        initProductSwiper();
       }
     });
   });
