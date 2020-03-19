@@ -1,0 +1,43 @@
+.item-product-list {
+  .item-product {
+    margin-bottom: 1rem;
+    min-height: 100px;
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    grid-gap: 10px;
+    width: 100%;
+    .img-wrapper {
+      img {
+        height: 100%;
+        display: block;
+      }
+    }
+    .product-content {
+      box-sizing: border-box;
+    }
+    .product-name {
+      color: #0062bd;
+      font-size: 1rem;
+      font-weight: bold;
+    }
+    .price {
+      ins {
+        text-decoration: none;
+        font-size: 1.1rem;
+        color: $dark-knight;
+      }
+      del {
+        color: #8f8f8f;
+        font-size: 12px;
+        display: inline-block;
+      }
+    }
+    .rating {
+      color: #fdd700;
+      display: flex;
+      font-size: 13px;
+      margin-top: 10px;
+      margin-bottom: 15px;
+    }
+  }
+}

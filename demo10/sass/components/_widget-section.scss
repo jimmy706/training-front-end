@@ -1,0 +1,33 @@
+section.widget {
+  margin: 3rem 0;
+  .column-title {
+    display: block;
+    font-size: 20px;
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #ddd;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 60%;
+      height: 2px;
+      min-width: 40px;
+      max-width: 100px;
+      background: $primary;
+      bottom: -1px;
+      left: 0;
+    }
+  }
+  .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+  }
+  .banner {
+    img {
+      height: auto;
+    }
+  }
+}

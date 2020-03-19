@@ -1,0 +1,35 @@
+section.signup {
+  background: $primary;
+  padding: 1rem 0;
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .content {
+      color: $dark-knight;
+      flex: 1;
+      h3 {
+        font-size: 20px;
+        font-weight: 400;
+        display: inline-block;
+        i {
+          font-size: 30px;
+          margin-right: 10px;
+        }
+      }
+      span {
+        margin-left: 30px;
+      }
+    }
+    form {
+      flex: 1;
+      padding-left: 60px;
+      input {
+        color: #818181;
+        &::placeholder {
+          color: #818181;
+        }
+      }
+    }
+  }
+}

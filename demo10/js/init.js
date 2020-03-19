@@ -5,6 +5,25 @@ function init() {
       clickable: true
     }
   });
+  new Swiper("#swiper-partner", {
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev"
+    },
+    slidesPerView: 2,
+    spaceBetween: 40,
+    breakpoints: {
+      427: {
+        slidesPerView: 3,
+        spaceBetween: 80
+      },
+      770: {
+        slidesPerView: 5,
+        spaceBetween: 100
+      }
+    },
+    loop: true
+  });
   initProductSwiper();
 }
 

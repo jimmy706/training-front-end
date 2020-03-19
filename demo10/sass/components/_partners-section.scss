@@ -1,0 +1,33 @@
+section.partners {
+  .swiper-container {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+  }
+  .img-wrapper {
+    padding: 0.5rem 0;
+    img {
+      filter: grayscale(100%);
+      transition: filter 0.3s ease;
+      transform: scale(0.9);
+      &:hover {
+        filter: grayscale(0);
+      }
+    }
+  }
+  .swiper-button-prev:after,
+  .swiper-button-next:after {
+    font-size: 2rem;
+    color: rgba(0, 0, 0, 0.342);
+    transition: color 0.3s ease;
+    font-weight: bold;
+    &:hover {
+      color: $black;
+    }
+  }
+  .swiper-button-prev {
+    left: 0;
+  }
+  .swiper-button-next {
+    right: 0;
+  }
+}
