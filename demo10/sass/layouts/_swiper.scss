@@ -1,9 +1,11 @@
 .product-swiper {
   width: 100%;
+  overflow: hidden;
   .swiper-wrapper {
     z-index: 20;
     position: relative;
     background-color: transparent;
+    padding-bottom: 40px;
   }
   .swiper-slide {
     padding: 2px 0;
@@ -16,6 +18,6 @@
   }
   .swiper-pagination {
     position: relative;
-    transform: translateY(-20px);
+    transform: translateY(10px);
   }
 }

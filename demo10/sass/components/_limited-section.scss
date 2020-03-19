@@ -1,0 +1,39 @@
+section.limited {
+  margin: 3rem 0;
+  background: $light;
+  padding: 3rem 0;
+  .offer-timer {
+    .offer-icon {
+      font-size: 130px;
+      line-height: 1;
+    }
+    .time-wrap {
+      display: flex;
+      .unit-wrap {
+        display: inline-block;
+        margin-right: 1rem;
+        font-size: 8px;
+        text-align: center;
+        padding: 15px 5px;
+        line-height: 1;
+        border: 2px solid $primary;
+        span {
+          font-size: 25px;
+          display: block;
+        }
+      }
+    }
+  }
+  .container {
+    display: flex;
+  }
+  .carousel-wrapper {
+    width: 80%;
+  }
+  .limited-wrapper {
+    width: 20%;
+    padding-right: 20px;
+    max-width: 280px;
+    box-sizing: border-box;
+  }
+}
