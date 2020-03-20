@@ -31,3 +31,22 @@ section.widget {
     }
   }
 }
+
+@media screen and (max-width: 1200px) {
+  section.widget {
+    .container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section.widget {
+    .container {
+      grid-template-columns: 1fr;
+    }
+    .banner {
+      display: none;
+    }
+  }
+}

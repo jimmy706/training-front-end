@@ -60,3 +60,28 @@
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  .section-head {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+    .section-title {
+      margin-bottom: 2rem;
+      font-weight: 700;
+      font-size: 17px;
+      position: relative;
+      padding-bottom: 0.7rem;
+      display: block;
+      width: 100%;
+    }
+    .nav {
+      display: flex;
+      overflow: scroll;
+      width: 100%;
+      .nav-link {
+        white-space: nowrap;
+      }
+    }
+  }
+}

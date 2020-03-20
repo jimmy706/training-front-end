@@ -1,10 +1,10 @@
 section.products {
   margin: 3rem 0;
   .product-cate-wrapper {
-    display: flex;
+    display: grid;
+    grid-template-columns: 220px auto 60%;
   }
   .cate-list {
-    width: 220px;
     box-sizing: border-box;
     padding-right: 20px;
     li {
@@ -25,7 +25,6 @@ section.products {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 5px;
-    width: 60%;
     margin-top: 10px;
     .card-product {
       position: relative;
@@ -43,22 +42,85 @@ section.products {
     }
   }
   .banner-wrapper {
+    box-sizing: border-box;
+    padding-right: 10px;
     width: auto;
     img {
       height: auto;
-      max-width: 100%;
+      max-width: 360px;
+      width: 100%;
       display: block;
     }
   }
   .large-card {
-    width: 35%;
-    height: auto;
     margin-top: 10px;
     margin-right: 15px;
     .hover-wrap {
       position: relative;
       transform: translateY(0);
       box-shadow: unset;
+    }
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  section.products {
+    .product-cate-wrapper {
+      grid-template-columns: auto 60%;
+    }
+    .cate-list {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      display: flex;
+      overflow-x: scroll;
+      padding: 1rem 0;
+      width: 100%;
+      li {
+        white-space: nowrap;
+        margin-right: 1rem;
+        &:not(:last-child) {
+          border-bottom: 0;
+        }
+      }
+    }
+    .products-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .large-card {
+      .hover-wrap {
+        display: none !important;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  section.products {
+    .product-cate-wrapper {
+      display: block;
+    }
+    .banner-wrapper {
+      padding: 0;
+    }
+    .cate-list {
+      grid-column-start: 1;
+      grid-column-end: 2;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  section.products {
+    .products-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  section.products {
+    .products-grid {
+      grid-template-columns: 1fr;
     }
   }
 }

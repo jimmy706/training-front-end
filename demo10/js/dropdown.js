@@ -1,7 +1,7 @@
-var dropdownToogles = Array.from(
+const dropdownToogles = Array.from(
   document.getElementsByClassName("dropdown-toggle")
 );
-var dropdowns = Array.from(document.getElementsByClassName("dropdown-menu"));
+const dropdowns = Array.from(document.getElementsByClassName("dropdown-menu"));
 
 dropdownToogles.forEach(toggle => {
   toggle.classList.add("on-close");

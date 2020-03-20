@@ -33,3 +33,41 @@ section.signup {
     }
   }
 }
+
+@media screen and (max-width: 1340px) {
+  section.signup {
+    .container {
+      .content {
+        h3 {
+          display: block;
+          margin-bottom: 0.5rem;
+        }
+        span {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 850px) {
+  section.signup {
+    .container {
+      flex-direction: column;
+      .content {
+        flex: 1;
+        margin-bottom: 1rem;
+      }
+      form {
+        flex: 1;
+        padding-left: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  section.signup {
+    display: none;
+  }
+}

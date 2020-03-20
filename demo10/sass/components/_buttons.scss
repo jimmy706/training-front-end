@@ -25,3 +25,26 @@
     background-color: $black;
   }
 }
+
+#top-btn {
+  position: fixed;
+  background-color: $primary;
+  opacity: 0.6;
+  color: $white;
+  cursor: pointer;
+  z-index: 100;
+  bottom: 20px;
+  right: 20px;
+  font-size: 1.5rem;
+  width: 30px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  display: none;
+  &:hover {
+    opacity: 1;
+  }
+  &.block {
+    display: block;
+  }
+}

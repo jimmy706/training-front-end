@@ -1,8 +1,8 @@
 .container {
   margin-left: auto;
   margin-right: auto;
-  padding-left: 5.7rem;
-  padding-right: 5.7rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
   max-width: 1400px;
 }
 
@@ -24,7 +24,7 @@
 
 @media screen and (max-width: 426px) {
   .container {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
