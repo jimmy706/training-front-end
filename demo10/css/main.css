@@ -1433,7 +1433,8 @@ section.signup {
       margin-bottom: 1rem; }
     section.signup .container form {
       flex: 1;
-      padding-left: 0; } }
+      padding-left: 0;
+      width: 100%; } }
 @media screen and (max-width: 425px) {
   section.signup {
     display: none; } }
