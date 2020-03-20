@@ -24,7 +24,8 @@ section.products {
   .products-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 5px;
+    grid-column-gap: 5px;
+    grid-row-gap: 1rem;
     margin-top: 10px;
     .card-product {
       position: relative;
@@ -75,6 +76,7 @@ section.products {
       overflow-x: scroll;
       padding: 1rem 0;
       width: 100%;
+      margin-bottom: 1rem;
       li {
         white-space: nowrap;
         margin-right: 1rem;
