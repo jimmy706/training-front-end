@@ -1,7 +1,12 @@
 #header {
-  position: relative;
   background-color: rgba(0, 0, 0, 0.7);
   padding: 10px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 999;
   li {
     display: block;
   }

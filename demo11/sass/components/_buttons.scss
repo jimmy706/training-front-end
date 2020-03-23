@@ -3,6 +3,7 @@
   border-radius: 0.4em;
   cursor: pointer;
   line-height: 1;
+  display: inline-block;
 }
 
 .btn-primary {
@@ -11,6 +12,16 @@
   transition: background-color 0.3s ease;
   &:hover {
     background-color: $strong-primary;
+    color: $white;
+  }
+}
+
+.btn-white {
+  color: #111;
+  background: $white;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  &:hover {
+    background-color: $primary;
     color: $white;
   }
 }

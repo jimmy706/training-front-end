@@ -1,0 +1,54 @@
+.tabs-container {
+  width: 100%;
+  .nav-tabs {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    .nav-item {
+      display: inline-block;
+      font-size: 1rem;
+      line-height: 1;
+      margin: 0 1.5rem;
+      text-align: center;
+      cursor: pointer;
+      white-space: nowrap;
+      position: relative;
+      &.active {
+        font-weight: bold;
+        border-bottom: 2px solid $primary;
+        color: $primary;
+      }
+    }
+  }
+  .tab-content {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    .tab {
+      transition: all 0.5s ease;
+      padding: 2rem 0;
+      width: 100%;
+      position: absolute;
+      left: 100%;
+      transform: translateX(-100%);
+      opacity: 0;
+      &.active {
+        visibility: visible;
+        position: relative;
+        opacity: 1;
+        left: 0;
+        transform: unset;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .tabs-container {
+    .nav-tabs {
+      .nav-item {
+        font-size: 10px;
+      }
+    }
+  }
+}

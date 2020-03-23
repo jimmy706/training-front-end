@@ -1,0 +1,18 @@
+section.top-product {
+  .tabs-container {
+    .tab-content {
+      .tab {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 2rem;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+    }
+  }
+  .banner-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+  }
+}
