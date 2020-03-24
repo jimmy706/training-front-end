@@ -144,7 +144,7 @@ new Swiper(".product-swiper-1", {
   slidesPerView: 1,
   spaceBetween: 0,
   breakpoints: {
-    425: {
+    500: {
       slidesPerView: 2,
       spaceBetween: 20
     },
@@ -171,7 +171,7 @@ new Swiper(".product-swiper-2", {
   slidesPerView: 1,
   spaceBetween: 0,
   breakpoints: {
-    425: {
+    500: {
       slidesPerView: 2,
       spaceBetween: 20
     },
