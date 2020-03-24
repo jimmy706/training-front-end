@@ -142,6 +142,12 @@ new Swiper(".product-swiper", {
       slidesPerView: 3,
       spaceBetween: 20
     }
-  },
-  loop: true
+  }
+});
+
+new Swiper("#swiper-quote", {
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true
+  }
 });

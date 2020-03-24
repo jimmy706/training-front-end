@@ -1,0 +1,80 @@
+section.gift {
+  .grid {
+    display: grid;
+    grid-template-columns: 35% calc(65% - 2rem);
+    grid-gap: 2rem;
+    margin-bottom: 3rem;
+  }
+  .deal-item,
+  .gift-wrapper {
+    padding: 2rem;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+  }
+  .deal-item {
+    .card {
+      .card-header {
+        position: relative;
+        .badge {
+          position: absolute;
+          display: block;
+          color: $white;
+          font-weight: bold;
+          font-size: 15px;
+          z-index: 10;
+          background-color: $secondary;
+          line-height: 1;
+          top: 15px;
+          right: 15px;
+          height: 20px;
+          line-height: 20px;
+          text-align: center;
+          padding-right: 5px;
+          &::before {
+            content: "";
+            border: 10px solid transparent;
+            border-right-color: $secondary;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateX(-100%) translateY(-50%);
+          }
+        }
+        .deal-icon {
+          position: absolute;
+          z-index: 20;
+          top: 15px;
+          left: 15px;
+        }
+      }
+
+      .product-title {
+        margin: 1rem 0;
+        display: block;
+        text-align: center;
+        a {
+          font-size: 18px;
+          font-weight: bold;
+          color: $primary;
+        }
+      }
+      .action-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .btn {
+          padding: 0.5em 1em;
+          font-size: 13px;
+        }
+        .price-wrap {
+          strong {
+            color: $primary;
+            font-weight: bold;
+            margin-right: 10px;
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+}

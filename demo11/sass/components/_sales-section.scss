@@ -1,11 +1,16 @@
 section.sales {
   .grid {
     display: grid;
-    grid-template-columns: 65% 35%;
+    grid-template-columns: 60% calc(40% - 2rem);
     grid-gap: 2rem;
+    margin-bottom: 3rem;
+  }
+  .sale-wrapper {
+    padding: 2rem;
+    border: 1px solid #ddd;
   }
   .video-wrapper {
-    padding-top: 56.25%;
+    padding-top: 75%;
     position: relative;
     iframe {
       position: absolute;
@@ -15,6 +20,35 @@ section.sales {
       left: 0;
       width: 100%;
       height: 100%;
+    }
+  }
+  .head-wrap {
+    text-align: right;
+  }
+
+  #swiper-quote {
+    margin-top: 2.5rem;
+    .swiper-pagination-bullet-active {
+      background: $primary;
+    }
+    .swiper-pagination {
+      text-align: left;
+      padding-left: 1rem;
+    }
+    .swiper-slide {
+      display: flex;
+      align-items: center;
+      padding: 1rem;
+      border: 1px solid #ddd;
+      box-sizing: border-box;
+      .img-wrapper {
+        width: 35%;
+        margin-right: 1rem;
+        img {
+          border-radius: 50%;
+          height: auto;
+        }
+      }
     }
   }
 }

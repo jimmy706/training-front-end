@@ -14,6 +14,16 @@
     background-color: $strong-primary;
     color: $white;
   }
+  &.outline {
+    background-color: transparent;
+    border: 1px solid $primary;
+    color: $primary;
+    box-sizing: border-box;
+    &:hover {
+      background-color: $primary;
+      color: $white;
+    }
+  }
 }
 
 .btn-white {

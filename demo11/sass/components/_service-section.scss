@@ -1,0 +1,69 @@
+section.services {
+  margin-top: 5rem;
+  .service-container {
+    padding: 2rem 0;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+  }
+  .service-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+    .service {
+      cursor: pointer;
+      .service-icon {
+        display: block;
+        margin-right: 1.2rem;
+        line-height: 1;
+        font-size: 50px;
+        color: $primary;
+        float: left;
+      }
+      .service-content {
+        float: left;
+        padding-top: 10px;
+      }
+      .service-title {
+        font-weight: bold;
+        font-size: 18px;
+        color: $primary;
+      }
+    }
+  }
+  .sign-form {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+    align-items: center;
+    h3 {
+      white-space: nowrap;
+      margin: 0;
+    }
+    .form-group {
+      margin-left: 40px;
+      display: flex;
+      width: 100%;
+      max-width: 500px;
+      min-width: 250px;
+      input[type="email"] {
+        background-color: #f8f8f8;
+        border: 0;
+        width: 100%;
+        padding-left: 15px;
+        box-sizing: border-box;
+        border: 1px solid #ddd;
+        border-bottom-left-radius: 0.3em;
+        border-top-left-radius: 0.3em;
+      }
+      .btn {
+        border-radius: 0;
+        border-top-right-radius: 0.3em;
+        border-bottom-right-radius: 0.3em;
+        white-space: nowrap;
+        font-weight: bold;
+        padding-left: 1em;
+        padding-right: 1em;
+      }
+    }
+  }
+}
