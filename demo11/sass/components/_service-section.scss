@@ -11,16 +11,15 @@ section.services {
     grid-gap: 2rem;
     .service {
       cursor: pointer;
+      display: flex;
       .service-icon {
         display: block;
         margin-right: 1.2rem;
         line-height: 1;
         font-size: 50px;
         color: $primary;
-        float: left;
       }
       .service-content {
-        float: left;
         padding-top: 10px;
       }
       .service-title {
@@ -63,6 +62,38 @@ section.services {
         font-weight: bold;
         padding-left: 1em;
         padding-right: 1em;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  section.services {
+    .service-list {
+      display: flex;
+      overflow: scroll;
+      .service {
+        min-width: 280px;
+        width: 100%;
+        padding: 1rem 0;
+        &:not(:last-child) {
+          margin-right: 2rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section.services {
+    .sign-form {
+      flex-direction: column;
+      justify-content: center;
+      h3 {
+        margin-bottom: 2rem;
+      }
+      .form-group {
+        margin: 0;
       }
     }
   }

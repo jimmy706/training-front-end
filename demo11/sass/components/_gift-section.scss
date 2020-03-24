@@ -46,6 +46,15 @@ section.gift {
           top: 15px;
           left: 15px;
         }
+        .img-wrapper {
+          text-align: center;
+          img {
+            height: auto;
+            max-width: 400px;
+            max-height: 400px;
+            display: inline-block;
+          }
+        }
       }
 
       .product-title {
@@ -65,6 +74,7 @@ section.gift {
         .btn {
           padding: 0.5em 1em;
           font-size: 13px;
+          white-space: nowrap;
         }
         .price-wrap {
           strong {
@@ -75,6 +85,17 @@ section.gift {
           }
         }
       }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  section.gift {
+    .grid {
+      display: block;
+    }
+    .deal-item {
+      margin-bottom: 2rem;
     }
   }
 }

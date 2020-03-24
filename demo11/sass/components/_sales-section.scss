@@ -52,3 +52,39 @@ section.sales {
     }
   }
 }
+
+@media screen and (max-width: 1024px) {
+  section.sales {
+    .grid {
+      display: block;
+    }
+    #swiper-quote {
+      .swiper-pagination {
+        text-align: center;
+        padding-left: 0;
+      }
+    }
+    .sale-wrapper {
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  section.sales {
+    #swiper-quote {
+      .swiper-slide {
+        padding-bottom: 30px;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        .img-wrapper {
+          width: 80px;
+          margin-bottom: 1rem;
+          margin-right: 0;
+          height: 80px;
+        }
+      }
+    }
+  }
+}

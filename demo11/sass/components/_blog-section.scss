@@ -5,3 +5,15 @@ section.blog {
     grid-gap: 2rem;
   }
 }
+
+@media screen and (max-width: 768px) {
+  section.blog {
+    .blog-list {
+      grid-template-columns: 1fr;
+      .blog-card {
+        margin: 0 auto;
+        max-width: unset;
+      }
+    }
+  }
+}

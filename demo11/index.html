@@ -14,9 +14,18 @@
   <body>
     <header id="header">
       <div class="container">
-        <a href="javascript:void(0)" class="logo-wrapper">
-          <img src="./images/logo-default.png" alt="logo" />
-        </a>
+        <div class="logo-wrap">
+          <a href="javascript:void(0)" class="logo-wrapper">
+            <img src="./images/logo-default.png" alt="logo" />
+          </a>
+          <a
+            href="javascript:void(0)"
+            class="dropdown-toggle header-mb-toggle"
+            data-target="#mb-nav"
+          >
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
         <nav class="header__nav">
           <ul>
             <li class="dropdown-handle nav-item active">
@@ -423,8 +432,8 @@
               </div>
             </form>
           </li>
-          <li class="nav-item">
-            <a href="javascript:void(0)" title="Wishlist" class="nav-link"
+          <li class="nav-item Whishlist-link">
+            <a href="javascript:void(0)" title="Wishlist" class="nav-link "
               ><i class="fa fa-heart"></i
             ></a>
           </li>
@@ -468,6 +477,88 @@
           </li>
         </ul>
       </div>
+      <nav class="dropdown-menu" id="mb-nav">
+        <ul>
+          <li class="active">
+            <a href="javascript:void(0)" class="nav-mb-link"
+              >Home
+              <span class="dropdown-toggle" data-target="#mb-menu-1">
+                <i class="fa fa-angle-down"></i>
+              </span>
+            </a>
+            <ul class="dropdown-menu" id="mb-menu-1">
+              <li>
+                <a href="javascript:void(0)" class="nav-mb-link"
+                  >Home Page Layouts 1</a
+                >
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="nav-mb-link"
+                  >Home Page Layouts 2</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="javascript:void(0)" class="nav-mb-link">Features</a>
+          </li>
+          <li>
+            <a href="javascript:void(0)" class="nav-mb-link"
+              >Shop
+              <span class="dropdown-toggle" data-target="#mb-menu-2">
+                <i class="fa fa-angle-down"></i> </span
+            ></a>
+            <ul class="dropdown-menu" id="mb-menu-2">
+              <li>
+                <a href="javascript:void(0)" class="nav-mb-link"
+                  >Shop Layouts</a
+                >
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="nav-mb-link">Shop Pages</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="nav-mb-link">Shop Types</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="javascript:void(0)" class="nav-mb-link"
+              >Blog
+              <span class="dropdown-toggle" data-target="#mb-menu-3">
+                <i class="fa fa-angle-down"></i> </span
+            ></a>
+            <ul class="dropdown-menu" id="mb-menu-3">
+              <li>
+                <a href="javascript:void(0)" class="nav-mb-link"
+                  >Blog Layouts 1</a
+                >
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="nav-mb-link"
+                  >Blog Layouts 2</a
+                >
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="nav-mb-link"
+                  >Product Pages</a
+                >
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="nav-mb-link"
+                  >Product Types</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="javascript:void(0)" class="nav-mb-link">Pages</a>
+          </li>
+          <li>
+            <a href="javascript:void(0)" class="nav-mb-link">Vendor</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <section class="main-banner">
@@ -549,10 +640,34 @@
             <a href="#top-item-4" class="nav-item">FEATURED PRODUCTS</a>
           </nav>
           <div class="tab-content">
-            <div class="tab active" id="top-item-1"></div>
-            <div class="tab" id="top-item-2"></div>
-            <div class="tab" id="top-item-3"></div>
-            <div class="tab" id="top-item-4"></div>
+            <div class="tab active" id="top-item-1">
+              <div class="swiper-container product-swiper-1 product-swiper">
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-wrapper"></div>
+              </div>
+            </div>
+            <div class="tab" id="top-item-2">
+              <div class="swiper-container product-swiper-1 product-swiper">
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-wrapper"></div>
+              </div>
+            </div>
+            <div class="tab" id="top-item-3">
+              <div class="swiper-container product-swiper-1 product-swiper">
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-wrapper"></div>
+              </div>
+            </div>
+            <div class="tab" id="top-item-4">
+              <div class="swiper-container product-swiper-1 product-swiper">
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-wrapper"></div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -580,7 +695,7 @@
               </p>
               <hr />
             </div>
-            <div class="swiper-container product-swiper">
+            <div class="swiper-container product-swiper-2 product-swiper">
               <div class="swiper-button-next"></div>
               <div class="swiper-button-prev"></div>
               <div class="swiper-wrapper"></div>
@@ -686,7 +801,7 @@
               </p>
               <hr />
             </div>
-            <div class="swiper-container product-swiper">
+            <div class="swiper-container product-swiper product-swiper-2">
               <div class="swiper-button-next"></div>
               <div class="swiper-button-prev"></div>
               <div class="swiper-wrapper"></div>
@@ -979,6 +1094,10 @@
         </div>
       </div>
     </footer>
+
+    <button id="top-btn">
+      <i class="fa fa-arrow-up"></i>
+    </button>
 
     <script src="./js/jquery-3.4.1.min.js"></script>
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
