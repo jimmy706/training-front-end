@@ -1,0 +1,30 @@
+.card-product {
+  position: relative;
+  box-sizing: border-box;
+  background-color: transparent;
+  max-width: 400px;
+  width: 100%;
+  transition: all 0.3 ease;
+  &:hover {
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.3);
+  }
+  .product-title {
+    display: block;
+    height: 40px;
+    overflow: hidden;
+    display: block;
+    font-size: 1rem;
+    line-height: 1.4;
+    font-weight: 700;
+  }
+  .card-header {
+    position: relative;
+    .whishlist-btn {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      z-index: 10;
+      font-size: 1.2rem;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+section.main-carousel {
+  .swiper-slide {
+    max-height: 70vh;
+    position: relative;
+  }
+  .banner-grid {
+    margin: 3rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+  }
+}

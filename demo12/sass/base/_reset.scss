@@ -1,0 +1,226 @@
+html {
+  font-size: 14px;
+}
+
+* {
+  box-sizing: unset;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.57;
+  font-family: "Roboto Slab", serif;
+  line-height: 1.6;
+  background-color: $white;
+  color: $dark-knight;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: $dark-knight;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  text-decoration: none;
+  color: $primary;
+}
+
+button {
+  border: 0;
+}
+
+button:focus,
+button:active,
+input:active,
+input:focus,
+textarea:active,
+textarea:focus,
+option:active,
+option:focus,
+select:active,
+select:focus {
+  outline: none;
+}
+
+button[disabled],
+input[disabled] {
+  cursor: default;
+}
+
+select {
+  font-family: inherit;
+}
+
+textarea {
+  resize: vertical;
+  font-family: inherit;
+}
+
+input::placeholder {
+  font-family: inherit;
+}
+
+input[type="checkbox"] {
+  vertical-align: middle;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1;
+}
+
+h1 {
+  font-size: 3.5rem;
+  margin-top: 0rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+}
+
+h2 {
+  font-size: 32px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 26px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h4 {
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h5 {
+  font-size: 1rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h6 {
+  font-size: 0.8rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+hr {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  border: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #ddd;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1rem;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+li {
+  display: inline-block;
+}
+
+.clean {
+  clear: both;
+}
+
+iframe {
+  border: 0;
+}
+
+.swiper-container {
+  width: 100%;
+}
+
+.img-wrapper {
+  display: block;
+  width: 100%;
+  position: relative;
+  img {
+    width: 100%;
+    display: block;
+    height: auto;
+  }
+}
+
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background-color: $white;
+  opacity: 1;
+  transition: background-color 0.3s ease;
+  &:hover {
+    background-color: $primary;
+  }
+}
+
+.swiper-pagination-bullet-active {
+  background-color: $primary !important;
+  width: 40px;
+  border-radius: 20px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  background-color: #ddd;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  &::after {
+    color: #666;
+    font-size: 20px;
+  }
+  &:hover {
+    background-color: $primary;
+    &::after {
+      color: $white;
+    }
+  }
+}
