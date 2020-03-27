@@ -4,9 +4,19 @@
     display: flex;
     width: 100%;
     justify-content: center;
-    overflow: auto;
+    overflow-x: auto;
     padding: 1rem 0;
-    border-bottom: 1px solid #ddd;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 1px;
+      width: 100%;
+      background-color: #ddd;
+      z-index: 5;
+    }
     .nav-item {
       display: inline-block;
       font-size: 1rem;
@@ -27,6 +37,7 @@
           height: 2px;
           width: 100%;
           background-color: $primary;
+          z-index: 10;
         }
       }
     }

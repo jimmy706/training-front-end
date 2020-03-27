@@ -7,16 +7,12 @@
   transition: all 0.3 ease;
   &:hover {
     box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.3);
+    .card-footer {
+      opacity: 1;
+      visibility: visible;
+    }
   }
-  .product-title {
-    display: block;
-    height: 40px;
-    overflow: hidden;
-    display: block;
-    font-size: 1rem;
-    line-height: 1.4;
-    font-weight: 700;
-  }
+
   .card-header {
     position: relative;
     .whishlist-btn {
@@ -25,6 +21,83 @@
       right: 20px;
       z-index: 10;
       font-size: 1.2rem;
+    }
+    .badge {
+      position: absolute;
+      background-color: $primary;
+      color: $white;
+      border-radius: 6px;
+      padding: 0.5em 1em;
+      font-size: 12px;
+      top: 20px;
+      left: 20px;
+      line-height: 1;
+      z-index: 10;
+    }
+  }
+  .card-body {
+    padding: 10px;
+    text-align: center;
+    .product-name {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+      font-size: 15px;
+      height: 30px;
+      line-height: 1;
+      overflow: hidden;
+    }
+    .price-wrap {
+      font-weight: 600;
+      ins {
+        text-decoration: none;
+        color: $primary;
+        font-size: 16px;
+      }
+      del {
+        color: #888;
+        font-size: 14px;
+        margin-right: 5px;
+      }
+    }
+    .rating {
+      display: flex;
+      color: #f1c92b;
+      justify-content: center;
+    }
+  }
+  .card-footer {
+    position: relative;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s ease;
+    &::before {
+      content: "";
+      height: 1px;
+      width: calc(100% - 20px);
+      background-color: #ddd;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    a {
+      display: block;
+      color: $primary;
+      background-color: #ededed;
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      border-radius: 50%;
+      transition: all 0.3 ease;
+      &:hover {
+        color: $white;
+        background-color: $primary;
+      }
     }
   }
 }

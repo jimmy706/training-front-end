@@ -3,6 +3,43 @@ section.main-carousel {
     max-height: 70vh;
     position: relative;
   }
+  .banner-content {
+    position: absolute;
+    z-index: 10;
+    top: 10%;
+    left: 5%;
+    width: 50%;
+    font-size: 4vw;
+    .sub-title {
+      font-size: 25%;
+      color: $primary;
+      margin-bottom: 0;
+    }
+    .banner-title {
+      font-size: 100%;
+      font-weight: 300;
+      line-height: 1;
+      margin-bottom: 0.6em;
+      b {
+        font-weight: 700;
+      }
+    }
+    .price-wrap {
+      font-size: 17px;
+      font-weight: 300;
+      line-height: 1;
+      strong {
+        font-weight: 700;
+        color: $primary;
+        font-size: 2vw;
+      }
+    }
+    .btn {
+      font-size: 20%;
+      font-weight: bold;
+      padding: 1.5em 3em;
+    }
+  }
   .banner-grid {
     margin: 3rem;
     display: grid;

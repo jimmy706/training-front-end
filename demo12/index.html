@@ -197,9 +197,6 @@
             <li class="nav-item">
               <a href="javascript:void(0)" class="nav-link">DRIED</a>
             </li>
-            <li class="nav-item">
-              <a href="javascript:void(0)" class="nav-link">ABOUT US</a>
-            </li>
           </ul>
         </nav>
         <div class="header-interact">
@@ -213,14 +210,39 @@
               <button class="submit-btn"><i class="fa fa-search"></i></button>
             </div>
           </form>
-          <a href="javascript:void(0)" class="nav-link header-cart">
+          <div class="setting-toggle dropdown-handle">
+            <i class="fa fa-cog"></i>
+            <div class="dropdown-content">
+              <ul>
+                <li>
+                  <a href="javascript:void(0)">Register</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">Login</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">Shoping Cart</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">Checkout</a>
+                </li>
+              </ul>
+              <strong>Language: </strong>
+              <ul>
+                <li>
+                  <a href="javascript:void(0)">English</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">French</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <a href="javascript:void(0)" class="header-cart">
             <i class="fa fa-shopping-cart"></i>
             <span class="price">$0.00</span>
             <span class="badge">0</span>
           </a>
-          <div class="setting-toggle dropdown-handle">
-            <i class="fa fa-cog"></i>
-          </div>
         </div>
       </div>
     </header>
@@ -230,12 +252,37 @@
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <div class="img-wrapper">
-              <img src="./images/slide1.jpg" alt="" />
+              <img src="./images/slide1.jpg" />
+            </div>
+            <div class="banner-content">
+              <p class="sub-title">Excludsive Offer - 10% Off This Week</p>
+              <h1 class="banner-title">
+                Live <b>healthy</b> with a glass of <b>fruit juice</b> every day
+              </h1>
+              <div class="price-wrap">Starting at <strong>$240.99</strong></div>
+              <a href="javascript:void(0)" class="btn btn-primary"
+                >SHOPPING NOW</a
+              >
             </div>
           </div>
           <div class="swiper-slide">
             <div class="img-wrapper">
-              <img src="./images/slide2.jpg" alt="" />
+              <img src="./images/slide2.jpg" />
+            </div>
+            <div class="banner-content">
+              <p class="sub-title">Excludsive Offer - 10% Off This Week</p>
+              <h1 class="banner-title">
+                We <b>provice</b> the best products <b>for you</b>
+              </h1>
+              <div class="price-wrap">Starting at <strong>$240.99</strong></div>
+              <a href="javascript:void(0)" class="btn btn-primary"
+                >SHOPPING NOW</a
+              >
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="img-wrapper">
+              <img src="./images/slide3.jpg" />
             </div>
           </div>
         </div>
@@ -263,19 +310,7 @@
         <h2 class="section-title text-center">
           Our Products
         </h2>
-        <div class="card-product">
-          <div class="card-header">
-            <a href="javascript:void(0)" class="tooltip whishlist-btn">
-              <i class="far fa-heart"></i>
-              <span class="tooltip-text left">
-                Add to whishlist
-              </span>
-            </a>
-            <a href="javascript:void(0)" class="img-wrapper">
-              <img src="./images/chaz-kangeroo-hoodie3.jpg" alt="" />
-            </a>
-          </div>
-        </div>
+
         <div class="tabs-container">
           <nav class="nav-tabs">
             <a href="#product-tab-1" class="nav-item active">
@@ -294,21 +329,62 @@
           <div class="tab-content">
             <div class="tab active" id="product-tab-1">
               <div class="swiper-container product-swiper product-swiper-1">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">Slide 1</div>
-                  <div class="swiper-slide">Slide 2</div>
-                  <div class="swiper-slide">Slide 3</div>
-                  <div class="swiper-slide">Slide 4</div>
-                  <div class="swiper-slide">Slide 5</div>
-                  <div class="swiper-slide">Slide 6</div>
-                  <div class="swiper-slide">Slide 7</div>
-                  <div class="swiper-slide">Slide 8</div>
-                  <div class="swiper-slide">Slide 9</div>
-                  <div class="swiper-slide">Slide 10</div>
-                </div>
+                <div class="swiper-wrapper"></div>
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
               </div>
+            </div>
+            <div class="tab" id="product-tab-2">
+              <div class="swiper-container product-swiper product-swiper-1">
+                <div class="swiper-wrapper"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+            </div>
+            <div class="tab" id="product-tab-3">
+              <div class="swiper-container product-swiper product-swiper-1">
+                <div class="swiper-wrapper"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+            </div>
+            <div class="tab" id="product-tab-4">
+              <div class="swiper-container product-swiper product-swiper-1">
+                <div class="swiper-wrapper"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sevice-grid">
+          <div class="service">
+            <img src="./images/ship.png" />
+            <div class="service-content">
+              <h3>Free Shipping On Order Over $120</h3>
+              <p>Free shipping on all order</p>
+            </div>
+          </div>
+          <div class="service">
+            <img src="./images/pig.png" />
+            <div class="service-content">
+              <h3>Money Return</h3>
+              <p>Back guarantee under 7 days</p>
+            </div>
+          </div>
+          <div class="service">
+            <img src="./images/percent.png" />
+            <div class="service-content">
+              <h3>Member Discount</h3>
+              <p>Support online 24 hours a day</p>
+            </div>
+          </div>
+          <div class="service">
+            <img src="./images/support.png" />
+            <div class="service-content">
+              <h3>Online Support 24/7</h3>
+              <p>Free shipping on all order</p>
             </div>
           </div>
         </div>

@@ -1,8 +1,11 @@
 #header {
   background-color: $white;
   position: relative;
-  padding: 1rem 0;
   z-index: 100;
+  .nav-link {
+    height: 85px;
+    line-height: 85px;
+  }
   .logo-wrapper {
     display: block;
     width: 150px;
@@ -120,6 +123,7 @@
     transform-origin: top;
     left: -20%;
     background-color: $white;
+    border-radius: 4px;
     li {
       display: block;
     }
@@ -140,6 +144,37 @@
       min-width: 150px;
       &:not(:last-child) {
         margin-right: 2rem;
+      }
+    }
+  }
+  .setting-toggle {
+    & > i {
+      height: 85px;
+      line-height: 85px;
+    }
+    position: relative;
+    .dropdown-content {
+      display: block;
+      font-size: 13px;
+      strong {
+        display: block;
+        margin-top: 10px;
+      }
+      ul {
+        display: flex;
+        flex-direction: column;
+        li {
+          min-width: 150px;
+          display: block;
+          &:not(:last-child) {
+            border-bottom: 1px solid #ddd;
+          }
+          a {
+            line-height: 2.5;
+            display: block;
+            font-size: 13px;
+          }
+        }
       }
     }
   }
