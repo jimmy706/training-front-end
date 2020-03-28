@@ -5,3 +5,27 @@
 .text-center {
   text-align: center !important;
 }
+
+.section-title {
+  font-size: 24px !important;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    background-color: #ddd;
+    width: 100%;
+    height: 1px;
+    left: 0;
+    bottom: 0;
+  }
+  .nav-tabs {
+    justify-content: flex-end;
+    width: auto;
+  }
+}

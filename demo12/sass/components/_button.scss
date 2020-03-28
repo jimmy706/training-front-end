@@ -4,6 +4,7 @@
   cursor: pointer;
   line-height: 1;
   display: inline-block;
+  box-sizing: border-box;
 }
 
 .btn-primary {
@@ -13,5 +14,15 @@
   &:hover {
     background-color: $secondary;
     color: $white;
+  }
+  &.outline {
+    color: $primary;
+    background-color: transparent;
+    border-radius: 4em;
+    border: 2px solid $primary;
+    &:hover {
+      color: $white;
+      background-color: $primary;
+    }
   }
 }

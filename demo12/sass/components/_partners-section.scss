@@ -1,0 +1,22 @@
+section.partners {
+  margin: 2rem 0;
+  .swiper-container {
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .img-wrapper {
+    padding: 1rem 0;
+    img {
+      display: block;
+      height: 100%;
+      filter: grayscale(100%);
+      transition: filter 0.3s ease;
+      transform: scale(0.9);
+      &:hover {
+        filter: grayscale(0);
+      }
+    }
+  }
+}

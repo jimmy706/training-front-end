@@ -43,6 +43,17 @@ const products = [
     name: "Lacinia at quis",
     image: "images/10-500x500.jpg",
     price: "120.00"
+  },
+  {
+    name: "Ut aliquam purus",
+    image: "images/6-500x500.jpg",
+    price: "200.00"
+  },
+  {
+    name: "Dapibus ultrices",
+    image: "images/sprite-yoga-straps1.jpg",
+    offPrice: "320.00",
+    price: "300.00"
   }
 ];
 
@@ -97,6 +108,35 @@ function createCard(product) {
   return card;
 }
 
+function createCard1(product) {
+  const { name, price, offPrice, image } = product;
+  const card = `
+    <div class="card-product1">
+      <a href="javascript:void(0)" class="img-wrapper">
+        <img src="${image}"/>
+      </a>
+      <div class="product-content">
+        <a href="javascript:void(0)" class="product-name">${name}</a>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-half-alt"></i>
+        </div>
+        <div class="price-wrap">
+          ${
+            offPrice
+              ? "<del>$" + offPrice + "</del><ins>$" + price + "</ins>"
+              : "<ins>$" + price + "</ins>"
+          }
+        </div>
+      </div>
+    </div>
+  `;
+  return card;
+}
+
 const productSwipers = $(".product-swiper");
 productSwipers.each(function() {
   const swiperWrappr = this.querySelector(".swiper-wrapper");
@@ -104,6 +144,19 @@ productSwipers.each(function() {
     .map(p => `<div class="swiper-slide">${createCard(p)}</div>`)
     .join("");
 });
+
+const productSwipers2 = $(".product-swiper-2");
+productSwipers2.each(function() {
+  const swiperWrappr = this.querySelector(".swiper-wrapper");
+  swiperWrappr.innerHTML = products
+    .map(
+      p => `<div class="swiper-slide">${createCard(p) + createCard(p)}</div>`
+    )
+    .join("");
+});
+
+const mostview = $("#mostview-products");
+mostview.html(products.map(p => createCard1(p)).join(""));
 
 // TODO: TABS
 const tabsContainers = [...document.getElementsByClassName("tabs-container")];
@@ -164,4 +217,47 @@ new Swiper(".product-swiper-1", {
       spaceBetween: 20
     }
   }
+});
+
+new Swiper(".product-swiper-2", {
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev"
+  },
+  slidesPerView: 2,
+  spaceBetween: 0,
+  breakpoints: {
+    600: {
+      slidesPerView: 3,
+      spaceBetween: 20
+    },
+    800: {
+      slidesPerView: 4,
+      spaceBetween: 20
+    },
+    1025: {
+      slidesPerView: 5,
+      spaceBetween: 20
+    }
+  }
+});
+
+new Swiper("#swiper-partner", {
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev"
+  },
+  slidesPerView: 2,
+  spaceBetween: 40,
+  breakpoints: {
+    427: {
+      slidesPerView: 3,
+      spaceBetween: 60
+    },
+    1025: {
+      slidesPerView: 5,
+      spaceBetween: 100
+    }
+  },
+  loop: true
 });

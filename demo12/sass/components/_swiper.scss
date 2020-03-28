@@ -22,7 +22,7 @@
   height: 50px;
   border-radius: 50%;
   transition: all 0.3s ease;
-
+  opacity: 0 !important;
   &::after {
     color: #666;
     font-size: 20px;
@@ -35,8 +35,27 @@
   }
 }
 
+.swiper-container {
+  &:hover {
+    .swiper-button-next,
+    .swiper-button-prev {
+      opacity: 1 !important;
+    }
+  }
+}
+
 .product-swiper {
   .swiper-slide {
     padding: 5px 0;
+  }
+}
+
+.product-swiper-2 {
+  .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    .card-product {
+      margin-bottom: 0.5rem;
+    }
   }
 }

@@ -64,6 +64,7 @@
       display: flex;
       color: #f1c92b;
       justify-content: center;
+      margin-bottom: 10px;
     }
   }
   .card-footer {
@@ -98,6 +99,50 @@
         color: $white;
         background-color: $primary;
       }
+    }
+  }
+}
+
+.card-product1 {
+  position: relative;
+  box-sizing: border-box;
+  max-width: 400px;
+  width: 100%;
+  display: flex;
+  .product-content {
+    padding-top: 1.5rem;
+    width: 65%;
+    box-sizing: border-box;
+    padding-left: 10px;
+  }
+  .img-wrapper {
+    width: 35%;
+  }
+  .product-name {
+    font-weight: 700;
+    display: block;
+    margin-bottom: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1;
+  }
+  .rating {
+    display: flex;
+    color: #f1c92b;
+    margin-bottom: 10px;
+    font-size: 12px;
+  }
+  .price-wrap {
+    font-weight: 600;
+    ins {
+      text-decoration: none;
+      color: $primary;
+      font-size: 16px;
+    }
+    del {
+      color: #888;
+      font-size: 14px;
+      margin-right: 5px;
     }
   }
 }

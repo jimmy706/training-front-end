@@ -1,0 +1,24 @@
+section.trending {
+  .products-grid {
+    display: grid;
+    grid-template-columns: minmax(300px, 400px) auto;
+    grid-gap: 2rem;
+  }
+  .large-card {
+    &:hover {
+      box-shadow: unset;
+    }
+    .product-name {
+      font-size: 18px;
+    }
+    .btn-primary {
+      font-size: 13px;
+      font-weight: bold;
+    }
+  }
+  .banner-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+  }
+}
