@@ -41,9 +41,42 @@ section.main-carousel {
     }
   }
   .banner-grid {
-    margin: 3rem;
+    margin-top: 3rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section.main-carousel {
+    .banner-content {
+      font-size: 5vw;
+      .price-wrap {
+        font-size: 30%;
+      }
+      .banner-title {
+        font-size: 80%;
+      }
+      .btn {
+        font-size: 25%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  section.main-carousel {
+    .banner-content {
+      font-size: 5.5vw;
+    }
+  }
+}
+
+@media screen and (max-width: 426px) {
+  section.main-carousel {
+    .banner-grid {
+      grid-template-columns: 1fr;
+    }
   }
 }

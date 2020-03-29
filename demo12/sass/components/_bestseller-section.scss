@@ -10,3 +10,11 @@ section.bestseller {
     }
   }
 }
+
+@media screen and (max-width: 426px) {
+  section.bestseller {
+    .banner-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+}

@@ -15,16 +15,16 @@
   display: flex;
 }
 
-// @media screen and (max-width: 768px) {
-//   .container {
-//     padding-left: 2rem;
-//     padding-right: 2rem;
-//   }
-// }
+@media screen and (max-width: 768px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
 
-// @media screen and (max-width: 426px) {
-//   .container {
-//     padding-left: 1rem;
-//     padding-right: 1rem;
-//   }
-// }
+@media screen and (max-width: 426px) {
+  .container {
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+  }
+}

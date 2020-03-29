@@ -82,6 +82,7 @@
         border-bottom: 1px solid #ededed;
         color: #91959b;
         font-size: 13px;
+        box-sizing: border-box;
         &::placeholder {
           color: inherit;
         }
@@ -93,6 +94,49 @@
       font-size: 12px;
       display: block;
       width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #footer {
+    .footer-rows {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #footer {
+    .footer-rows {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .contact-col {
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+    .col {
+      margin-bottom: 1rem;
+    }
+    .copyright {
+      flex-direction: column;
+      justify-content: center;
+      padding: 20px 0;
+      p {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 426px) {
+  #footer {
+    .footer-rows {
+      grid-template-columns: 1fr;
+    }
+    .contact-col {
+      grid-column-start: 1;
+      grid-column-end: 2;
     }
   }
 }

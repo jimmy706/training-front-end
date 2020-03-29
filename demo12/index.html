@@ -14,11 +14,20 @@
   <body>
     <header id="header">
       <div class="container">
-        <a href="javascript:void(0)" class="logo-wrapper">
-          <img
-            src="./images/organicfood-responsive-prestashop-theme-logo-1515566207.jpg"
-          />
-        </a>
+        <div class="flexbox" style="align-items: center;">
+          <a href="javascript:void(0)" class="logo-wrapper">
+            <img
+              src="./images/organicfood-responsive-prestashop-theme-logo-1515566207.jpg"
+            />
+          </a>
+          <a
+            href="javascript:void(0)"
+            class="dropdown-toggle nav-link mb-nav-toggle"
+            data-target="#mb-nav"
+          >
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
         <nav class="header-nav">
           <ul>
             <li class="nav-item">
@@ -244,6 +253,85 @@
             <span class="badge">0</span>
           </a>
         </div>
+      </div>
+      <div class="mb-container">
+        <nav id="mb-nav" class="dropdown-menu">
+          <div class="container">
+            <ul class="nav-list">
+              <li class="list-item">
+                <a href="javascript:void(0)" class="list-link">Home</a>
+              </li>
+              <li class="list-item">
+                <a href="javascript:void(0)" class="list-link">
+                  <span>Shop</span>
+                  <span class="dropdown-toggle" data-target="#mb-menu-1">
+                    <i class="fa fa-plus"></i>
+                    <i class="fa fa-minus"></i>
+                  </span>
+                </a>
+                <div class="dropdown-menu" id="mb-menu-1">
+                  <ul>
+                    <li>
+                      <a href="#">Flowers</a>
+                    </li>
+                    <li>
+                      <a href="#">Fresh Fruits</a>
+                    </li>
+                    <li>
+                      <a href="#">Organics</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="list-item">
+                <a href="javascript:void(0)" class="list-link">
+                  <span>Vegatble</span>
+                  <span class="dropdown-toggle" data-target="#mb-menu-2">
+                    <i class="fa fa-plus"></i>
+                    <i class="fa fa-minus"></i>
+                  </span>
+                </a>
+                <div class="dropdown-menu" id="mb-menu-2">
+                  <ul>
+                    <li>
+                      <a href="#">Bread Salads</a>
+                    </li>
+                    <li>
+                      <a href="#">Fruit Salads</a>
+                    </li>
+                    <li>
+                      <a href="#">Salad Dressing</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="list-item">
+                <a href="javascript:void(0)" class="list-link">
+                  <span>Fruit</span>
+                  <span class="dropdown-toggle" data-target="#mb-menu-3">
+                    <i class="fa fa-plus"></i>
+                    <i class="fa fa-minus"></i>
+                  </span>
+                </a>
+                <div class="dropdown-menu" id="mb-menu-3">
+                  <ul>
+                    <li>
+                      <a href="#">Shop</a>
+                    </li>
+                    <li>
+                      <a href="#">Vegatbles</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="list-item">
+                <a href="javascript:void(0)" class="list-link">
+                  Dried
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
       </div>
     </header>
 
@@ -628,7 +716,7 @@
     <footer id="footer">
       <div class="container">
         <div class="footer-rows">
-          <div class="col">
+          <div class="col contact-col">
             <a href="javascript:void(0)" class="footer-logo">
               <img src="./images/logo_footer.png" />
             </a>
@@ -775,6 +863,10 @@
         </div>
       </div>
     </footer>
+
+    <button id="btn-top">
+      <i class="fa fa-arrow-up"></i>
+    </button>
 
     <script src="./js/jquery-3.4.1.min.js"></script>
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>

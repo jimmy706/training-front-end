@@ -29,3 +29,13 @@
     width: auto;
   }
 }
+
+@media screen and (max-width: 900px) {
+  .section-header {
+    flex-direction: column;
+    justify-content: flex-start;
+    .nav-tabs {
+      justify-content: flex-start;
+    }
+  }
+}

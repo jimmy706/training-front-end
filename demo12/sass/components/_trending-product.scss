@@ -22,3 +22,22 @@ section.trending {
     grid-gap: 2rem;
   }
 }
+
+@media screen and (max-width: 900px) {
+  section.trending {
+    .products-grid {
+      grid-template-columns: 1fr;
+    }
+    .large-card {
+      margin: 2rem auto;
+    }
+  }
+}
+
+@media screen and (max-width: 426px) {
+  section.trending {
+    .banner-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+}
